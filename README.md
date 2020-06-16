@@ -1,6 +1,10 @@
 # BikeLando
+
+## Autorzy
 Aleksandra Rawicz-Galińska
+
 Małgorzata Wieteska
+
 Adam Hilaruk
 
 # Spis treści
@@ -18,9 +22,11 @@ Adam Hilaruk
 	    1. [Kolumny](#kolumny1)
     2. [Tabela Trasy](#tabela-trasy)
 	    1. [Kolumny](#kolumny2)
+5. [Instalacja](#instalacja)
+6. [Licencja](#licencja)
 
 ## Informacje ogólne
-Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca projektowego MVC. Głównym założeniem projektu jest stworzenie środowiska przyjaznego rowerzystom, który w jasny i czytelny sposób pomógłby wybrać najlepsze trasy rowerowe dla userów o różnej formie. Aplikacja stworzona jest z panelu dostępnego wszechstronnie i części dostępnej jedynie dla zalogowanych. W programie poza panelem logowania dostępne będą mapy tras, zaawansowana wyszukiwarka i filtr.
+Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca projektowego MVC. Głównym założeniem projektu jest stworzenie środowiska przyjaznego rowerzystom, które w jasny i czytelny sposób pomógłby wybrać najlepsze trasy rowerowe dla userów o różnej formie. Aplikacja zbudowana jest z panelu dostępnego wszechstronnie i części dostępnej jedynie dla zalogowanych. W programie poza panelem logowania dostępne będą mapy tras, zaawansowana wyszukiwarka i filtr.
 
 ## Technologie:
 * [Framework Symfony 5]
@@ -30,17 +36,17 @@ Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca proje
 * [CSS 3]
 * [Bootstrap]
 * [jQuery]
-* [SQL]
+* [MySQL]
 
 ## Warstwy MVC:
 ### Widoki
 
-* Widok index, strona główna; na stronie głównej lista tras rowerowych wraz opcją filtru (po ocenie/lokalizacji (miejscowości); w panelu bocznym panel logowania, z odnośnikiem do rejestracji oraz resetu hasła
-* Widok register, widok z formularzem rejestracji do strony
-* Widok resetu hasła 
-* Widok addTour, widok pozwalający dodać na stronę do ogólnodostępnego użytku swoją trasę rowerową
-* Widok viewYourTours, widok pozwalający przeglądać dodane przez nas trasy i ewentualne ich usuwanie oraz edycję
-* Widok profile, widok pozwalający podejrzeć swoje dane oraz je edytować
+* Widok Index, strona główna; na stronie głównej informacja o stronie, czym się zajmuje etc, w górnym prawym rogu możliwość szybkiego zalogowania się wraz z odnośnikiem do formularza rejestracji i resetu hasła (dostępny w każdym widoku)
+* Widok ViewTours lista tras rowerowych wraz opcją filtru (po ocenie/lokalizacji (województwie))
+* Widok ResetPassword, mechanizm pozwalający zresetować hasło w oparciu o wysyłkę instrukcji na po podany e-mail
+* Widok AddTour, widok pozwalający dodać na stronę do ogólnodostępnego użytku swoją trasę rowerową
+* Widok ViewYourTours, widok pozwalający przeglądać dodane przez nas trasy i ewentualne ich usuwanie oraz edycję
+* Widok Profile, widok pozwalający podejrzeć swoje dane oraz je edytować
 
 ### Kontrolery
 
@@ -51,7 +57,8 @@ Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca proje
 * Kontroler EditTour, kontroler edytujący dane trasy
 * Kontroler LogIn, kontroler służący do zalogowania użytkownika na stronę
 * Kontroler LogOut, kontroler służący do wylogowania użytkownika ze strony
-* Kontroler RecoverPassword, kontroler służący do odzyskania zapomnianego hasła przez użytkownika
+* Kontroler ResetPassword, kontroler służący do resetu hasła w przypadku zapomnienia hasła przez użytkownika
+* Kontroler AddComment, kontroler służący do dodania komentarza do trasy
 
 ### Modele:
 #### Obiekt User, pola
@@ -59,13 +66,16 @@ Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca proje
 * password (hash md5)
 
 #### Obiekt Tour
-* name
-* author
-* difficulty
-* length
-* map
-* region
-* description
+* name (nazwa)
+* length (długość trasy)
+* linkToMap (link google Maps który posłuży do wyświetlania mapy Google)
+* difficulty (trudność trasy, w skali 1-10)
+* region (województwo)
+* author (email-username autora)
+* description (opis trasy)
+* note (ocena trasy)
+* numberOfNotes (liczba ocen)
+
 Metody: 
 * getAuthor()
 * getRegion()
@@ -73,25 +83,49 @@ Metody:
 * getLength()
 
 #### Model Filtry:
-* Funkcja filtrująca zawartość portalu po wybranych zmiennych
+* Funkcja filtrująca zawartość portalu po wybranych zmiennych (w klasie Tour)
 
 
 ## Bazy Danych
-### Tabela Users
+### Tabela users
 #### Kolumny: 
 * email [VARCHAR(255)] 
 * password [TEXT]
 
-### Tabela Trasy
+### Tabela Trasy (tours)
 #### Kolumny:
-* id [int] 
+* id [INT] 
 * name [VARCHAR (30)]
-* length [float]
+* length [FLOAT]
 * linkToMap [TEXT]
 * difficulty [INT]
 * region [VARCHAR (50)]
-* authorId (email) [VARCHAR (50)]
+* authorId (email) [VARCHAR (255)]
 * description [TEXT (500)]
+* note [FLOAT]
+* numberOfNotes [INT]
+
+### Tabela Komentarze (comments)
+#### Kolumny:
+* tourId [INT]
+* author [VARCHAR (255)]
+* content [TEXT (500)]
+* date [DATE]
+
+
+## Instalacja
+
+W celu instalacji aplikacji:
+1. Zklonuj projekt GitHub na swój lokalny komputer.
+2. Zainstaluj program xampp i włącz Apache oraz MySQL
+3. Włącz projekt w przeglądarce w dowolny sposób (np. poprzez wpisanie adresu localhost)
+
+##### Uwaga
+W celu prawidłowego działania aplikacji lokalnie wymagane jest stworzenie lokalnej bazy danych o nazwie: bikelando z tabelami i kolumnami jak w opisie bazy danych wyżej (patrz punkt 4. [Bazy Danych](#bazy-danych))
+
+## Licencja
+
+Ten projekt jest udostępniony na licencji MIT. W celu uzyskania większej ilości informacji o tej licencji kliknij tutaj [MIT]. 
 
 [Framework Symfony 5]: <https://symfony.com/>
 [PHP 7]: <https://www.php.net/>
@@ -100,6 +134,7 @@ Metody:
 [CSS 3]: <https://developer.mozilla.org/en-US/docs/Archive/CSS3>
 [Bootstrap]: <https://getbootstrap.com/>
 [jQuery]: <https://jquery.com/>
-[SQL]: <https://www.mysql.com/>
+[MySQL]: <https://www.mysql.com/>
+[MIT]: <https://choosealicense.com/licenses/mit/>
  
 
