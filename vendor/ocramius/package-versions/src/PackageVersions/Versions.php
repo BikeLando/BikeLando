@@ -55,6 +55,7 @@ final class Versions
   'psr/link' => 'dev-master@131b5c337db3599ef922e9d6c22889ad237b80b9',
   'psr/log' => 'dev-master@0f73288fd15629204f9d42b7055f72dacbe811fc',
   'sensio/framework-extra-bundle' => 'dev-master@b49f079d8a87a6e6dd434062085ff5a132af466b',
+  'symfony/apache-pack' => 'dev-master@d7e64ecf8e5974738924b84cedc70cacc8afa47f',
   'symfony/asset' => 'dev-master@d228deb9cb876277adcf9ff2b6f0dd57025d32c5',
   'symfony/cache' => 'dev-master@a6ea1b312809dec4937858b6c139e937c07b6d06',
   'symfony/cache-contracts' => 'dev-master@8cdaf96856dd1381d83711c303c7abbe3f76eeed',

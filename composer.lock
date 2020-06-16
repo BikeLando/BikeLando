@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "068d1b016fd44a34787c5acc5444bcc1",
+    "content-hash": "cffebd189ead76bf2a30018095d3b147",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2318,6 +2318,28 @@
                 "controllers"
             ],
             "time": "2020-06-15T20:28:02+00:00"
+        },
+        {
+            "name": "symfony/apache-pack",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/apache-pack.git",
+                "reference": "d7e64ecf8e5974738924b84cedc70cacc8afa47f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/apache-pack/zipball/d7e64ecf8e5974738924b84cedc70cacc8afa47f",
+                "reference": "d7e64ecf8e5974738924b84cedc70cacc8afa47f",
+                "shasum": ""
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for Apache support in Symfony",
+            "time": "2020-02-11T16:22:56+00:00"
         },
         {
             "name": "symfony/asset",
@@ -8255,6 +8277,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "sensio/framework-extra-bundle": 20,
+        "symfony/apache-pack": 20,
         "symfony/twig-pack": 20,
         "symfony/maker-bundle": 20
     },

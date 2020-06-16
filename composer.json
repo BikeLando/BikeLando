@@ -9,6 +9,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.5@dev",
+        "symfony/apache-pack": "dev-master",
         "symfony/asset": "5.2.*",
         "symfony/console": "*",
         "symfony/dotenv": "*",

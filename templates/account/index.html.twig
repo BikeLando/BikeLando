@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block title %}BikeLando - Twoje konto{% endblock %}
+    {% block body1 %}
+    <div class="col">
+        <h5 style="float: right;">Zalogowany jako email</h5>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <a href="{{ path('home') }}" lass="badge badge-light" style="float: right; margin-left: 10px">Wyloguj</a>
+    </div>
+</div>
+ {% endblock %}
+{% block body2 %}
+    <div class="row">
+        <div class="col">
+            <nav class="nav navbar-light" style="float: left">
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('home') }}">Strona główna</a>
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('tours') }}">Trasy</a>
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('about') }}">O nas</a>
+            </nav>
+            <nav class="nav navbar-light" style="float: right">
+                <a class="nav-link btn btn-outline-dark active" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('account') }}">Twoje konto</a>
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('user_tours') }}">Twoje trasy</a>
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('add_tours') }}">Dodaj trase</a>
+            </nav>
+        </div>
+    </div>
+
+{% endblock %}
+{% block body %}
+    <div class="row" id="zakladki">
+        <div class="col">
+            <div class="card bg-transparent border-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Twoje Konto</h5>
+                    <p class="card-text">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
+                    <a class="nav-link btn btn-outline-dark" href="{{ path('edit') }}">Edytu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

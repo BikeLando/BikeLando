@@ -13,8 +13,18 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/tours/show' => [[['_route' => 'tours', '_controller' => 'App\\Controller\\ToursController::show'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'index', 'template' => 'index.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], null, null, null, false, false, null]],
+        '/about' => [[['_route' => 'about', '_controller' => 'App\\Controller\\AboutController::index'], null, null, null, false, false, null]],
+        '/account' => [[['_route' => 'account', '_controller' => 'App\\Controller\\AccountController::index'], null, null, null, false, false, null]],
+        '/add/tours' => [[['_route' => 'add_tours', '_controller' => 'App\\Controller\\AddToursController::index'], null, null, null, false, false, null]],
+        '/edit' => [[['_route' => 'edit', '_controller' => 'App\\Controller\\EditController::index'], null, null, null, false, false, null]],
+        '/' => [
+            [['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null],
+            [['_route' => 'index', 'template' => 'base.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], null, null, null, false, false, null],
+        ],
+        '/register' => [[['_route' => 'register', '_controller' => 'App\\Controller\\RegisterController::index'], null, null, null, false, false, null]],
+        '/reset' => [[['_route' => 'reset', '_controller' => 'App\\Controller\\ResetController::index'], null, null, null, false, false, null]],
+        '/tours' => [[['_route' => 'tours', '_controller' => 'App\\Controller\\ToursController::index'], null, null, null, false, false, null]],
+        '/user/tours' => [[['_route' => 'user_tours', '_controller' => 'App\\Controller\\UserToursController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+{% block title %}BikeLando - Twoje konto{% endblock %}
+    {% block body1 %}
+        <div class="col">
+            <h5 style="float: right;">Zalogowany jako email</h5>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="{{ path('home') }}" lass="badge badge-light" style="float: right; margin-left: 10px">Wyloguj</a>
+            </div>
+        </div>
+    {% endblock %}
+{% block body2 %}
+    <div class="row">
+        <div class="col">
+            <nav class="nav navbar-light" style="float: left">
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('home') }}">Strona główna</a>
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('tours') }}">Trasy</a>
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('about') }}">O nas</a>
+            </nav>
+            <nav class="nav navbar-light" style="float: right">
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('account') }}">Twoje konto</a>
+                <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('user_tours') }}">Twoje trasy</a>
+                <a class="nav-link btn btn-outline-dark active" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('add_tours') }}">Dodaj trase</a>
+            </nav>
+        </div>
+    </div>
+
+{% endblock %}
+{% block body %}
+    <div class="row" id="zakladki">
+        <div class="col">
+            <div class="card bg-transparent border-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Dodaj trase</h5>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput1">Nazwa trasy</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Nazwa">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Link Google Maps</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Link">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="col"><div class="form-group">
+                                    <label for="formGroupExampleInput3">Długość [km]</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Długość">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect3">Region</label>
+                                    <select class="form-control" id="exampleFormControlSelect3">
+                                        <option>Dolnośląskie</option>
+                                        <option>Kujawsko-Pomorskie</option>
+                                        <option>Lubelskie</option>
+                                        <option>Lubuskiej</option>
+                                        <option>Lódzkie</option>
+                                        <option>Małopolskie</option>
+                                        <option>Mazowieckie</option>
+                                        <option>Opolskie</option>
+                                        <option>Podkarpackie</option>
+                                        <option>Podlaskie</option>
+                                        <option>Pomorskie</option>
+                                        <option>Śląskie</option>
+                                        <option>Świętokrzyskie</option>
+                                        <option>Warmińsko-Mazurskie</option>
+                                        <option>Wielkopolskie</option>
+                                        <option>Zachodniopomorskie</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Trudność trasy</label>
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Opis</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-info" style="float: right">Dodaj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

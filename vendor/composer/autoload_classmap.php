@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controller\\AboutController' => $baseDir . '/src/Controller/AboutController.php',
     'App\\Controller\\ToursController' => $baseDir . '/src/Controller/ToursController.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'Collator' => $vendorDir . '/symfony/intl/Resources/stubs/Collator.php',
