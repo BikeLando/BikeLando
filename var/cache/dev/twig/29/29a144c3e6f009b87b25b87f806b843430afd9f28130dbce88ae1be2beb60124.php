@@ -122,6 +122,6 @@ class __TwigTemplate_91b1ba078ebcfeecf2bcbc5194404068608fee4eb2e0e35633d762f75c0
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/table.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\table.html.twig");
+", "@WebProfiler/Profiler/table.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\table.html.twig");
     }
 }

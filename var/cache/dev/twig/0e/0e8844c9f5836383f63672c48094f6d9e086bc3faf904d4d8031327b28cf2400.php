@@ -155,6 +155,6 @@ class __TwigTemplate_fbd7396a4312cca31c27740d96236a006779da6bd3a70ef619ef9841258
 {% block panel %}
     {{ render(path('_profiler_router', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\router.html.twig");
     }
 }

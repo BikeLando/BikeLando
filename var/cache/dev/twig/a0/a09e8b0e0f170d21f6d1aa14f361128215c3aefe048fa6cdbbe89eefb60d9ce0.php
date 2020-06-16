@@ -173,6 +173,6 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\templates\\base.html.twig");
+", "base.html.twig", "C:\\xampp\\htdocs\\bikelando\\templates\\base.html.twig");
     }
 }

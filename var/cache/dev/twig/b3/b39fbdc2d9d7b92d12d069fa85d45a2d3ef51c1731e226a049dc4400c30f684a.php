@@ -102,6 +102,6 @@ class __TwigTemplate_acc3eb06264f9e3234a64f6412ffd0f14c5be0af9321c1b8bc13cb49cd6
     {% if link|default(false) %}</a>{% endif %}
         <div class=\"sf-toolbar-info\">{{ text|default('') }}</div>
 </div>
-", "@WebProfiler/Profiler/toolbar_item.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_item.html.twig");
+", "@WebProfiler/Profiler/toolbar_item.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_item.html.twig");
     }
 }

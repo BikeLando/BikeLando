@@ -171,6 +171,6 @@ class __TwigTemplate_e3959e6d5a0cbf8f756de381ca627eb58069a58dd82a6892d89ed99de37
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
     }
 }

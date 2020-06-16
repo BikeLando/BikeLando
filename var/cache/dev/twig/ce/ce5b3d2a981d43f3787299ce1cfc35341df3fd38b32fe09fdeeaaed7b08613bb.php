@@ -1175,6 +1175,6 @@ class __TwigTemplate_26bd834a7e2a7514bb82d4a4f07066f053cac65135d443d56cdf69f113d
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
     }
 }

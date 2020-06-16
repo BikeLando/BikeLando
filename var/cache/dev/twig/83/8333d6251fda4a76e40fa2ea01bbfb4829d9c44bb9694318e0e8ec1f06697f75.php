@@ -1882,6 +1882,6 @@ class __TwigTemplate_c22e5d5342033df170891af85b495e622042f5ce8c5652f2ed718acd5db
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
     }
 }

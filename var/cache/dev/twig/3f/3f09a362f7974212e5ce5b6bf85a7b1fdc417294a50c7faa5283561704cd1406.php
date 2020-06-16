@@ -417,6 +417,6 @@ class __TwigTemplate_65aadaddcb9dc337b89fc4aad0d25ae229cc97aadddc29fb5bb552a465a
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
     }
 }

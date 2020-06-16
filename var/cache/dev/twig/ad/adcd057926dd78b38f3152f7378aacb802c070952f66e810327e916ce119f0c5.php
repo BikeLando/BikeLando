@@ -898,6 +898,6 @@ class __TwigTemplate_f74e62f3308f70806f53d59a2ad0f1e8cc33a63bc9e95648387c6927b98
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\translation.html.twig");
     }
 }

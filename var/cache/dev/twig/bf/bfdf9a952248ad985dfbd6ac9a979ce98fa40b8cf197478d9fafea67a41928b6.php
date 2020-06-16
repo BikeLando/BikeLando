@@ -479,6 +479,6 @@ class __TwigTemplate_6c1a30de27cf2060bc2fddb74ede5e4b4821dc10a2f966abd0ac64699aa
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
     }
 }

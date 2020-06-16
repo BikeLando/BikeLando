@@ -61,6 +61,10 @@ return [[
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 1,
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CToursController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CToursController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CToursController%23show%5D%5B1%5D' => 3,
+'%5B%5BC%5DApp%5CController%5CToursController%23show%5D%5B1%5D' => 2,
 '%5BDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 1,
 '%5B%5BC%5DDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 2,
 '%5BDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%23setContainer%5D%5B1%5D' => 1,
@@ -598,6 +602,28 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1592159646,
+2 => 1592316166,
+3 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/tours',
+                ],
+                'name' => [
+                    'tours',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
 
 ]];

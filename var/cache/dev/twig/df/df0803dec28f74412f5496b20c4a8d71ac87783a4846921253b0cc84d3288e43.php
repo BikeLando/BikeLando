@@ -89,6 +89,6 @@ class __TwigTemplate_b6cbcfa8251592b989143af86ceccd2d342127a417c37c704fe42b0b7d5
         ?>
     </div>
 <?php endif ?>
-", "@Framework/Form/week_widget.html.php", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\week_widget.html.php");
+", "@Framework/Form/week_widget.html.php", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\framework-bundle\\Resources\\views\\Form\\week_widget.html.php");
     }
 }

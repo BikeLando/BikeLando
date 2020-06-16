@@ -8,8 +8,8 @@
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "sensio/framework-extra-bundle": "^5.1",
-        "symfony/asset": "*",
+        "sensio/framework-extra-bundle": "^5.5@dev",
+        "symfony/asset": "5.2.*",
         "symfony/console": "*",
         "symfony/dotenv": "*",
         "symfony/expression-language": "*",
@@ -28,14 +28,14 @@
         "symfony/serializer-pack": "*",
         "symfony/string": "*",
         "symfony/translation": "*",
-        "symfony/twig-pack": "*",
+        "symfony/twig-pack": "dev-master",
         "symfony/validator": "*",
         "symfony/web-link": "*",
         "symfony/yaml": "*"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
-        "symfony/maker-bundle": "^1.0",
+        "symfony/maker-bundle": "^1.0@dev",
         "symfony/profiler-pack": "*",
         "symfony/test-pack": "*"
     },

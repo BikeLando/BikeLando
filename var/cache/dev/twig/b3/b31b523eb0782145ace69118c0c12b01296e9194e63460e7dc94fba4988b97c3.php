@@ -111,6 +111,6 @@ class __TwigTemplate_4b46ff58908dab93860fa34cf6df861dc9d3e89b0aedde8e05a6b82716e
         Sfjs.loadToolbar('{{ token }}');
     })();
 /*]]>*/</script>
-", "@WebProfiler/Profiler/toolbar_js.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_js.html.twig");
+", "@WebProfiler/Profiler/toolbar_js.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_js.html.twig");
     }
 }

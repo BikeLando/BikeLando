@@ -99,6 +99,6 @@ class __TwigTemplate_79aa6c6906f030427e8e2e469a07d40263472465065a2c5b364cbfc3416
 .container.body_default {
     border-top: 8px solid #aaaaaa;
 }
-", "@email/zurb_2/notification/local.css", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\local.css");
+", "@email/zurb_2/notification/local.css", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\local.css");
     }
 }

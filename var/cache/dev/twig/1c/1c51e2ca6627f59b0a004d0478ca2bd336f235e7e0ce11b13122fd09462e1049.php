@@ -555,6 +555,6 @@ class __TwigTemplate_10d828fb8c8c34c8ef813bbe6bba780c9f5161db3c4b0639a2df536ee2d
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Collector/http_client.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
+", "@WebProfiler/Collector/http_client.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
     }
 }

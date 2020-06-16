@@ -482,6 +482,6 @@ class __TwigTemplate_0c9f49266bb198acc42939fec3662d918a078e3c05a9735458e9a344b6a
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

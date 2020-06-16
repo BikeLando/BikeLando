@@ -189,6 +189,6 @@ class __TwigTemplate_3d211775eb7003b6be7b1a0922d5ad7c7e630a2e825a2abafaa579e2dfd
 .timeline-graph .timeline-period {
     stroke-width: 0;
 }
-", "@WebProfiler/Collector/time.css.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.css.twig");
+", "@WebProfiler/Collector/time.css.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.css.twig");
     }
 }

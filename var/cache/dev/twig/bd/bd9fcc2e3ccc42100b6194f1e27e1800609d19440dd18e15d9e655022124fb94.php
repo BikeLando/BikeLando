@@ -125,6 +125,6 @@ class __TwigTemplate_73dad12e68efcbfab2c812aa6fc028a362175b313a40f81956f50ca199f
 .exception-message-wrapper .container {
     min-height: auto;
 }
-", "@WebProfiler/Collector/exception.css.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.css.twig");
     }
 }

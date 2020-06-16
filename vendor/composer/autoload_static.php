@@ -563,6 +563,8 @@ class ComposerStaticInit0644e6ff3f0a34c90c84e22a226e08f2
     );
 
     public static $classMap = array (
+        'App\\Controller\\ToursController' => __DIR__ . '/../..' . '/src/Controller/ToursController.php',
+        'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\CreateDatabaseDoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\DoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/DoctrineCommand.php',

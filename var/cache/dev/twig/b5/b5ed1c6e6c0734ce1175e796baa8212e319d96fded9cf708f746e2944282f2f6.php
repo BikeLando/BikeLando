@@ -710,6 +710,6 @@ class __TwigTemplate_69f588b33fd5faf760320b8beca8486cf12948d55cf80dab6882e284410
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/mailer.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
+", "@WebProfiler/Collector/mailer.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
     }
 }

@@ -2362,12 +2362,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-            "reference": "c76bb1c5c67840ecb6d9be8e9d8d7036e375e317"
+            "reference": "b49f079d8a87a6e6dd434062085ff5a132af466b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/c76bb1c5c67840ecb6d9be8e9d8d7036e375e317",
-            "reference": "c76bb1c5c67840ecb6d9be8e9d8d7036e375e317",
+            "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/b49f079d8a87a6e6dd434062085ff5a132af466b",
+            "reference": "b49f079d8a87a6e6dd434062085ff5a132af466b",
             "shasum": ""
         },
         "require": {
@@ -2398,7 +2398,7 @@
             "symfony/yaml": "^4.4|^5.0",
             "twig/twig": "^1.34|^2.4|^3.0"
         },
-        "time": "2020-05-06T12:12:33+00:00",
+        "time": "2020-06-15T20:28:02+00:00",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {

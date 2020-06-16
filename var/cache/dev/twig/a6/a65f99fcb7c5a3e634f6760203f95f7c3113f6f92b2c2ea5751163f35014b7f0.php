@@ -174,6 +174,6 @@ class __TwigTemplate_815d049ad5736ec7bb1a58bf005507855ce0575f15f6c54605b8214c3c1
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\open.html.twig");
     }
 }

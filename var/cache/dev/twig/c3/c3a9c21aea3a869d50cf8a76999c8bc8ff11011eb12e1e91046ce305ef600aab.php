@@ -843,6 +843,6 @@ class __TwigTemplate_6fd6674628ccabcbf8a92b3356719ce4981532429c571bc1df82dd9953b
     </table>
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/messenger.html.twig", "C:\\xampp\\htdocs\\website-skeleton\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\messenger.html.twig");
+", "@WebProfiler/Collector/messenger.html.twig", "C:\\xampp\\htdocs\\bikelando\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\messenger.html.twig");
     }
 }
