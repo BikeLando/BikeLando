@@ -104,7 +104,7 @@ class __TwigTemplate_1b9ef7a7223be56251604cb823b42693463652d237c1132bd5a0439f43b
          <div class=\"col\">
              <a href=\"";
         // line 19
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
              <a href=\"";
         // line 20
@@ -238,7 +238,7 @@ class __TwigTemplate_1b9ef7a7223be56251604cb823b42693463652d237c1132bd5a0439f43b
      <!-- Rejestracja i nowe hasło-->
      <div class=\"row\">
          <div class=\"col\">
-             <a href=\"{{ path('register')}}\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
+             <a href=\"{{ path('app_register')}}\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
              <a href=\"{{ path('reset')}}\" lass=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
          </div>
      </div>
