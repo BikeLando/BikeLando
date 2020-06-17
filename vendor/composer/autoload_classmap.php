@@ -7,8 +7,17 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Controller\\AboutController' => $baseDir . '/src/Controller/AboutController.php',
+    'App\\Controller\\AccountController' => $baseDir . '/src/Controller/AccountController.php',
+    'App\\Controller\\AddToursController' => $baseDir . '/src/Controller/AddToursController.php',
+    'App\\Controller\\EditController' => $baseDir . '/src/Controller/EditController.php',
+    'App\\Controller\\HomeController' => $baseDir . '/src/Controller/HomeController.php',
+    'App\\Controller\\RegisterController' => $baseDir . '/src/Controller/RegisterController.php',
+    'App\\Controller\\ResetController' => $baseDir . '/src/Controller/ResetController.php',
     'App\\Controller\\ToursController' => $baseDir . '/src/Controller/ToursController.php',
+    'App\\Controller\\UserToursController' => $baseDir . '/src/Controller/UserToursController.php',
+    'App\\Entity\\User' => $baseDir . '/src/Entity/User.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
+    'App\\Repository\\UserRepository' => $baseDir . '/src/Repository/UserRepository.php',
     'Collator' => $vendorDir . '/symfony/intl/Resources/stubs/Collator.php',
     'Doctrine\\Bundle\\DoctrineBundle\\Command\\CreateDatabaseDoctrineCommand' => $vendorDir . '/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php',
     'Doctrine\\Bundle\\DoctrineBundle\\Command\\DoctrineCommand' => $vendorDir . '/doctrine/doctrine-bundle/Command/DoctrineCommand.php',

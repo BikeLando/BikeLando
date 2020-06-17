@@ -93,7 +93,10 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
         </div>
         <div class=\"row\">
             <div class=\"col\">
-                <a href=\"#\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+                <a href=\"";
+        // line 10
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
             </div>
         </div>
     ";
@@ -219,7 +222,7 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
 
     public function getDebugInfo()
     {
-        return array (  172 => 32,  162 => 31,  146 => 25,  142 => 24,  138 => 23,  132 => 20,  128 => 19,  124 => 18,  119 => 15,  109 => 14,  90 => 4,  80 => 3,  61 => 2,  38 => 1,);
+        return array (  175 => 32,  165 => 31,  149 => 25,  145 => 24,  141 => 23,  135 => 20,  131 => 19,  127 => 18,  122 => 15,  112 => 14,  98 => 10,  90 => 4,  80 => 3,  61 => 2,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -233,7 +236,7 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
         </div>
         <div class=\"row\">
             <div class=\"col\">
-                <a href=\"#\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+                <a href=\"{{ path('home') }}\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
             </div>
         </div>
     {% endblock %}

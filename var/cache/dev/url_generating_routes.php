@@ -20,7 +20,7 @@ return [
     'add_tours' => [[], ['_controller' => 'App\\Controller\\AddToursController::index'], [], [['text', '/add/tours']], [], []],
     'edit' => [[], ['_controller' => 'App\\Controller\\EditController::index'], [], [['text', '/edit']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
-    'register' => [[], ['_controller' => 'App\\Controller\\RegisterController::index'], [], [['text', '/register']], [], []],
+    'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
     'reset' => [[], ['_controller' => 'App\\Controller\\ResetController::index'], [], [['text', '/reset']], [], []],
     'tours' => [[], ['_controller' => 'App\\Controller\\ToursController::index'], [], [['text', '/tours']], [], []],
     'user_tours' => [[], ['_controller' => 'App\\Controller\\UserToursController::index'], [], [['text', '/user/tours']], [], []],

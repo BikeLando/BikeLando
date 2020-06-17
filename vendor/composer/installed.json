@@ -4084,12 +4084,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/form.git",
-            "reference": "495233354d165a60e450c5c02fee231bfaa1e119"
+            "reference": "bbe02201fbe195b73afdb14cbd81d4ea7fbeead1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/form/zipball/495233354d165a60e450c5c02fee231bfaa1e119",
-            "reference": "495233354d165a60e450c5c02fee231bfaa1e119",
+            "url": "https://api.github.com/repos/symfony/form/zipball/bbe02201fbe195b73afdb14cbd81d4ea7fbeead1",
+            "reference": "bbe02201fbe195b73afdb14cbd81d4ea7fbeead1",
             "shasum": ""
         },
         "require": {
@@ -4135,7 +4135,7 @@
             "symfony/twig-bridge": "For templating with Twig.",
             "symfony/validator": "For form validation."
         },
-        "time": "2020-06-12T08:40:00+00:00",
+        "time": "2020-06-15T12:59:35+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

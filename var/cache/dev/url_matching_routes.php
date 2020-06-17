@@ -21,7 +21,7 @@ return [
             [['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null],
             [['_route' => 'index', 'template' => 'base.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], null, null, null, false, false, null],
         ],
-        '/register' => [[['_route' => 'register', '_controller' => 'App\\Controller\\RegisterController::index'], null, null, null, false, false, null]],
+        '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/reset' => [[['_route' => 'reset', '_controller' => 'App\\Controller\\ResetController::index'], null, null, null, false, false, null]],
         '/tours' => [[['_route' => 'tours', '_controller' => 'App\\Controller\\ToursController::index'], null, null, null, false, false, null]],
         '/user/tours' => [[['_route' => 'user_tours', '_controller' => 'App\\Controller\\UserToursController::index'], null, null, null, false, false, null]],

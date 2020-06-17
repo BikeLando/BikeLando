@@ -564,8 +564,17 @@ class ComposerStaticInit0644e6ff3f0a34c90c84e22a226e08f2
 
     public static $classMap = array (
         'App\\Controller\\AboutController' => __DIR__ . '/../..' . '/src/Controller/AboutController.php',
+        'App\\Controller\\AccountController' => __DIR__ . '/../..' . '/src/Controller/AccountController.php',
+        'App\\Controller\\AddToursController' => __DIR__ . '/../..' . '/src/Controller/AddToursController.php',
+        'App\\Controller\\EditController' => __DIR__ . '/../..' . '/src/Controller/EditController.php',
+        'App\\Controller\\HomeController' => __DIR__ . '/../..' . '/src/Controller/HomeController.php',
+        'App\\Controller\\RegisterController' => __DIR__ . '/../..' . '/src/Controller/RegisterController.php',
+        'App\\Controller\\ResetController' => __DIR__ . '/../..' . '/src/Controller/ResetController.php',
         'App\\Controller\\ToursController' => __DIR__ . '/../..' . '/src/Controller/ToursController.php',
+        'App\\Controller\\UserToursController' => __DIR__ . '/../..' . '/src/Controller/UserToursController.php',
+        'App\\Entity\\User' => __DIR__ . '/../..' . '/src/Entity/User.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
+        'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/src/Repository/UserRepository.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\CreateDatabaseDoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\DoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/DoctrineCommand.php',
