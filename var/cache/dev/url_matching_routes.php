@@ -16,6 +16,7 @@ return [
         '/about' => [[['_route' => 'about', '_controller' => 'App\\Controller\\AboutController::index'], null, null, null, false, false, null]],
         '/account' => [[['_route' => 'account', '_controller' => 'App\\Controller\\AccountController::index'], null, null, null, false, false, null]],
         '/add/tours' => [[['_route' => 'add_tours', '_controller' => 'App\\Controller\\AddToursController::index'], null, null, null, false, false, null]],
+        '/add/user/to/db' => [[['_route' => 'add_user_to_db', '_controller' => 'App\\Controller\\AddUserToDbController::index'], null, null, null, false, false, null]],
         '/edit' => [[['_route' => 'edit', '_controller' => 'App\\Controller\\EditController::index'], null, null, null, false, false, null]],
         '/' => [
             [['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null],

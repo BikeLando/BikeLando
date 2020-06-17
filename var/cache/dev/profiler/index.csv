@@ -41,3 +41,4 @@ b16a4e,::1,GET,http://bikelando.localhost/,1592415217,,200
 b3d4e0,::1,POST,http://bikelando.localhost/register,1592415257,,200
 f6cae4,::1,POST,http://bikelando.localhost/register,1592415269,,302
 a1ed99,::1,GET,http://bikelando.localhost/,1592415269,,200
+e92ece,::1,GET,http://bikelando.localhost/,1592416343,,200

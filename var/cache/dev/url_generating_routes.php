@@ -18,6 +18,7 @@ return [
     'about' => [[], ['_controller' => 'App\\Controller\\AboutController::index'], [], [['text', '/about']], [], []],
     'account' => [[], ['_controller' => 'App\\Controller\\AccountController::index'], [], [['text', '/account']], [], []],
     'add_tours' => [[], ['_controller' => 'App\\Controller\\AddToursController::index'], [], [['text', '/add/tours']], [], []],
+    'add_user_to_db' => [[], ['_controller' => 'App\\Controller\\AddUserToDbController::index'], [], [['text', '/add/user/to/db']], [], []],
     'edit' => [[], ['_controller' => 'App\\Controller\\EditController::index'], [], [['text', '/edit']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
