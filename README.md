@@ -65,7 +65,7 @@ Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca proje
 * Kontroler EditTourController, kontroler edytujący dane trasy
 * Kontroler LogInController, kontroler służący do zalogowania użytkownika na stronę
 * Kontroler LogOutController, kontroler służący do wylogowania użytkownika ze strony
-* Kontroler ResetController, kontroler służący do resetu hasła w przypadku zapomnienia hasła przez użytkownika
+* Kontroler ResetController, kontroler służący do wygenerowania nowego hasła w przypadku zapomnienia starego przez użytkownika
 * Kontroler AddNoteController, kontroler odpowiedzialny za ocenianie tras przez użytkowników
 
 ### Modele:
@@ -74,12 +74,13 @@ Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca proje
 * password (hash md5)
 
 #### Obiekt Tour
+* id (numer porządkowy)
 * name (nazwa)
 * length (długość trasy)
 * linkToMap (link google Maps który posłuży do wyświetlania mapy Google)
 * difficulty (trudność trasy, w skali 1-10)
 * region (województwo)
-* author (email-username autora)
+* authorId (email) (email-username autora)
 * description (opis trasy)
 * note (ocena trasy)
 * numberOfNotes (liczba ocen)
@@ -112,13 +113,6 @@ Metody:
 * description [TEXT (500)]
 * note [FLOAT]
 * numberOfNotes [INT]
-
-### Tabela Komentarze (comments)
-#### Kolumny:
-* tourId [INT]
-* author [VARCHAR (255)]
-* content [TEXT (500)]
-* date [DATE]
 
 
 ## Instalacja
