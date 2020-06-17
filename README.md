@@ -42,23 +42,31 @@ Aplikacja webowa oparta na framework’u Symfony przy wykorzystaniu wzorca proje
 ### Widoki
 
 * Widok Index, strona główna; na stronie głównej informacja o stronie, czym się zajmuje etc, w górnym prawym rogu możliwość szybkiego zalogowania się wraz z odnośnikiem do formularza rejestracji i resetu hasła (dostępny w każdym widoku)
-* Widok ViewTours lista tras rowerowych wraz opcją filtru (po ocenie/lokalizacji (województwie))
-* Widok ResetPassword, mechanizm pozwalający zresetować hasło w oparciu o wysyłkę instrukcji na po podany e-mail
-* Widok AddTour, widok pozwalający dodać na stronę do ogólnodostępnego użytku swoją trasę rowerową
-* Widok ViewYourTours, widok pozwalający przeglądać dodane przez nas trasy i ewentualne ich usuwanie oraz edycję
-* Widok Profile, widok pozwalający podejrzeć swoje dane oraz je edytować
+* Widok About, widok z krótką informacją o czym jest strona
+* Widok Tours, lista tras rowerowych wraz opcją filtru (po ocenie/lokalizacji (województwie))
+* Widok Account, widok pozwalający podejrzeć swoje dane
+* Widok Add_tours, widok pozwalający dodać na stronę do ogólnodostępnego użytku swoją trasę rowerową
+* Widok Edit, widok pozwalający edytować swoje dane
+* Widok Register, widok do rejestracji nowego użytkownika
+* Widok Reset, mechanizm pozwalający zresetować hasło w oparciu o wysyłkę instrukcji na po podany e-mail
+* Widok User_tours, widok pozwalający przeglądać dodane przez nas trasy i ewentualne ich usuwanie oraz edycję
+
 
 ### Kontrolery
 
-* Kontroler AddUser, kontroler dodający rejestrującego się użytkownika do bazy
-* Kontroler EditProfile, kontroler edytujący dane użytkownika
-* Kontroler AddTour, kontroler dodajacy nowa trase do bazy wycieczek
-* Kontroler RemoveTour, kontroler usuwajacy trasę z bazy
-* Kontroler EditTour, kontroler edytujący dane trasy
-* Kontroler LogIn, kontroler służący do zalogowania użytkownika na stronę
-* Kontroler LogOut, kontroler służący do wylogowania użytkownika ze strony
-* Kontroler ResetPassword, kontroler służący do resetu hasła w przypadku zapomnienia hasła przez użytkownika
-* Kontroler AddComment, kontroler służący do dodania komentarza do trasy
+* Kontroler HomeController, kontroler podstawowy, otwierający stronę główną
+* Kontroler AboutController, kontroler otwierający widok z zakładką "o nas"
+* Kontroler ToursController, kontroler otwierający widok z zakładką "trasy"
+* Kontroler RegisterController, kontroler dodający nowego użytkownika do bazy
+* Kontroler EditController, kontroler edytujący dane użytkownika (hasło)
+* Kontroler AccountController, kontroler wyświetlający dane z konta użytkownika (widok z zakładką 'twoje konto')
+* Kontroler AddToursController, kontroler dodający nową trasę do bazy wycieczek
+* Kontroler RemoveTourController, kontroler usuwający trasę z bazy
+* Kontroler EditTourController, kontroler edytujący dane trasy
+* Kontroler LogInController, kontroler służący do zalogowania użytkownika na stronę
+* Kontroler LogOutController, kontroler służący do wylogowania użytkownika ze strony
+* Kontroler ResetController, kontroler służący do resetu hasła w przypadku zapomnienia hasła przez użytkownika
+* Kontroler AddNoteController, kontroler odpowiedzialny za ocenianie tras przez użytkowników
 
 ### Modele:
 #### Obiekt User, pola
