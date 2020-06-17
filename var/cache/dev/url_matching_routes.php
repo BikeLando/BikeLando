@@ -21,7 +21,11 @@ return [
             [['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null],
             [['_route' => 'index', 'template' => 'base.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], null, null, null, false, false, null],
         ],
-        '/register' => [[['_route' => 'register', '_controller' => 'App\\Controller\\RegisterController::index'], null, null, null, false, false, null]],
+        '/register' => [
+            [['_route' => 'register', '_controller' => 'App\\Controller\\RegisterController::index'], null, null, null, false, false, null],
+            [['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null],
+        ],
+        '/verify/email' => [[['_route' => 'app_verify_email', '_controller' => 'App\\Controller\\RegistrationController::verifyUserEmail'], null, null, null, false, false, null]],
         '/reset' => [[['_route' => 'reset', '_controller' => 'App\\Controller\\ResetController::index'], null, null, null, false, false, null]],
         '/tours' => [[['_route' => 'tours', '_controller' => 'App\\Controller\\ToursController::index'], null, null, null, false, false, null]],
         '/user/tours' => [[['_route' => 'user_tours', '_controller' => 'App\\Controller\\UserToursController::index'], null, null, null, false, false, null]],
@@ -43,6 +47,7 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
+                .'|/add/user/to/db/([^/]++)(*:193)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -52,8 +57,9 @@ return [
         116 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        159 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        193 => [
+            [['_route' => 'add_user_to_db', '_controller' => 'App\\Controller\\AddUserToDbController::index'], ['text'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],
