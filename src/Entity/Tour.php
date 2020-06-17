@@ -53,12 +53,12 @@ class Tour
     private $description;
 
     /**
-     * @ORM\Column(type="float", nullable=true)
+     * @ORM\Column(type="float")
      */
     private $note;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="integer")
      */
     private $numberOfNotes;
 
@@ -156,7 +156,7 @@ class Tour
         return $this->note;
     }
 
-    public function setNote(?float $note): self
+    public function setNote(float $note): self
     {
         $this->note = $note;
 
@@ -168,7 +168,7 @@ class Tour
         return $this->numberOfNotes;
     }
 
-    public function setNumberOfNotes(?int $numberOfNotes): self
+    public function setNumberOfNotes(int $numberOfNotes): self
     {
         $this->numberOfNotes = $numberOfNotes;
 
