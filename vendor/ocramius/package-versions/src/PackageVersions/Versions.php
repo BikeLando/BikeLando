@@ -118,6 +118,7 @@ final class Versions
   'symfony/var-exporter' => 'dev-master@1faf28875f2ac9c08eae51b83a273a1e2c0f0469',
   'symfony/web-link' => 'dev-master@b59ae4b66a71f602cd0206f8c83bfedbaf065278',
   'symfony/yaml' => 'dev-master@90faa846d8e34b647d3021227ee37b838f1001b5',
+  'symfonycasts/verify-email-bundle' => 'dev-master@501e503f6a8ae282ffb3fff167e0740dae56b1ae',
   'twig/extra-bundle' => '3.x-dev@a7c5799cf742ab0827f5d32df37528ee8bf5a233',
   'twig/twig' => '3.x-dev@83d6a120ffab9dfce143505eea52ace0febe8328',
   'webimpress/safe-writer' => 'dev-develop@af360c80e178d6293549c31ea329b0db0997734e',

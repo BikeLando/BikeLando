@@ -23,7 +23,7 @@
         "symfony/mime": "*",
         "symfony/monolog-bundle": "^3.1",
         "symfony/notifier": "*",
-        "symfony/orm-pack": "*",
+        "symfony/orm-pack": "dev-master",
         "symfony/process": "*",
         "symfony/security-bundle": "*",
         "symfony/serializer-pack": "*",
@@ -32,7 +32,8 @@
         "symfony/twig-pack": "dev-master",
         "symfony/validator": "*",
         "symfony/web-link": "*",
-        "symfony/yaml": "*"
+        "symfony/yaml": "*",
+        "symfonycasts/verify-email-bundle": "dev-master"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
