@@ -12,3 +12,6 @@
 - pętla do wyświetlania tras z bazy <- wyszukiwarka tras/filtr
 - ocenianie tras
 - memy i muzyczka!
+
+git fetch --all
+git reset --hard origin/master
