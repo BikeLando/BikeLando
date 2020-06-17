@@ -23,6 +23,8 @@ return [
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
     'reset' => [[], ['_controller' => 'App\\Controller\\ResetController::index'], [], [['text', '/reset']], [], []],
+    'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
+    'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
     'tours' => [[], ['_controller' => 'App\\Controller\\ToursController::index'], [], [['text', '/tours']], [], []],
     'user_tours' => [[], ['_controller' => 'App\\Controller\\UserToursController::index'], [], [['text', '/user/tours']], [], []],
     'index' => [[], ['template' => 'base.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], [], [['text', '/']], [], []],
