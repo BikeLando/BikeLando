@@ -1,5 +1,5 @@
 ##OGÓLNE
-- przerobić rutowanie do pliku YAML dla czytelności
+- przerobić rutowanie do pliku YAML dla czytelności 
 - Email verification
 - Promt po rejestracji udanej 
 - Umiejscowienie logowania i rejestracji (jakis sensowny layout)
@@ -13,5 +13,10 @@
 - ocenianie tras
 - memy i muzyczka!
 
+reset wszystkiego i sciagniecie z githuba wersji
 git fetch --all
 git reset --hard origin/master
+
+usun ostatni commit
+git checkout master
+git push -f origin HEAD
