@@ -1,6 +1,5 @@
 ##OGÓLNE
 - przerobić rutowanie do pliku YAML dla czytelności 
-- Email verification
 - Promt po rejestracji udanej 
 - Umiejscowienie logowania i rejestracji (jakis sensowny layout)
 - odzyskiwanie hasla (jak?)
