@@ -1,4 +1,5 @@
 ##OGÓLNE
+- dodanie username przy rejestracji oraz zrobienie wyswietlania username (tam gdzie zalogowany "zalogowany")
 - przerobić rutowanie do pliku YAML dla czytelności 
 - Promt po rejestracji udanej 
 - Umiejscowienie logowania i rejestracji (jakis sensowny layout)
