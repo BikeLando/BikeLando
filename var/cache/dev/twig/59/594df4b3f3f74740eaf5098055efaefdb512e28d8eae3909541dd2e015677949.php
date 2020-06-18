@@ -177,79 +177,18 @@ class __TwigTemplate_2939fecedd497be77b24317390bfa4db356a4c35f78e33c83db2b321f28
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Dodaj trase</h5>
-                    <form>
-                        <div class=\"form-row\">
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"formGroupExampleInput1\">Nazwa trasy</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput1\" placeholder=\"Nazwa\">
-                                </div>
-                            </div>
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"formGroupExampleInput2\">Link Google Maps</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput2\" placeholder=\"Link\">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class=\"form-row\">
-                            <div class=\"col\"><div class=\"form-group\">
-                                    <label for=\"formGroupExampleInput3\">Długość [km]</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput3\" placeholder=\"Długość\">
-                                </div>
-                            </div>
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"exampleFormControlSelect3\">Region</label>
-                                    <select class=\"form-control\" id=\"exampleFormControlSelect3\">
-                                        <option>Dolnośląskie</option>
-                                        <option>Kujawsko-Pomorskie</option>
-                                        <option>Lubelskie</option>
-                                        <option>Lubuskiej</option>
-                                        <option>Lódzkie</option>
-                                        <option>Małopolskie</option>
-                                        <option>Mazowieckie</option>
-                                        <option>Opolskie</option>
-                                        <option>Podkarpackie</option>
-                                        <option>Podlaskie</option>
-                                        <option>Pomorskie</option>
-                                        <option>Śląskie</option>
-                                        <option>Świętokrzyskie</option>
-                                        <option>Warmińsko-Mazurskie</option>
-                                        <option>Wielkopolskie</option>
-                                        <option>Zachodniopomorskie</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"exampleFormControlSelect2\">Trudność trasy</label>
-                                    <select class=\"form-control\" id=\"exampleFormControlSelect2\">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\"form-row\">
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"exampleFormControlTextarea1\">Opis</label>
-                                    <textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"6\"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <button type=\"button\" class=\"btn btn-outline-info\" style=\"float: right\">Dodaj</button>
-                    </form>
+                    ";
+        // line 37
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 37, $this->source); })()), 'form_start');
+        echo "
+                    ";
+        // line 38
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 38, $this->source); })()), 'widget');
+        echo "
+                    ";
+        // line 39
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 39, $this->source); })()), 'form_end');
+        echo "
                 </div>
             </div>
         </div>
@@ -275,7 +214,7 @@ class __TwigTemplate_2939fecedd497be77b24317390bfa4db356a4c35f78e33c83db2b321f28
 
     public function getDebugInfo()
     {
-        return array (  175 => 32,  165 => 31,  149 => 25,  145 => 24,  141 => 23,  135 => 20,  131 => 19,  127 => 18,  122 => 15,  112 => 14,  98 => 10,  90 => 4,  80 => 3,  61 => 2,  38 => 1,);
+        return array (  190 => 39,  186 => 38,  182 => 37,  175 => 32,  165 => 31,  149 => 25,  145 => 24,  141 => 23,  135 => 20,  131 => 19,  127 => 18,  122 => 15,  112 => 14,  98 => 10,  90 => 4,  80 => 3,  61 => 2,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -316,79 +255,9 @@ class __TwigTemplate_2939fecedd497be77b24317390bfa4db356a4c35f78e33c83db2b321f28
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Dodaj trase</h5>
-                    <form>
-                        <div class=\"form-row\">
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"formGroupExampleInput1\">Nazwa trasy</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput1\" placeholder=\"Nazwa\">
-                                </div>
-                            </div>
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"formGroupExampleInput2\">Link Google Maps</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput2\" placeholder=\"Link\">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class=\"form-row\">
-                            <div class=\"col\"><div class=\"form-group\">
-                                    <label for=\"formGroupExampleInput3\">Długość [km]</label>
-                                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput3\" placeholder=\"Długość\">
-                                </div>
-                            </div>
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"exampleFormControlSelect3\">Region</label>
-                                    <select class=\"form-control\" id=\"exampleFormControlSelect3\">
-                                        <option>Dolnośląskie</option>
-                                        <option>Kujawsko-Pomorskie</option>
-                                        <option>Lubelskie</option>
-                                        <option>Lubuskiej</option>
-                                        <option>Lódzkie</option>
-                                        <option>Małopolskie</option>
-                                        <option>Mazowieckie</option>
-                                        <option>Opolskie</option>
-                                        <option>Podkarpackie</option>
-                                        <option>Podlaskie</option>
-                                        <option>Pomorskie</option>
-                                        <option>Śląskie</option>
-                                        <option>Świętokrzyskie</option>
-                                        <option>Warmińsko-Mazurskie</option>
-                                        <option>Wielkopolskie</option>
-                                        <option>Zachodniopomorskie</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"exampleFormControlSelect2\">Trudność trasy</label>
-                                    <select class=\"form-control\" id=\"exampleFormControlSelect2\">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=\"form-row\">
-                            <div class=\"col\">
-                                <div class=\"form-group\">
-                                    <label for=\"exampleFormControlTextarea1\">Opis</label>
-                                    <textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"6\"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <button type=\"button\" class=\"btn btn-outline-info\" style=\"float: right\">Dodaj</button>
-                    </form>
+                    {{ form_start(form)  }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
                 </div>
             </div>
         </div>

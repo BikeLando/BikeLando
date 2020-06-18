@@ -117,3 +117,10 @@ e2b1ed,::1,GET,http://bikelando.localhost/account,1592420065,,200
 ce3834,::1,GET,http://bikelando.localhost/user/tours,1592420067,,200
 3c5233,::1,GET,http://bikelando.localhost/account,1592420069,,200
 8903d0,::1,GET,http://bikelando.localhost/user/tours,1592420078,,200
+daa3b8,::1,GET,http://bikelando.localhost/add/tours,1592513939,,200
+a0ca6e,::1,GET,http://bikelando.localhost/add/tours,1592513949,,200
+d76459,::1,GET,http://bikelando.localhost/,1592513954,,200
+7c2c6c,::1,GET,http://bikelando.localhost/,1592513967,,200
+7e55c9,::1,GET,http://bikelando.localhost/,1592514023,,200
+2b1119,::1,GET,http://bikelando.localhost/account,1592514025,,200
+32b0fd,::1,GET,http://bikelando.localhost/add/tours,1592514027,,200
