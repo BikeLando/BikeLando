@@ -10,18 +10,18 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\HttpFoundation\Request;
 use App\Entity\Tour;
+use App\Entity\User;
 
 class AddToursController extends AbstractController
 {
     /**
-     * @Route("/add/tours", name="add_tours")
+     * @Route("/add/tours/{user}", name="add_tours")
      * Method({"GET", "POST"})
      */
-    public function index(Request $request)
+    public function index(Request $request, $user)
     {
-        $logged = "zalogowany";
         $tour = new Tour();
-        $tour ->setUserId($logged);
+        $tour ->setUserId($user);
         $tour ->setNumberOfNotes(1);
 
         $form = $this->createFormBuilder($tour)

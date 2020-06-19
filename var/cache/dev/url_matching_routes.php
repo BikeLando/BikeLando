@@ -15,7 +15,6 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/about' => [[['_route' => 'about', '_controller' => 'App\\Controller\\AboutController::index'], null, null, null, false, false, null]],
         '/account' => [[['_route' => 'account', '_controller' => 'App\\Controller\\AccountController::index'], null, null, null, false, false, null]],
-        '/add/tours' => [[['_route' => 'add_tours', '_controller' => 'App\\Controller\\AddToursController::index'], null, null, null, false, false, null]],
         '/add/user/to/db' => [[['_route' => 'add_user_to_db', '_controller' => 'App\\Controller\\AddUserToDbController::index'], null, null, null, false, false, null]],
         '/edit' => [[['_route' => 'edit', '_controller' => 'App\\Controller\\EditController::index'], null, null, null, false, false, null]],
         '/' => [
@@ -46,6 +45,7 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
+                .'|/add/tours/([^/]++)(*:188)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -55,8 +55,9 @@ return [
         116 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        159 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        188 => [
+            [['_route' => 'add_tours', '_controller' => 'App\\Controller\\AddToursController::index'], ['user'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

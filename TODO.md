@@ -1,8 +1,5 @@
-##OGÓLNE
-- dodanie username przy rejestracji oraz zrobienie wyswietlania username (tam gdzie zalogowany "zalogowany")
+ ##OGÓLNE
 - przerobić rutowanie do pliku YAML dla czytelności 
-- Promt po rejestracji udanej 
-- Umiejscowienie logowania i rejestracji (jakis sensowny layout)
 - odzyskiwanie hasla (jak?)
 - pętla do wyświetlania tras z bazy <- wyszukiwarka tras/filtr [ctrl+c ctrl+v wyswietlanie tras dla jednego zalogowanego uzytkownika]
 

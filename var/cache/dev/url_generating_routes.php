@@ -17,7 +17,7 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'about' => [[], ['_controller' => 'App\\Controller\\AboutController::index'], [], [['text', '/about']], [], []],
     'account' => [[], ['_controller' => 'App\\Controller\\AccountController::index'], [], [['text', '/account']], [], []],
-    'add_tours' => [[], ['_controller' => 'App\\Controller\\AddToursController::index'], [], [['text', '/add/tours']], [], []],
+    'add_tours' => [['user'], ['_controller' => 'App\\Controller\\AddToursController::index'], [], [['variable', '/', '[^/]++', 'user', true], ['text', '/add/tours']], [], []],
     'add_user_to_db' => [[], ['_controller' => 'App\\Controller\\AddUserToDbController::index'], [], [['text', '/add/user/to/db']], [], []],
     'edit' => [[], ['_controller' => 'App\\Controller\\EditController::index'], [], [['text', '/edit']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
