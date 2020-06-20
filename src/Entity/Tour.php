@@ -4,7 +4,9 @@ namespace App\Entity;
 
 use App\Repository\TourRepository;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity(repositoryClass=TourRepository::class)
  */
@@ -18,6 +20,13 @@ class Tour
     private $id;
 
     /**
+     *  * @Assert\Length(
+     *      min = 2,
+     *      max = 50,
+     *      minMessage = "Tour name must be at least {{ limit }} characters long",
+     *      maxMessage = "Tour name cannot be longer than {{ limit }} characters",
+     *      allowEmptyString = false
+     * )
      * @ORM\Column(type="string", length=30)
      */
     private $name;
@@ -28,6 +37,9 @@ class Tour
     private $length;
 
     /**
+     * @Assert\Url(
+     *    message = "The url '{{ value }}' is not a valid url",
+     * )
      * @ORM\Column(type="text", nullable=true)
      */
     private $linkToMap;

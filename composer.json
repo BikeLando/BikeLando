@@ -8,6 +8,7 @@
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/annotations": "^1.11@dev",
         "sensio/framework-extra-bundle": "^5.5@dev",
         "symfony/apache-pack": "dev-master",
         "symfony/asset": "5.2.*",
@@ -30,7 +31,7 @@
         "symfony/string": "*",
         "symfony/translation": "*",
         "symfony/twig-pack": "dev-master",
-        "symfony/validator": "*",
+        "symfony/validator": "5.2.*",
         "symfony/web-link": "*",
         "symfony/yaml": "*",
         "symfonycasts/verify-email-bundle": "dev-master"

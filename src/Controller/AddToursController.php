@@ -28,7 +28,7 @@ class AddToursController extends AbstractController
             ->add('name', TextType::class, array('attr' =>
                 array('class'=>'form-control')))
             ->add('length', TextType::class, array('attr' =>
-                array('class'=>'form-control')))
+                array('class'=>'form-control')) )
             ->add('linkToMap', TextType::class, array('attr' =>
                 array('class'=>'form-control')))
             ->add('difficulty', ChoiceType::class,
@@ -101,4 +101,5 @@ class AddToursController extends AbstractController
         return $this->render('add_tours/index.html.twig', array(
             'form' => $form->createView()
         ));
-    }}
+    }
+}

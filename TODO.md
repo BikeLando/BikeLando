@@ -5,7 +5,7 @@
 
 ##PO ZALOGOWANIU
 - edycja hasla
-- dodawanie tras (walidacja), edycja oraz ich usuwanie
+- edycja tras oraz ich usuwanie
 - pętla do wyświetlania tras z bazy <- wyszukiwarka tras/filtr
 - ocenianie tras
 - memy i muzyczka!

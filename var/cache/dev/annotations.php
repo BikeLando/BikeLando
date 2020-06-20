@@ -73,31 +73,125 @@ return [[
 '%5B%5BC%5DApp%5CController%5CAddToursController%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CAddToursController%23index%5D%5B1%5D' => 5,
 '%5B%5BC%5DApp%5CController%5CAddToursController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAddUserToDbController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CAddUserToDbController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAddUserToDbController%23index%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CController%5CAddUserToDbController%23index%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CEditController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CEditController%5D%5B1%5D' => 2,
-'%5BApp%5CController%5CEditController%23index%5D%5B1%5D' => 6,
+'%5BApp%5CController%5CEditController%23index%5D%5B1%5D' => 7,
 '%5B%5BC%5DApp%5CController%5CEditController%23index%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CHomeController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CHomeController%5D%5B1%5D' => 2,
-'%5BApp%5CController%5CHomeController%23index%5D%5B1%5D' => 7,
+'%5BApp%5CController%5CHomeController%23index%5D%5B1%5D' => 8,
 '%5B%5BC%5DApp%5CController%5CHomeController%23index%5D%5B1%5D' => 2,
-'%5BApp%5CController%5CRegisterController%5D%5B1%5D' => 1,
-'%5B%5BC%5DApp%5CController%5CRegisterController%5D%5B1%5D' => 2,
-'%5BApp%5CController%5CRegisterController%23index%5D%5B1%5D' => 8,
-'%5B%5BC%5DApp%5CController%5CRegisterController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CRegistrationController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CRegistrationController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CRegistrationController%23register%5D%5B1%5D' => 9,
+'%5B%5BC%5DApp%5CController%5CRegistrationController%23register%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CResetController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CResetController%5D%5B1%5D' => 2,
-'%5BApp%5CController%5CResetController%23index%5D%5B1%5D' => 9,
+'%5BApp%5CController%5CResetController%23index%5D%5B1%5D' => 10,
 '%5B%5BC%5DApp%5CController%5CResetController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CSecurityController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CSecurityController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CSecurityController%23login%5D%5B1%5D' => 11,
+'%5B%5BC%5DApp%5CController%5CSecurityController%23login%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CSecurityController%23logout%5D%5B1%5D' => 12,
+'%5B%5BC%5DApp%5CController%5CSecurityController%23logout%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CToursController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CToursController%5D%5B1%5D' => 2,
-'%5BApp%5CController%5CToursController%23index%5D%5B1%5D' => 10,
+'%5BApp%5CController%5CToursController%23index%5D%5B1%5D' => 13,
 '%5B%5BC%5DApp%5CController%5CToursController%23index%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CUserToursController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CUserToursController%5D%5B1%5D' => 2,
-'%5BApp%5CController%5CUserToursController%23index%5D%5B1%5D' => 11,
+'%5BApp%5CController%5CUserToursController%23index%5D%5B1%5D' => 14,
 '%5B%5BC%5DApp%5CController%5CUserToursController%23index%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%5D%5B1%5D' => 12,
+'%5BApp%5CEntity%5CNote%5D%5B1%5D' => 15,
+'%5B%5BC%5DApp%5CEntity%5CNote%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CNote%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%23getUserId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CNote%23getUserId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%23setUserId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CNote%23setUserId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%23getTourId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CNote%23getTourId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%23setTourId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CNote%23setTourId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%23getValue%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CNote%23getValue%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%23setValue%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CNote%23setValue%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%24id%5D%5B1%5D' => 16,
+'%5B%5BC%5DApp%5CEntity%5CNote%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%24userId%5D%5B1%5D' => 17,
+'%5B%5BC%5DApp%5CEntity%5CNote%24userId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%24tourId%5D%5B1%5D' => 18,
+'%5B%5BC%5DApp%5CEntity%5CNote%24tourId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CNote%24value%5D%5B1%5D' => 18,
+'%5B%5BC%5DApp%5CEntity%5CNote%24value%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%5D%5B1%5D' => 19,
+'%5B%5BC%5DApp%5CEntity%5CTour%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getLength%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getLength%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setLength%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setLength%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getLinkToMap%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getLinkToMap%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setLinkToMap%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setLinkToMap%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getDifficulty%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getDifficulty%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setDifficulty%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setDifficulty%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getRegion%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getRegion%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setRegion%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setRegion%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getUserId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getUserId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setUserId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setUserId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getDescription%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getDescription%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setDescription%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setDescription%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getNote%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getNote%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setNote%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setNote%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23getNumberOfNotes%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23getNumberOfNotes%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%23setNumberOfNotes%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTour%23setNumberOfNotes%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24id%5D%5B1%5D' => 16,
+'%5B%5BC%5DApp%5CEntity%5CTour%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24name%5D%5B1%5D' => 20,
+'%5B%5BC%5DApp%5CEntity%5CTour%24name%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24length%5D%5B1%5D' => 21,
+'%5B%5BC%5DApp%5CEntity%5CTour%24length%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24linkToMap%5D%5B1%5D' => 22,
+'%5B%5BC%5DApp%5CEntity%5CTour%24linkToMap%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24difficulty%5D%5B1%5D' => 18,
+'%5B%5BC%5DApp%5CEntity%5CTour%24difficulty%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24region%5D%5B1%5D' => 23,
+'%5B%5BC%5DApp%5CEntity%5CTour%24region%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24userId%5D%5B1%5D' => 17,
+'%5B%5BC%5DApp%5CEntity%5CTour%24userId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24description%5D%5B1%5D' => 22,
+'%5B%5BC%5DApp%5CEntity%5CTour%24description%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24note%5D%5B1%5D' => 21,
+'%5B%5BC%5DApp%5CEntity%5CTour%24note%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTour%24numberOfNotes%5D%5B1%5D' => 18,
+'%5B%5BC%5DApp%5CEntity%5CTour%24numberOfNotes%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CUser%5D%5B1%5D' => 24,
 '%5B%5BC%5DApp%5CEntity%5CUser%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%23getId%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CUser%23getId%5D%5B1%5D' => 2,
@@ -119,13 +213,13 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CUser%23getSalt%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CUser%23eraseCredentials%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CUser%23eraseCredentials%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%24id%5D%5B1%5D' => 13,
+'%5BApp%5CEntity%5CUser%24id%5D%5B1%5D' => 16,
 '%5B%5BC%5DApp%5CEntity%5CUser%24id%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%24email%5D%5B1%5D' => 14,
+'%5BApp%5CEntity%5CUser%24email%5D%5B1%5D' => 25,
 '%5B%5BC%5DApp%5CEntity%5CUser%24email%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%24roles%5D%5B1%5D' => 15,
+'%5BApp%5CEntity%5CUser%24roles%5D%5B1%5D' => 26,
 '%5B%5BC%5DApp%5CEntity%5CUser%24roles%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CUser%24password%5D%5B1%5D' => 16,
+'%5BApp%5CEntity%5CUser%24password%5D%5B1%5D' => 27,
 '%5B%5BC%5DApp%5CEntity%5CUser%24password%5D%5B1%5D' => 2,
 '%5BDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 1,
 '%5B%5BC%5DDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 2,
@@ -434,237 +528,237 @@ return [[
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23expandToManyParameters%5D%5B1%5D' => 1,
 '%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23expandToManyParameters%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getTypes%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getTypes%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getTypes%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getValues%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getValues%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getValues%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getIndividualValue%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getIndividualValue%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getIndividualValue%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23exists%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23exists%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23exists%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getJoinSQLForJoinColumns%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getJoinSQLForJoinColumns%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getJoinSQLForJoinColumns%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getSQLColumnAlias%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getSQLColumnAlias%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getSQLColumnAlias%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23generateFilterConditionSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23generateFilterConditionSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23generateFilterConditionSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23switchPersisterContext%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23switchPersisterContext%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23switchPersisterContext%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getClassIdentifiersTypes%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getClassIdentifiersTypes%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getClassIdentifiersTypes%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24class%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24class%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24class%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24conn%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24conn%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24conn%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24platform%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24platform%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24platform%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24em%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24em%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24em%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24queuedInserts%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24queuedInserts%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24queuedInserts%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24columnTypes%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24columnTypes%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24columnTypes%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24quotedColumns%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24quotedColumns%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24quotedColumns%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24quoteStrategy%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24quoteStrategy%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24quoteStrategy%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24currentPersisterContext%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24currentPersisterContext%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24currentPersisterContext%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23prepareInsertData%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23prepareInsertData%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23prepareInsertData%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getSelectColumnSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getSelectColumnSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%23getSelectColumnSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24comparisonMap%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24comparisonMap%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24comparisonMap%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24insertSql%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24insertSql%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24insertSql%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24identifierFlattener%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24identifierFlattener%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24identifierFlattener%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24limitsHandlingContext%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24limitsHandlingContext%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24limitsHandlingContext%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24noLimitsContext%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24noLimitsContext%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CBasicEntityPersister%24noLimitsContext%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%23__construct%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%23__construct%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%23__construct%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24class%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24class%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24class%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24rsm%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24rsm%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24rsm%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24selectColumnListSql%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24selectColumnListSql%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24selectColumnListSql%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24selectJoinSql%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24selectJoinSql%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24selectJoinSql%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24sqlAliasCounter%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24sqlAliasCounter%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24sqlAliasCounter%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24sqlTableAliases%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24sqlTableAliases%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24sqlTableAliases%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24handlesLimits%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24handlesLimits%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CCachedPersisterContext%24handlesLimits%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CEntityPersister%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CEntityPersister%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CEntityPersister%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getDiscriminatorColumnTableName%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getDiscriminatorColumnTableName%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getDiscriminatorColumnTableName%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getVersionedClassMetadata%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getVersionedClassMetadata%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getVersionedClassMetadata%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getOwningTable%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getOwningTable%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getOwningTable%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23executeInserts%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23executeInserts%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23executeInserts%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23update%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23update%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23update%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23delete%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23delete%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23delete%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getSelectSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getSelectSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getSelectSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getCountSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getCountSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getCountSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getLockTablesSql%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getLockTablesSql%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getLockTablesSql%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getSelectColumnsSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getSelectColumnsSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getSelectColumnsSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getInsertColumnList%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getInsertColumnList%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getInsertColumnList%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23assignDefaultVersionValue%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23assignDefaultVersionValue%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23assignDefaultVersionValue%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getJoinSql%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getJoinSql%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%23getJoinSql%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%24owningTableMap%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%24owningTableMap%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%24owningTableMap%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%24quotedTableMap%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%24quotedTableMap%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CJoinedSubclassPersister%24quotedTableMap%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getDiscriminatorColumnTableName%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getDiscriminatorColumnTableName%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getDiscriminatorColumnTableName%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectColumnsSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectColumnsSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectColumnsSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getInsertColumnList%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getInsertColumnList%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getInsertColumnList%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSQLTableAlias%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSQLTableAlias%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSQLTableAlias%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionCriteriaSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionCriteriaSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionCriteriaSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionDiscriminatorValueSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionDiscriminatorValueSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23getSelectConditionDiscriminatorValueSQL%5D%5B1%5D' => 2,
 '%5BDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23generateFilterConditionSQL%5D%5B1%5D' => 1,
-'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23generateFilterConditionSQL%5D%5B1%5D' => 17,
+'%5B%5BC%5DDoctrine%5CORM%5CPersisters%5CEntity%5CSingleTablePersister%23generateFilterConditionSQL%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__construct%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__construct%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__construct%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23redirectAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23redirectAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23redirectAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23urlRedirectAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23urlRedirectAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23urlRedirectAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__invoke%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__invoke%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__invoke%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24router%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24router%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24router%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24httpPort%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24httpPort%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24httpPort%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24httpsPort%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24httpsPort%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%24httpsPort%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23__construct%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23__construct%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23__construct%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23templateAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23templateAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23templateAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23__invoke%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23__invoke%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%23__invoke%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%24twig%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%24twig%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CTemplateController%24twig%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23__construct%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23__construct%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23__construct%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23body%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23body%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23body%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23stylesheet%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23stylesheet%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%23stylesheet%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%24errorRenderer%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%24errorRenderer%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%24errorRenderer%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%24profiler%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%24profiler%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CExceptionPanelController%24profiler%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23__construct%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23__construct%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23__construct%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23homeAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23homeAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23homeAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23panelAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23panelAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23panelAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23toolbarAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23toolbarAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23toolbarAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchBarAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchBarAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchBarAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchResultsAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchResultsAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchResultsAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23searchAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23phpinfoAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23phpinfoAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23phpinfoAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23openAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23openAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23openAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23getTemplateManager%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23getTemplateManager%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23getTemplateManager%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23denyAccessIfProfilerDisabled%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23denyAccessIfProfilerDisabled%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23denyAccessIfProfilerDisabled%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23renderWithCspNonces%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23renderWithCspNonces%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%23renderWithCspNonces%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24templateManager%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24templateManager%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24templateManager%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24generator%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24generator%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24generator%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24profiler%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24profiler%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24profiler%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24twig%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24twig%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24twig%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24templates%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24templates%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24templates%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24cspHandler%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24cspHandler%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24cspHandler%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24baseDir%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24baseDir%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CProfilerController%24baseDir%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23__construct%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23__construct%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23__construct%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23panelAction%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23panelAction%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23panelAction%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23getTraces%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23getTraces%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%23getTraces%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24profiler%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24profiler%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24profiler%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24twig%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24twig%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24twig%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24matcher%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24matcher%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24matcher%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24routes%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24routes%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24routes%5D%5B1%5D' => 2,
 '%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%5D%5B1%5D' => 2,
 '%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23__construct%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23__construct%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23__construct%5D%5B1%5D' => 2,
 '%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23supports%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23supports%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23supports%5D%5B1%5D' => 2,
 '%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23resolve%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23resolve%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23resolve%5D%5B1%5D' => 2,
 '%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%24tokenStorage%5D%5B1%5D' => 1,
-'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%24tokenStorage%5D%5B1%5D' => 17,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%24tokenStorage%5D%5B1%5D' => 2,
 
 ], [
 
 0 => 'N;',
 1 => [],
-2 => 1592412890,
+2 => 1592654904,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -718,7 +812,7 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/add/tours',
+                    '/add/tours/{user}',
                 ],
                 'name' => [
                     'add_tours',
@@ -740,6 +834,28 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
+                    '/add/user/to/db',
+                ],
+                'name' => [
+                    'add_user_to_db',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+7 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
                     '/edit',
                 ],
                 'name' => [
@@ -753,7 +869,7 @@ return [[
         []
     );
 },
-7 => static function () {
+8 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
@@ -775,7 +891,7 @@ return [[
         []
     );
 },
-8 => static function () {
+9 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
@@ -787,7 +903,7 @@ return [[
                     '/register',
                 ],
                 'name' => [
-                    'register',
+                    'app_register',
                 ],
             ],
         ],
@@ -797,7 +913,7 @@ return [[
         []
     );
 },
-9 => static function () {
+10 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
@@ -819,7 +935,51 @@ return [[
         []
     );
 },
-10 => static function () {
+11 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/login',
+                ],
+                'name' => [
+                    'app_login',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+12 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/logout',
+                ],
+                'name' => [
+                    'app_logout',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+13 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
@@ -841,7 +1001,7 @@ return [[
         []
     );
 },
-11 => static function () {
+14 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
@@ -863,7 +1023,7 @@ return [[
         []
     );
 },
-12 => static function () {
+15 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
@@ -872,7 +1032,7 @@ return [[
         [
             'stdClass' => [
                 'repositoryClass' => [
-                    'App\\Repository\\UserRepository',
+                    'App\\Repository\\NoteRepository',
                 ],
             ],
         ],
@@ -882,7 +1042,7 @@ return [[
         []
     );
 },
-13 => static function () {
+16 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Id'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Id')),
@@ -905,7 +1065,7 @@ return [[
         []
     );
 },
-14 => static function () {
+17 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
@@ -914,9 +1074,104 @@ return [[
         [
             'stdClass' => [
                 'length' => [
-                    180,
+                    255,
                 ],
-                'unique' => [
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+18 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'integer',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+19 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\TourRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+20 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'length' => [
+                    30,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+21 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'float',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+22 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'text',
+                ],
+                'nullable' => [
                     true,
                 ],
             ],
@@ -927,7 +1182,94 @@ return [[
         []
     );
 },
-15 => static function () {
+23 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'length' => [
+                    50,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+24 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\UserRepository',
+                ],
+                'message' => [
+                    1 => 'There is already an account with this email',
+                ],
+                'fields' => [
+                    1 => [
+                        'email',
+                    ],
+                ],
+                'groups' => [
+                    1 => [
+                        'Default',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+        ],
+        []
+    );
+},
+25 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+            clone ($p['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+            clone ($p['Symfony\\Component\\Validator\\Constraints\\Email'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Email')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'length' => [
+                    180,
+                ],
+                'unique' => [
+                    true,
+                ],
+                'groups' => [
+                    1 => [
+                        'Default',
+                    ],
+                    [
+                        'Default',
+                    ],
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+            $o[2],
+        ],
+        []
+    );
+},
+26 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
@@ -946,7 +1288,7 @@ return [[
         []
     );
 },
-16 => static function () {
+27 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
             clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
@@ -959,6 +1301,5 @@ return [[
         []
     );
 },
-17 => 1592412891,
 
 ]];

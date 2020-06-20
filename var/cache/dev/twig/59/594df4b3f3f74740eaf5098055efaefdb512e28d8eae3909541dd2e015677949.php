@@ -98,11 +98,46 @@ class __TwigTemplate_2939fecedd497be77b24317390bfa4db356a4c35f78e33c83db2b321f28
             echo "
                     ";
             // line 12
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), 'widget');
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), "name", [], "any", false, false, false, 12), 'row', ["label" => "Nazwa"]);
+            // line 14
             echo "
                     ";
-            // line 13
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), 'form_end');
+            // line 15
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 15, $this->source); })()), "length", [], "any", false, false, false, 15), 'row', ["label" => "Dlugość"]);
+            // line 17
+            echo "
+                    ";
+            // line 18
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), "difficulty", [], "any", false, false, false, 18), 'row', ["label" => "Trudność"]);
+            // line 20
+            echo "
+                    ";
+            // line 21
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 21, $this->source); })()), "linkToMap", [], "any", false, false, false, 21), 'row', ["label" => "Link do mapy Google"]);
+            // line 23
+            echo "
+                    ";
+            // line 24
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 24, $this->source); })()), "region", [], "any", false, false, false, 24), 'row', ["label" => "Województwo"]);
+            // line 26
+            echo "
+                    ";
+            // line 27
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 27, $this->source); })()), "note", [], "any", false, false, false, 27), 'row', ["label" => "Ocena"]);
+            // line 29
+            echo "
+                    ";
+            // line 30
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 30, $this->source); })()), "description", [], "any", false, false, false, 30), 'row', ["label" => "Opis"]);
+            // line 32
+            echo "
+                    ";
+            // line 33
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 33, $this->source); })()), 'widget');
+            echo "
+                    ";
+            // line 34
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 34, $this->source); })()), 'form_end');
             echo "
                 </div>
             </div>
@@ -110,13 +145,13 @@ class __TwigTemplate_2939fecedd497be77b24317390bfa4db356a4c35f78e33c83db2b321f28
     </div>
     ";
         }
-        // line 19
+        // line 40
         echo "    ";
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 19, $this->source); })()), "user", [], "any", false, false, false, 19), null))) {
-            // line 20
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 40, $this->source); })()), "user", [], "any", false, false, false, 40), null))) {
+            // line 41
             echo "        <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 21
+            // line 42
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -142,7 +177,7 @@ class __TwigTemplate_2939fecedd497be77b24317390bfa4db356a4c35f78e33c83db2b321f28
 
     public function getDebugInfo()
     {
-        return array (  120 => 21,  117 => 20,  114 => 19,  105 => 13,  101 => 12,  97 => 11,  90 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  155 => 42,  152 => 41,  149 => 40,  140 => 34,  136 => 33,  133 => 32,  131 => 30,  128 => 29,  126 => 27,  123 => 26,  121 => 24,  118 => 23,  116 => 21,  113 => 20,  111 => 18,  108 => 17,  106 => 15,  103 => 14,  101 => 12,  97 => 11,  90 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -158,6 +193,27 @@ class __TwigTemplate_2939fecedd497be77b24317390bfa4db356a4c35f78e33c83db2b321f28
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Dodaj trase</h5>
                     {{ form_start(form)  }}
+                    {{ form_row(form.name, {
+                        label: 'Nazwa'
+                    }) }}
+                    {{ form_row(form.length, {
+                        label: 'Dlugość'
+                    }) }}
+                    {{ form_row(form.difficulty, {
+                        label: 'Trudność'
+                    }) }}
+                    {{ form_row(form.linkToMap, {
+                        label: 'Link do mapy Google'
+                    }) }}
+                    {{ form_row(form.region, {
+                        label: 'Województwo'
+                    }) }}
+                    {{ form_row(form.note, {
+                        label: 'Ocena'
+                    }) }}
+                    {{ form_row(form.description, {
+                        label: 'Opis'
+                    }) }}
                     {{ form_widget(form) }}
                     {{ form_end(form) }}
                 </div>

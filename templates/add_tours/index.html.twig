@@ -9,6 +9,27 @@
                 <div class="card-body">
                     <h5 class="card-title">Dodaj trase</h5>
                     {{ form_start(form)  }}
+                    {{ form_row(form.name, {
+                        label: 'Nazwa'
+                    }) }}
+                    {{ form_row(form.length, {
+                        label: 'Dlugość'
+                    }) }}
+                    {{ form_row(form.difficulty, {
+                        label: 'Trudność'
+                    }) }}
+                    {{ form_row(form.linkToMap, {
+                        label: 'Link do mapy Google'
+                    }) }}
+                    {{ form_row(form.region, {
+                        label: 'Województwo'
+                    }) }}
+                    {{ form_row(form.note, {
+                        label: 'Ocena'
+                    }) }}
+                    {{ form_row(form.description, {
+                        label: 'Opis'
+                    }) }}
                     {{ form_widget(form) }}
                     {{ form_end(form) }}
                 </div>

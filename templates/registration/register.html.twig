@@ -15,6 +15,9 @@
 
         {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.username,
+                {label: 'Nazwa użytkownika'
+                })}}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Hasło'
         }) }}
