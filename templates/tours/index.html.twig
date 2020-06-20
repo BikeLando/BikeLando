@@ -77,19 +77,28 @@
             </div>
         </div>
     </div>
-        <div class="row" id="zakladki">
+
+
+            {% if tours %}
+                {% for tour in tours %}
+                    <div class="row" id="zakladki">
     <div class="col">
         <div class="card-group">
-            <div class="card bg-transparent border-dark">
-                <img class="card-img-top" src="..." alt="Tu ładuje mapke z googla da sie po linku i jest to na mojej stronie">
-                <div class="card-body">
-                    <h5 class="card-title">Tutaj ładujemy tytuł</h5>
-                    <p class="card-text">I jak zrobimy to w pętli to będą się ładować obok siebie i będzie ładnie, a tu opis trasy damy.</p>
-                </div>
-                <div class="card-footer bg-transparent border-dark">
-                    <small class="text-muted">Data wpisana przez usera</small>
-                </div>
-            </div>
-        </div>
+                       <div class="card bg-transparent border-dark">
+
+                           <div id="map-container-google-3" class="z-depth-1-half map-container-3">
+                               <iframe src="{{ tour.linkToMap }}" style="border:0" allowfullscreen></iframe>
+                           </div>
+                           <div class="card-body">
+                               <h5 class="card-title">{{ tour.name }}</h5>
+                               <a class="btn  btn-dark" href="/tour/{{ tour.id }}">Show</a>
+                           </div>
+                       </div>
+          </div>
     </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No tours to display</p>
+            {% endif %}
 {% endblock %}

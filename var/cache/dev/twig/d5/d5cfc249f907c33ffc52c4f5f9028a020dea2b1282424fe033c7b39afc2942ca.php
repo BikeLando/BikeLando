@@ -160,22 +160,54 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             </div>
         </div>
     </div>
-        <div class=\"row\" id=\"zakladki\">
+
+
+            ";
+        // line 82
+        if ((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 82, $this->source); })())) {
+            // line 83
+            echo "                ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 83, $this->source); })()));
+            foreach ($context['_seq'] as $context["_key"] => $context["tour"]) {
+                // line 84
+                echo "                    <div class=\"row\" id=\"zakladki\">
     <div class=\"col\">
         <div class=\"card-group\">
-            <div class=\"card bg-transparent border-dark\">
-                <img class=\"card-img-top\" src=\"...\" alt=\"Tu ładuje mapke z googla da sie po linku i jest to na mojej stronie\">
-                <div class=\"card-body\">
-                    <h5 class=\"card-title\">Tutaj ładujemy tytuł</h5>
-                    <p class=\"card-text\">I jak zrobimy to w pętli to będą się ładować obok siebie i będzie ładnie, a tu opis trasy damy.</p>
-                </div>
-                <div class=\"card-footer bg-transparent border-dark\">
-                    <small class=\"text-muted\">Data wpisana przez usera</small>
-                </div>
-            </div>
-        </div>
+                       <div class=\"card bg-transparent border-dark\">
+
+                           <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
+                               <iframe src=\"";
+                // line 90
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 90), "html", null, true);
+                echo "\" style=\"border:0\" allowfullscreen></iframe>
+                           </div>
+                           <div class=\"card-body\">
+                               <h5 class=\"card-title\">";
+                // line 93
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 93), "html", null, true);
+                echo "</h5>
+                               <a class=\"btn  btn-dark\" href=\"/tour/";
+                // line 94
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 94), "html", null, true);
+                echo "\">Show</a>
+                           </div>
+                       </div>
+          </div>
     </div>
-";
+                    </div>
+                ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tour'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 101
+            echo "            ";
+        } else {
+            // line 102
+            echo "                <p>No tours to display</p>
+            ";
+        }
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -196,7 +228,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 
     public function getDebugInfo()
     {
-        return array (  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  208 => 102,  205 => 101,  192 => 94,  188 => 93,  182 => 90,  174 => 84,  169 => 83,  167 => 82,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -280,21 +312,30 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             </div>
         </div>
     </div>
-        <div class=\"row\" id=\"zakladki\">
+
+
+            {% if tours %}
+                {% for tour in tours %}
+                    <div class=\"row\" id=\"zakladki\">
     <div class=\"col\">
         <div class=\"card-group\">
-            <div class=\"card bg-transparent border-dark\">
-                <img class=\"card-img-top\" src=\"...\" alt=\"Tu ładuje mapke z googla da sie po linku i jest to na mojej stronie\">
-                <div class=\"card-body\">
-                    <h5 class=\"card-title\">Tutaj ładujemy tytuł</h5>
-                    <p class=\"card-text\">I jak zrobimy to w pętli to będą się ładować obok siebie i będzie ładnie, a tu opis trasy damy.</p>
-                </div>
-                <div class=\"card-footer bg-transparent border-dark\">
-                    <small class=\"text-muted\">Data wpisana przez usera</small>
-                </div>
-            </div>
-        </div>
+                       <div class=\"card bg-transparent border-dark\">
+
+                           <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
+                               <iframe src=\"{{ tour.linkToMap }}\" style=\"border:0\" allowfullscreen></iframe>
+                           </div>
+                           <div class=\"card-body\">
+                               <h5 class=\"card-title\">{{ tour.name }}</h5>
+                               <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}\">Show</a>
+                           </div>
+                       </div>
+          </div>
     </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No tours to display</p>
+            {% endif %}
 {% endblock %}", "tours/index.html.twig", "C:\\xampp\\htdocs\\bikelando\\templates\\tours\\index.html.twig");
     }
 }
