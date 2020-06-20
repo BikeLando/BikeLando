@@ -3,6 +3,10 @@
 {% block title %}Log in!{% endblock %}
 
 {% block body %}
+<div class="row" id="zakladki">
+    <div class="col">
+        <div class="card bg-transparent border-dark">
+            <div class="card-body">
 <form method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -18,6 +22,7 @@
     <label for="inputEmail">Email</label>
     <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
     <label for="inputPassword">Password</label>
+    <br>
     <input type="password" name="password" id="inputPassword" class="form-control" required>
 
     <input type="hidden" name="_csrf_token"
@@ -36,7 +41,8 @@
     #}
 
     <button class="btn btn-lg btn-primary" type="submit">
-        Sign in
+        Zaloguj
     </button>
 </form>
+            </div></div></div></div>
 {% endblock %}

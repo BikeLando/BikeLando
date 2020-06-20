@@ -28,8 +28,6 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'body1' => [$this, 'block_body1'],
-            'body2' => [$this, 'block_body2'],
             'body' => [$this, 'block_body'],
         ];
     }
@@ -53,6 +51,17 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
+    <style>
+        input[type=email], input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 <!-- skrypty do bootstrapa i jquery -->
@@ -62,7 +71,25 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 <!-- Główny kontener -->
 <div class=\"container\">
     <!-- Tytuł -->
-    <div class=\"row\">
+    ";
+        // line 27
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 27, $this->source); })()), "session", [], "any", false, false, false, 27), "flashbag", [], "any", false, false, false, 27), "get", [0 => "notice"], "method", false, false, false, 27));
+        foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
+            // line 28
+            echo "        <div class=\"alert alert-success\">
+            ";
+            // line 29
+            echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
+            echo "
+        </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 32
+        echo "    <div class=\"row\">
         <div class=\"col\">
             <h1 style=\"float: left;\">BikeLando</h1>
         </div>
@@ -73,14 +100,119 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
             <h5 style=\"float: left;\">Portal rowerowy dla każdego</h5>
         </div>
         ";
-        // line 26
-        $this->displayBlock('body1', $context, $blocks);
-        // line 47
-        echo "    <!-- Menu -->
+        // line 42
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 42, $this->source); })()), "user", [], "any", false, false, false, 42)) {
+            // line 43
+            echo "            <div class=\"mb-3\" style=\"float: right\">
+                Zalogowany jako ";
+            // line 44
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 44, $this->source); })()), "user", [], "any", false, false, false, 44), "username", [], "any", false, false, false, 44), "html", null, true);
+            echo ",
+                <a href=\"";
+            // line 45
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+            </div>
+        </div>
+        ";
+        }
+        // line 49
+        echo "
+        ";
+        // line 50
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50), null))) {
+            // line 51
+            echo "        <div class=\"col\">
+            <form class=\"form-inline\" style=\"float: right\">
+                <a href=\"";
+            // line 53
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\" type=\"button\" class=\"btn btn-outline-dark\">Zaloguj się</a>
+            </form>
+        </div>
+    </div>
+    <!-- Rejestracja i nowe hasło-->
+    <div class=\"row\">
+        <div class=\"col\">
+            <a href=\"";
+            // line 60
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
+            echo "\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
+            <a href=\"";
+            // line 61
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reset");
+            echo "\" lass=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
+        </div>
+    </div>
     ";
-        // line 48
-        $this->displayBlock('body2', $context, $blocks);
-        // line 60
+        }
+        // line 65
+        echo "    <!-- Menu -->
+        ";
+        // line 66
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 66, $this->source); })()), "user", [], "any", false, false, false, 66)) {
+            // line 67
+            echo "            <div class=\"row\">
+                <div class=\"col\">
+                    <nav class=\"nav navbar-light\" style=\"float: left\">
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 70
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+            echo "\">Strona główna</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 71
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
+            echo "\">Trasy</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 72
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("about");
+            echo "\">O nas</a>
+                    </nav>
+                    <nav class=\"nav navbar-light\" style=\"float: right\">
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 75
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account");
+            echo "\">Twoje konto</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 76
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_tours");
+            echo "\">Twoje trasy</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent;\" href=\"";
+            // line 77
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_tours", ["user" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 77, $this->source); })()), "user", [], "any", false, false, false, 77), "username", [], "any", false, false, false, 77)]), "html", null, true);
+            echo "\">Dodaj trase</a>
+                    </nav>
+                </div>
+            </div>
+        ";
+        }
+        // line 82
+        echo "
+        ";
+        // line 83
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 83, $this->source); })()), "user", [], "any", false, false, false, 83), null))) {
+            // line 84
+            echo "    <div class=\"row\">
+        <div class=\"col\">
+            <nav class=\"nav navbar-light\">
+                <a class=\"nav-link btn btn-outline-dark active\" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 87
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+            echo "\">Strona główna</a>
+                <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 88
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
+            echo "\">Trasy</a>
+                <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
+            // line 89
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("about");
+            echo "\">O nas</a>
+            </nav>
+        </div>
+    </div>
+        ";
+        }
+        // line 94
         echo "    <!-- Pokaz slajdów -->
     <div class=\"row\">
         <div class=\"col\">
@@ -93,20 +225,20 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
                 <div class=\"carousel-inner\">
                     <div class=\"carousel-item active\">
                         ";
-        // line 72
+        // line 106
         echo "                        <img class=\"d-block w-100\" src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("grafic/1.png"), "html", null, true);
         echo "\" alt=\"Pierwszy slajd\">
                     </div>
                     <div class=\"carousel-item\">
                         <img class=\"d-block w-100\" src=\"";
-        // line 75
+        // line 109
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("grafic/2.png"), "html", null, true);
         echo "\" alt=\"Drugi slajd\">
                     </div>
                     <div class=\"carousel-item\">
                         <img class=\"d-block w-100\" src=\"";
-        // line 78
+        // line 112
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("grafic/3.png"), "html", null, true);
         echo "\" alt=\"Trzeci slajd\">
                     </div>
@@ -124,9 +256,9 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     </div>
     <!-- Zakładki z manu -->
     ";
-        // line 93
+        // line 127
         $this->displayBlock('body', $context, $blocks);
-        // line 110
+        // line 144
         echo "</div>
 </body>
 </html>";
@@ -157,91 +289,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 
     }
 
-    // line 26
-    public function block_body1($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body1"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body1"));
-
-        echo " <!-- dopisać if-->
-        <div class=\"col\">
-            <form class=\"form-inline\" style=\"float: right\">
-                <div class=\"form-group mb-1\">
-                    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria- describedby=\"emailHelp\" placeholder=\"Email\">
-                </div>
-                <div class=\"form-group mx-sm-1 mb-1\">
-                    <input type=\"password\" class=\"form-control\" id=\"inputPassword2\" placeholder=\"Hasło\">
-                </div>
-                <button type=\"submit\" class=\"btn btn-outline-dark mb-1\">Zaloguj się</button>
-            </form>
-        </div>
-    </div>
-    <!-- Rejestracja i nowe hasło-->
-    <div class=\"row\">
-        <div class=\"col\">
-            <a href=\"";
-        // line 42
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-        echo "\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
-            <a href=\"";
-        // line 43
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reset");
-        echo "\" lass=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
-        </div>
-    </div>
-    ";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-    }
-
-    // line 48
-    public function block_body2($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body2"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body2"));
-
-        // line 49
-        echo "    <div class=\"row\">
-        <div class=\"col\">
-            <nav class=\"nav navbar-light\">
-                <a class=\"nav-link btn btn-outline-dark active\" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-        // line 52
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\">Strona główna</a>
-                <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-        // line 53
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
-        echo "\">Trasy</a>
-                <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-        // line 54
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("about");
-        echo "\">O nas</a>
-            </nav>
-        </div>
-    </div>
-
-        ";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
-
-    }
-
-    // line 93
+    // line 127
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -251,7 +299,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 94
+        // line 128
         echo "        <div class=\"row\" id=\"zakladki\">
             <div class=\"col\">
                 <div class=\"card bg-transparent border-dark\">
@@ -288,7 +336,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 
     public function getDebugInfo()
     {
-        return array (  255 => 94,  245 => 93,  229 => 54,  225 => 53,  221 => 52,  216 => 49,  206 => 48,  192 => 43,  188 => 42,  161 => 26,  142 => 5,  130 => 110,  128 => 93,  110 => 78,  104 => 75,  97 => 72,  84 => 60,  82 => 48,  79 => 47,  77 => 26,  53 => 5,  47 => 1,);
+        return array (  303 => 128,  293 => 127,  274 => 5,  262 => 144,  260 => 127,  242 => 112,  236 => 109,  229 => 106,  216 => 94,  208 => 89,  204 => 88,  200 => 87,  195 => 84,  193 => 83,  190 => 82,  182 => 77,  178 => 76,  174 => 75,  168 => 72,  164 => 71,  160 => 70,  155 => 67,  153 => 66,  150 => 65,  143 => 61,  139 => 60,  129 => 53,  125 => 51,  123 => 50,  120 => 49,  113 => 45,  109 => 44,  106 => 43,  104 => 42,  92 => 32,  83 => 29,  80 => 28,  76 => 27,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -299,6 +347,17 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     <meta charset=\"UTF-8\">
     <title>{% block title %}BikeLando{% endblock %}</title>
     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
+    <style>
+        input[type=email], input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 <!-- skrypty do bootstrapa i jquery -->
@@ -308,6 +367,11 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 <!-- Główny kontener -->
 <div class=\"container\">
     <!-- Tytuł -->
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+        <div class=\"alert alert-success\">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
     <div class=\"row\">
         <div class=\"col\">
             <h1 style=\"float: left;\">BikeLando</h1>
@@ -318,16 +382,18 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         <div class=\"col\">
             <h5 style=\"float: left;\">Portal rowerowy dla każdego</h5>
         </div>
-        {% block body1 %} <!-- dopisać if-->
+        {% if app.user %}
+            <div class=\"mb-3\" style=\"float: right\">
+                Zalogowany jako {{ app.user.username }},
+                <a href=\"{{ path('app_logout') }}\" lass=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+            </div>
+        </div>
+        {% endif %}
+
+        {%  if app.user == null %}
         <div class=\"col\">
             <form class=\"form-inline\" style=\"float: right\">
-                <div class=\"form-group mb-1\">
-                    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria- describedby=\"emailHelp\" placeholder=\"Email\">
-                </div>
-                <div class=\"form-group mx-sm-1 mb-1\">
-                    <input type=\"password\" class=\"form-control\" id=\"inputPassword2\" placeholder=\"Hasło\">
-                </div>
-                <button type=\"submit\" class=\"btn btn-outline-dark mb-1\">Zaloguj się</button>
+                <a href=\"{{ path('app_login') }}\" type=\"button\" class=\"btn btn-outline-dark\">Zaloguj się</a>
             </form>
         </div>
     </div>
@@ -338,9 +404,26 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
             <a href=\"{{ path('reset')}}\" lass=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
         </div>
     </div>
-    {% endblock %}
+    {% endif %}
     <!-- Menu -->
-    {%  block body2 %}
+        {% if app.user %}
+            <div class=\"row\">
+                <div class=\"col\">
+                    <nav class=\"nav navbar-light\" style=\"float: left\">
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"{{ path('home') }}\">Strona główna</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"{{ path('tours') }}\">Trasy</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"{{ path('about') }}\">O nas</a>
+                    </nav>
+                    <nav class=\"nav navbar-light\" style=\"float: right\">
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"{{ path('account') }}\">Twoje konto</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"{{ path('user_tours') }}\">Twoje trasy</a>
+                        <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent;\" href=\"{{ path('add_tours',{'user':app.user.username})}}\">Dodaj trase</a>
+                    </nav>
+                </div>
+            </div>
+        {%  endif %}
+
+        {%  if app.user == null %}
     <div class=\"row\">
         <div class=\"col\">
             <nav class=\"nav navbar-light\">
@@ -350,8 +433,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
             </nav>
         </div>
     </div>
-
-        {% endblock %}
+        {% endif %}
     <!-- Pokaz slajdów -->
     <div class=\"row\">
         <div class=\"col\">
