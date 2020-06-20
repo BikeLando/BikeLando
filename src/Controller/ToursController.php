@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -12,8 +13,7 @@ class ToursController extends AbstractController
      */
     public function index()
     {
-        return $this->render('tours/index.html.twig', [
-            'controller_name' => 'ToursController',
-        ]);
+        $tours = ['Tour 1', 'Tour 2'];
+        return $this->render('tours/index.html.twig', array('tours'=>$tours));
     }
 }
