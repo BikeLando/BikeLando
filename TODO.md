@@ -1,14 +1,14 @@
  ##OGÓLNE
 - przerobić rutowanie do pliku YAML dla czytelności 
 - odzyskiwanie hasla (jak?)
-- pętla do wyświetlania tras z bazy <- wyszukiwarka tras/filtr [ctrl+c ctrl+v wyswietlanie tras dla jednego zalogowanego uzytkownika]
+- wyszukiwarka tras/filtr [ctrl+c ctrl+v wyswietlanie tras dla jednego zalogowanego uzytkownika]
 
 ##PO ZALOGOWANIU
 - edycja hasla
 - dodawanie tras (walidacja), edycja oraz ich usuwanie
-- pętla do wyświetlania tras z bazy <- wyszukiwarka tras/filtr
+- wyszukiwarka tras/filtr
 - ocenianie tras
-- memy i muzyczka!
+- memy
 
 reset wszystkiego i sciagniecie z githuba wersji
 git fetch --all
