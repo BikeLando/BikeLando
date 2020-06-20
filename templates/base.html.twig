@@ -91,7 +91,7 @@
                     </nav>
                     <nav class="nav navbar-light" style="float: right">
                         <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('account') }}">Twoje konto</a>
-                        <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('user_tours') }}">Twoje trasy</a>
+                        <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('user_tours',{'user':app.user.username})}}">Twoje trasy</a>
                         <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent;" href="{{ path('add_tours',{'user':app.user.username})}}">Dodaj trase</a>
                     </nav>
                 </div>

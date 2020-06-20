@@ -2,18 +2,18 @@
 
 namespace App\Controller;
 
+use App\Entity\Tour;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 class UserToursController extends AbstractController
 {
     /**
-     * @Route("/user/tours", name="user_tours")
+     * @Route("/user/tours/{user}", name="user_tours")
      */
-    public function index()
+    public function index($user)
     {
-        return $this->render('user_tours/index.html.twig', [
-            'controller_name' => 'UserToursController',
-        ]);
+        $tours2 = $this->getDoctrine()->getRepository(Tour::class)->findBy(array('userId'=>$user));
+        return $this->render('tours/index.html.twig', array('tours'=>$tours2));
     }
 }
