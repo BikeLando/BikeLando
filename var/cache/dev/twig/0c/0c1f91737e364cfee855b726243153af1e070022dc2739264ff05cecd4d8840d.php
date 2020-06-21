@@ -91,33 +91,33 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
     <div class=\"col\">
         <div class=\"card bg-transparent border-dark\">
             <div class=\"card-body\">
-                    <form method=\"post\">
-                        <h1 class=\"h3 mb-3 font-weight-normal\">Change your password</h1>
-                        <label for=\"inputPassword\">Password</label>
-                        <br>
-                        <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" required>
-                        <label for=\"inputPassword2\">Password again</label>
-                        <br>
-                        <input type=\"password\" name=\"password\" id=\"inputPassword2\" class=\"form-control\" required>
-                        <button class=\"btn btn-lg btn-dark\" type=\"submit\">
-                            Zmień
-                        </button>
-                    </form>
-                </div>
+                ";
+            // line 9
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 9, $this->source); })()), 'form_start');
+            echo "
+                ";
+            // line 10
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 10, $this->source); })()), 'widget');
+            echo "
+                ";
+            // line 11
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form_end');
+            echo "
+            </div>
         </div>
     </div>
 </div>
     ";
         }
-        // line 26
+        // line 17
         echo "
     ";
-        // line 27
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 27, $this->source); })()), "user", [], "any", false, false, false, 27), null))) {
-            // line 28
+        // line 18
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 18, $this->source); })()), "user", [], "any", false, false, false, 18), null))) {
+            // line 19
             echo "        <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 29
+            // line 20
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -143,7 +143,7 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
 
     public function getDebugInfo()
     {
-        return array (  121 => 29,  118 => 28,  116 => 27,  113 => 26,  90 => 5,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
+        return array (  121 => 20,  118 => 19,  116 => 18,  113 => 17,  104 => 11,  100 => 10,  96 => 9,  90 => 5,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -156,19 +156,10 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
     <div class=\"col\">
         <div class=\"card bg-transparent border-dark\">
             <div class=\"card-body\">
-                    <form method=\"post\">
-                        <h1 class=\"h3 mb-3 font-weight-normal\">Change your password</h1>
-                        <label for=\"inputPassword\">Password</label>
-                        <br>
-                        <input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control\" required>
-                        <label for=\"inputPassword2\">Password again</label>
-                        <br>
-                        <input type=\"password\" name=\"password\" id=\"inputPassword2\" class=\"form-control\" required>
-                        <button class=\"btn btn-lg btn-dark\" type=\"submit\">
-                            Zmień
-                        </button>
-                    </form>
-                </div>
+                {{ form_start(form)  }}
+                {{ form_widget(form) }}
+                {{ form_end(form) }}
+            </div>
         </div>
     </div>
 </div>

@@ -117,8 +117,7 @@ class __TwigTemplate_df6f4f9d0db90f94fac0f174c631931052cada8bf911bfe4651670ccf80
         echo "
         ";
         // line 18
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 18, $this->source); })()), "username", [], "any", false, false, false, 18), 'row', ["label" => "Nazwa użytkownika
-"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 18, $this->source); })()), "username", [], "any", false, false, false, 18), 'row', ["label" => "Nazwa użytkownika"]);
         // line 20
         echo "
         ";
@@ -160,7 +159,7 @@ class __TwigTemplate_df6f4f9d0db90f94fac0f174c631931052cada8bf911bfe4651670ccf80
 
     public function getDebugInfo()
     {
-        return array (  137 => 27,  131 => 24,  128 => 23,  126 => 21,  123 => 20,  120 => 18,  116 => 17,  112 => 16,  107 => 13,  98 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  136 => 27,  130 => 24,  127 => 23,  125 => 21,  122 => 20,  120 => 18,  116 => 17,  112 => 16,  107 => 13,  98 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -183,8 +182,8 @@ class __TwigTemplate_df6f4f9d0db90f94fac0f174c631931052cada8bf911bfe4651670ccf80
         {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.username,
-                {label: 'Nazwa użytkownika
-'       })}}
+                {label: 'Nazwa użytkownika'
+                })}}
         {{ form_row(registrationForm.plainPassword, {
             label: 'Hasło'
         }) }}

@@ -52,7 +52,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         echo "</title>
     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
     <style>
-        input[type=email], input[type=password], select {
+        input[type=email], input[type=password], input[type=text], select {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
@@ -372,7 +372,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     <title>{% block title %}BikeLando{% endblock %}</title>
     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
     <style>
-        input[type=email], input[type=password], select {
+        input[type=email], input[type=password], input[type=text], select {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;

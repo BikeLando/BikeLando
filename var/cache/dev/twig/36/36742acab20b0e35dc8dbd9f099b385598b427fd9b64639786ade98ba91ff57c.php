@@ -162,32 +162,67 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
             </div>
         </div>
     </div>
-            <div class=\"row\" id=\"zakladki\">
+    ";
+            // line 81
+            if ((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 81, $this->source); })())) {
+                // line 82
+                echo "        ";
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 82, $this->source); })()));
+                foreach ($context['_seq'] as $context["_key"] => $context["tour"]) {
+                    // line 83
+                    echo "            <div class=\"row\" id=\"zakladki\">
                 <div class=\"col\">
-                    <div class=\"card bg-transparent border-dark\">
-                        <img class=\"card-img-top\" src=\"...\" alt=\"Tu ładuje mapke z googla da sie po linku i jest to na mojej stronie\">
-                        <div class=\"card-body\">
-                            <h5 class=\"card-title\">Tutaj ładujemy tytuł</h5>
-                            <p class=\"card-text\">I jak zrobimy to w pętli to będą się ładować obok siebie i będzie ładnie, a tu opis trasy damy.</p>
-                        </div>
-                        <div class=\"card-footer bg-transparent border-dark\">
-                            <small class=\"text-muted\">Data wpisana przez usera</small>
+                    <div class=\"card-group\">
+                        <div class=\"card bg-transparent border-dark\">
+
+                            <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
+                                <iframe src=\"";
+                    // line 89
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 89), "html", null, true);
+                    echo "\" style=\"border:0\" allowfullscreen></iframe>
+                            </div>
+                            <div class=\"card-body\">
+                                <h5 class=\"card-title\">";
+                    // line 92
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 92), "html", null, true);
+                    echo "</h5>
+                                <a class=\"btn  btn-dark\" href=\"/tour/";
+                    // line 93
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 93), "html", null, true);
+                    echo "\">Więcej</a>
+                                <a class=\"btn  btn-dark\" href=\"/tour/";
+                    // line 94
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 94), "html", null, true);
+                    echo "\">Więcej</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
+        ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tour'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 101
+                echo "    ";
+            } else {
+                // line 102
+                echo "        <p>No tours to display</p>
+    ";
+            }
+            // line 104
+            echo "
     ";
         }
-        // line 99
+        // line 106
         echo "    ";
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 99, $this->source); })()), "user", [], "any", false, false, false, 99), null))) {
-            // line 100
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 106, $this->source); })()), "user", [], "any", false, false, false, 106), null))) {
+            // line 107
             echo "        <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 101
+            // line 108
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -213,7 +248,7 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 
     public function getDebugInfo()
     {
-        return array (  191 => 101,  188 => 100,  185 => 99,  90 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  226 => 108,  223 => 107,  220 => 106,  216 => 104,  212 => 102,  209 => 101,  196 => 94,  192 => 93,  188 => 92,  182 => 89,  174 => 83,  169 => 82,  167 => 81,  90 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -298,22 +333,29 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
             </div>
         </div>
     </div>
+    {% if tours2 %}
+        {% for tour in tours2 %}
             <div class=\"row\" id=\"zakladki\">
                 <div class=\"col\">
-                    <div class=\"card bg-transparent border-dark\">
-                        <img class=\"card-img-top\" src=\"...\" alt=\"Tu ładuje mapke z googla da sie po linku i jest to na mojej stronie\">
-                        <div class=\"card-body\">
-                            <h5 class=\"card-title\">Tutaj ładujemy tytuł</h5>
-                            <p class=\"card-text\">I jak zrobimy to w pętli to będą się ładować obok siebie i będzie ładnie, a tu opis trasy damy.</p>
-                        </div>
-                        <div class=\"card-footer bg-transparent border-dark\">
-                            <small class=\"text-muted\">Data wpisana przez usera</small>
+                    <div class=\"card-group\">
+                        <div class=\"card bg-transparent border-dark\">
+
+                            <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
+                                <iframe src=\"{{ tour.linkToMap }}\" style=\"border:0\" allowfullscreen></iframe>
+                            </div>
+                            <div class=\"card-body\">
+                                <h5 class=\"card-title\">{{ tour.name }}</h5>
+                                <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}\">Więcej</a>
+                                <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}\">Więcej</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        {% endfor %}
+    {% else %}
+        <p>No tours to display</p>
+    {% endif %}
 
     {% endif %}
     {% if app.user == null %}

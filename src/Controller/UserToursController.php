@@ -14,6 +14,6 @@ class UserToursController extends AbstractController
     public function index($user)
     {
         $tours2 = $this->getDoctrine()->getRepository(Tour::class)->findBy(array('userId'=>$user));
-        return $this->render('tours/index.html.twig', array('tours'=>$tours2));
+        return $this->render('user_tours/index.html.twig', array('tours2'=>$tours2));
     }
 }
