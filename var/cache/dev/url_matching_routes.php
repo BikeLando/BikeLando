@@ -16,7 +16,6 @@ return [
         '/about' => [[['_route' => 'about', '_controller' => 'App\\Controller\\AboutController::index'], null, null, null, false, false, null]],
         '/account' => [[['_route' => 'account', '_controller' => 'App\\Controller\\AccountController::index'], null, null, null, false, false, null]],
         '/add/user/to/db' => [[['_route' => 'add_user_to_db', '_controller' => 'App\\Controller\\AddUserToDbController::index'], null, null, null, false, false, null]],
-        '/edit' => [[['_route' => 'edit', '_controller' => 'App\\Controller\\EditController::index'], null, null, null, false, false, null]],
         '/' => [
             [['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null],
             [['_route' => 'index', 'template' => 'base.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], null, null, null, false, false, null],
@@ -45,8 +44,9 @@ return [
                     .')'
                 .')'
                 .'|/add/tours/([^/]++)(*:188)'
-                .'|/tour/([^/]++)(*:210)'
-                .'|/user/tours/([^/]++)(*:238)'
+                .'|/edit/([^/]++)(*:210)'
+                .'|/tour/([^/]++)(*:232)'
+                .'|/user/tours/([^/]++)(*:260)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -58,8 +58,9 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         188 => [[['_route' => 'add_tours', '_controller' => 'App\\Controller\\AddToursController::index'], ['user'], null, null, false, true, null]],
-        210 => [[['_route' => 'tour_show', '_controller' => 'App\\Controller\\ToursController::show'], ['id'], null, null, false, true, null]],
-        238 => [
+        210 => [[['_route' => 'edit', '_controller' => 'App\\Controller\\EditController::index'], ['id'], null, null, false, true, null]],
+        232 => [[['_route' => 'tour_show', '_controller' => 'App\\Controller\\ToursController::show'], ['id'], null, null, false, true, null]],
+        260 => [
             [['_route' => 'user_tours', '_controller' => 'App\\Controller\\UserToursController::index'], ['user'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
