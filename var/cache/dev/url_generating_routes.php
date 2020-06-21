@@ -26,6 +26,7 @@ return [
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
     'tours' => [[], ['_controller' => 'App\\Controller\\ToursController::index'], [], [['text', '/tours']], [], []],
-    'user_tours' => [[], ['_controller' => 'App\\Controller\\UserToursController::index'], [], [['text', '/user/tours']], [], []],
+    'tour_show' => [['id'], ['_controller' => 'App\\Controller\\ToursController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/tour']], [], []],
+    'user_tours' => [['user'], ['_controller' => 'App\\Controller\\UserToursController::index'], [], [['variable', '/', '[^/]++', 'user', true], ['text', '/user/tours']], [], []],
     'index' => [[], ['template' => 'base.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], [], [['text', '/']], [], []],
 ];
