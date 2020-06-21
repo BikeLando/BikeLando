@@ -19,7 +19,7 @@ return [
     'account' => [[], ['_controller' => 'App\\Controller\\AccountController::index'], [], [['text', '/account']], [], []],
     'add_tours' => [['user'], ['_controller' => 'App\\Controller\\AddToursController::index'], [], [['variable', '/', '[^/]++', 'user', true], ['text', '/add/tours']], [], []],
     'add_user_to_db' => [[], ['_controller' => 'App\\Controller\\AddUserToDbController::index'], [], [['text', '/add/user/to/db']], [], []],
-    'edit' => [[], ['_controller' => 'App\\Controller\\EditController::index'], [], [['text', '/edit']], [], []],
+    'edit' => [['id'], ['_controller' => 'App\\Controller\\EditController::index'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/edit']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], []],
     'reset' => [[], ['_controller' => 'App\\Controller\\ResetController::index'], [], [['text', '/reset']], [], []],

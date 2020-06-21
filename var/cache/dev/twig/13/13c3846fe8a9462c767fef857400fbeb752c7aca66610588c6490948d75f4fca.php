@@ -137,7 +137,7 @@ class __TwigTemplate_95b127c757c7b3d11491df5a528d592e10a670eea80d525421dbdd090eb
     ";
         // line 42
         echo "
-    <button class=\"btn btn-lg btn-primary\" type=\"submit\">
+    <button class=\"btn btn-lg btn-dark\" type=\"submit\">
         Zaloguj
     </button>
 </form>
@@ -210,7 +210,7 @@ class __TwigTemplate_95b127c757c7b3d11491df5a528d592e10a670eea80d525421dbdd090eb
         </div>
     #}
 
-    <button class=\"btn btn-lg btn-primary\" type=\"submit\">
+    <button class=\"btn btn-lg btn-dark\" type=\"submit\">
         Zaloguj
     </button>
 </form>

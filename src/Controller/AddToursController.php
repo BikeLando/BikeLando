@@ -94,7 +94,7 @@ class AddToursController extends AbstractController
             $entityManager->persist($tour);
             $entityManager->flush();
 
-            return $this->redirectToRoute('user_tours');
+            return $this->redirectToRoute('index');
         }
 
 
