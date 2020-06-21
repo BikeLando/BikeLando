@@ -5,7 +5,6 @@
 
 ##PO ZALOGOWANIU
 - edycja hasla
-- edycja tras oraz ich usuwanie
 - wyszukiwarka tras/filtr
 - ocenianie tras
 - memy
