@@ -172,7 +172,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             foreach ($context['_seq'] as $context["_key"] => $context["tour"]) {
                 // line 84
                 echo "                    <div class=\"row\" id=\"zakladki\">
-    <div class=\"col\">
+                         <div class=\"col\">
         <div class=\"card-group\">
                        <div class=\"card bg-transparent border-dark\">
 
@@ -317,7 +317,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             {% if tours %}
                 {% for tour in tours %}
                     <div class=\"row\" id=\"zakladki\">
-    <div class=\"col\">
+                         <div class=\"col\">
         <div class=\"card-group\">
                        <div class=\"card bg-transparent border-dark\">
 
@@ -336,6 +336,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             {% else %}
                 <p>No tours to display</p>
             {% endif %}
-{% endblock %}", "tours/index.html.twig", "C:\\xampp\\htdocs\\bikelando\\templates\\tours\\index.html.twig");
+{% endblock %}
+", "tours/index.html.twig", "C:\\xampp\\htdocs\\bikelando\\templates\\tours\\index.html.twig");
     }
 }

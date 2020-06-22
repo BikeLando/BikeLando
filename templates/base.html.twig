@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}BikeLando{% endblock %}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css') }}" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+        body {
+            background-image: url({{ asset('grafic/IMG_1825.JPG') }});
+            background-position: top center;
+            background-attachment: fixed;
+        }
+
         input[type=email], input[type=password], input[type=text], select {
             width: 100%;
             padding: 12px 20px;
@@ -15,11 +21,11 @@
             box-sizing: border-box;
         }
         .map-container-3{
-            overflow:hidden;
-            padding-bottom:56.25%;
-            position:relative;
-            height:0;
-        }
+              overflow:hidden;
+              padding-bottom:25%;
+              position:relative;
+              height:0;
+          }
         .map-container-3 iframe{
             left:0;
             top:0;
@@ -27,20 +33,23 @@
             width:100%;
             position:absolute;
         }
+        .container {
+            background-color: #f2e4d9;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
     </style>
 </head>
 <body>
 
 <!-- skrypty do bootstrapa i jquery -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="{{ asset('https://code.jquery.com/jquery-3.2.1.slim.min.js') }}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js') }}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') }}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Główny kontener -->
 <div class="container">
-    <audio controls autoplay loop style="float: right">
-        <source src="{{ asset('Music/Loona.mp3') }}" type='audio/mpeg'>
-        <a href="{{ asset('Music/Loona.mp3') }}">Pobierz</a>
-    </audio>
     <!-- Tytuł -->
     {% for flashMessage in app.session.flashbag.get('notice') %}
         <div class="alert alert-success">
@@ -51,20 +60,25 @@
         <div class="col">
             <h1 style="float: left;">BikeLando</h1>
         </div>
+        <div class="col">
+            <audio controls autoplay loop style="float: right">
+                <source src="{{ asset('Music/Loona.mp3') }}" type='audio/mpeg'>
+                <a href="{{ asset('Music/Loona.mp3') }}">Pobierz</a>
+            </audio>
+        </div>
     </div>
     <!-- Podtytuł i logowanie-->
     <div class="row">
         <div class="col">
             <h5 style="float: left;">Portal rowerowy dla każdego</h5>
-        </div>
-        {% if app.user %}
+            {% if app.user %}
             <div class="mb-3" style="float: right">
                 Zalogowany jako {{ app.user.username }},
-                <a href="{{ path('app_logout') }}" lass="badge badge-light" style="float: right; margin-left: 10px">Wyloguj</a>
+                <a href="{{ path('app_logout') }}" class="badge badge-light" style="float: right; margin-left: 10px">Wyloguj</a>
             </div>
         </div>
         {% endif %}
-
+        </div>
         {%  if app.user == null %}
         <div class="col">
             <form class="form-inline" style="float: right">
@@ -75,8 +89,8 @@
     <!-- Rejestracja i nowe hasło-->
     <div class="row">
         <div class="col">
-            <a href="{{ path('app_register')}}" lass="badge badge-light" style="float: right; margin-left: 10px">Dołącz do nas!</a>
-            <a href="{{ path('reset')}}" lass="badge badge-light" style="float: right">Nie pamietam hasła</a>
+            <a href="{{ path('app_register')}}" class="badge badge-light" style="float: right; margin-left: 10px">Dołącz do nas!</a>
+            <a href="{{ path('reset')}}" class="badge badge-light" style="float: right">Nie pamietam hasła</a>
         </div>
     </div>
     {% endif %}
@@ -151,14 +165,16 @@
                     </div>
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
-                            <p>Jakiś fajny tekst o tym że mozna tu duzo fajnychtras znaleść i jeździć tak duzo jak Ola.</p>
-                            <footer class="blockquote-footer">Notatka developera <cite title="Source Title">15.06.2020</cite></footer>
+                            <p>Zawitałeś na portal stworzony właśnie dla Ciebie! Dla podróżnika!</p>
+                            <p>Jesteśmy portalem zrzeszającym ludzi, którzy czasem lubią zdjąć korporacyjne uniformy, założyć kask i gnać ku zachodzącemu słońcu!</p>
+                            <p>Na naszej stronie znajdziesz niesamowite trasy rowerowe. Począwszy od tych pozornie zwykłych, skończywszy na tych, co zaprowadzą cię na koniec tęczy!</p>
+                            <p>Możesz tu dodać rownież swoje oulubione ścieżki, a my napenwo odwdzięczymy się tym samym.</p>
+                            <footer class="blockquote-footer">Notatka autorów <cite title="Source Title">15.06.2020</cite></footer>
                         </blockquote>
                     </div>
                 </div>
             </div>
         </div>
     {% endblock %}
-</div>
 </body>
 </html>

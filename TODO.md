@@ -4,10 +4,8 @@
 - wyszukiwarka tras/filtr [ctrl+c ctrl+v wyswietlanie tras dla jednego zalogowanego uzytkownika]
 
 ##PO ZALOGOWANIU
-- edycja hasla
 - wyszukiwarka tras/filtr
 - ocenianie tras
-- memy
 
 reset wszystkiego i sciagniecie z githuba wersji
 git fetch --all
