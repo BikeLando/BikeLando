@@ -85,23 +85,44 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 4, $this->source); })()), "user", [], "any", false, false, false, 4)) {
-            // line 5
+        echo "
+
+";
+        // line 6
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 6, $this->source); })()), "user", [], "any", false, false, false, 6)) {
+            // line 7
             echo "<div class=\"row\" id=\"zakladki\">
     <div class=\"col\">
         <div class=\"card bg-transparent border-dark\">
             <div class=\"card-body\">
                 ";
-            // line 9
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 9, $this->source); })()), 'form_start');
-            echo "
-                ";
-            // line 10
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 10, $this->source); })()), 'widget');
-            echo "
-                ";
             // line 11
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form_end');
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "session", [], "any", false, false, false, 11), "flashbag", [], "any", false, false, false, 11), "get", [0 => "password_error"], "method", false, false, false, 11));
+            foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
+                // line 12
+                echo "                    <div class=\"alert alert-danger\">
+                        ";
+                // line 13
+                echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
+                echo "
+                    </div>
+                ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 16
+            echo "                ";
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 16, $this->source); })()), 'form_start');
+            echo "
+                ";
+            // line 17
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 17, $this->source); })()), 'widget');
+            echo "
+                ";
+            // line 18
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), 'form_end');
             echo "
             </div>
         </div>
@@ -109,15 +130,15 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
 </div>
     ";
         }
-        // line 17
+        // line 24
         echo "
     ";
-        // line 18
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 18, $this->source); })()), "user", [], "any", false, false, false, 18), null))) {
-            // line 19
+        // line 25
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 25, $this->source); })()), "user", [], "any", false, false, false, 25), null))) {
+            // line 26
             echo "        <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 20
+            // line 27
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -143,7 +164,7 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
 
     public function getDebugInfo()
     {
-        return array (  121 => 20,  118 => 19,  116 => 18,  113 => 17,  104 => 11,  100 => 10,  96 => 9,  90 => 5,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
+        return array (  142 => 27,  139 => 26,  137 => 25,  134 => 24,  125 => 18,  121 => 17,  116 => 16,  107 => 13,  104 => 12,  100 => 11,  94 => 7,  92 => 6,  88 => 4,  78 => 3,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -151,11 +172,18 @@ class __TwigTemplate_21e7857a28326b5bf12ded774b0223ae200f02220b56e06be3f0fe10905
         return new Source("{% extends 'base.html.twig' %}
 {% block title %}BikeLando - Edytuj dane{% endblock %}
 {% block body %}
+
+
 {% if app.user  %}
 <div class=\"row\" id=\"zakladki\">
     <div class=\"col\">
         <div class=\"card bg-transparent border-dark\">
             <div class=\"card-body\">
+                {% for flashMessage in app.session.flashbag.get('password_error') %}
+                    <div class=\"alert alert-danger\">
+                        {{ flashMessage }}
+                    </div>
+                {% endfor %}
                 {{ form_start(form)  }}
                 {{ form_widget(form) }}
                 {{ form_end(form) }}

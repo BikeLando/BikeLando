@@ -191,10 +191,10 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
                     // line 93
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 93), "html", null, true);
                     echo "\">Więcej</a>
-                                <a class=\"btn  btn-dark\" href=\"/tour/";
+                                <a class=\"btn  btn-dark\" href=\"/delete/tour/";
                     // line 94
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 94), "html", null, true);
-                    echo "\">Więcej</a>
+                    echo "\">Usuń trasę</a>
                             </div>
                         </div>
                     </div>
@@ -346,7 +346,7 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
                             <div class=\"card-body\">
                                 <h5 class=\"card-title\">{{ tour.name }}</h5>
                                 <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}\">Więcej</a>
-                                <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}\">Więcej</a>
+                                <a class=\"btn  btn-dark\" href=\"/delete/tour/{{ tour.id }}\">Usuń trasę</a>
                             </div>
                         </div>
                     </div>

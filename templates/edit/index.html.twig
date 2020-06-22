@@ -1,11 +1,18 @@
 {% extends 'base.html.twig' %}
 {% block title %}BikeLando - Edytuj dane{% endblock %}
 {% block body %}
+
+
 {% if app.user  %}
 <div class="row" id="zakladki">
     <div class="col">
         <div class="card bg-transparent border-dark">
             <div class="card-body">
+                {% for flashMessage in app.session.flashbag.get('password_error') %}
+                    <div class="alert alert-danger">
+                        {{ flashMessage }}
+                    </div>
+                {% endfor %}
                 {{ form_start(form)  }}
                 {{ form_widget(form) }}
                 {{ form_end(form) }}

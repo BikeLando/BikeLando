@@ -44,9 +44,10 @@ return [
                     .')'
                 .')'
                 .'|/add/tours/([^/]++)(*:188)'
-                .'|/edit/([^/]++)(*:210)'
-                .'|/tour/([^/]++)(*:232)'
-                .'|/user/tours/([^/]++)(*:260)'
+                .'|/delete/tour/([^/]++)(*:217)'
+                .'|/edit/([^/]++)(*:239)'
+                .'|/tour/([^/]++)(*:261)'
+                .'|/user/tours/([^/]++)(*:289)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -58,9 +59,10 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         188 => [[['_route' => 'add_tours', '_controller' => 'App\\Controller\\AddToursController::index'], ['user'], null, null, false, true, null]],
-        210 => [[['_route' => 'edit', '_controller' => 'App\\Controller\\EditController::index'], ['id'], null, null, false, true, null]],
-        232 => [[['_route' => 'tour_show', '_controller' => 'App\\Controller\\ToursController::show'], ['id'], null, null, false, true, null]],
-        260 => [
+        217 => [[['_route' => 'delete_tour', '_controller' => 'App\\Controller\\DeleteTourController::index'], ['idTour'], null, null, false, true, null]],
+        239 => [[['_route' => 'edit', '_controller' => 'App\\Controller\\EditController::index'], ['id'], null, null, false, true, null]],
+        261 => [[['_route' => 'tour_show', '_controller' => 'App\\Controller\\ToursController::show'], ['id'], null, null, false, true, null]],
+        289 => [
             [['_route' => 'user_tours', '_controller' => 'App\\Controller\\UserToursController::index'], ['user'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

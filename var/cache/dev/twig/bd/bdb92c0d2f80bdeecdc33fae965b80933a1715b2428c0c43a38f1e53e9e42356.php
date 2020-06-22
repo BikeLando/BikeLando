@@ -96,8 +96,8 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
                     <p class=\"card-text\">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
                     <a class=\"nav-link btn btn-outline-dark\" href=\"";
             // line 13
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 13, $this->source); })()), "user", [], "any", false, false, false, 13), "username", [], "any", false, false, false, 13)]), "html", null, true);
-            echo "\">Edytu</a>
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 13, $this->source); })()), "user", [], "any", false, false, false, 13), "email", [], "any", false, false, false, 13)]), "html", null, true);
+            echo "\">Edytuj</a>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Twoje Konto</h5>
                     <p class=\"card-text\">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
-                    <a class=\"nav-link btn btn-outline-dark\" href=\"{{ path('edit',{'id':app.user.username}) }}\">Edytu</a>
+                    <a class=\"nav-link btn btn-outline-dark\" href=\"{{ path('edit',{'id':app.user.email}) }}\">Edytuj</a>
                 </div>
             </div>
         </div>
