@@ -92,69 +92,33 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
                     <div class=\"card-body\">
                         <h5 class=\"card-title\">Wyszukaj</h5>
                         <p class=\"card-text\">Wybierz kryteria wyszukiwania</p>
-                        <form>
-                            <div class=\"form-row\">
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect1\">Ocena trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect1\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect2\">Trudność trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect2\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect3\">Region</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect3\">
-                                            <option>Dolnośląskie</option>
-                                            <option>Kujawsko-Pomorskie</option>
-                                            <option>Lubelskie</option>
-                                            <option>Lubuskiej</option>
-                                            <option>Lódzkie</option>
-                                            <option>Małopolskie</option>
-                                            <option>Mazowieckie</option>
-                                            <option>Opolskie</option>
-                                            <option>Podkarpackie</option>
-                                            <option>Podlaskie</option>
-                                            <option>Pomorskie</option>
-                                            <option>Śląskie</option>
-                                            <option>Świętokrzyskie</option>
-                                            <option>Warmińsko-Mazurskie</option>
-                                            <option>Wielkopolskie</option>
-                                            <option>Zachodniopomorskie</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <button type=\"button\" class=\"btn btn-outline-info\" style=\"float: right\">Wyszukaj</button>
-                        </form>
+                        ";
+        // line 12
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), 'form_start');
+        echo "
+                        ";
+        // line 13
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), "diff", [], "any", false, false, false, 13), 'row', ["label" => "Trudność"]);
+        // line 15
+        echo "
+                        ";
+        // line 16
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 16, $this->source); })()), "region", [], "any", false, false, false, 16), 'row', ["label" => "Województwo"]);
+        // line 18
+        echo "
+                        ";
+        // line 19
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 19, $this->source); })()), "note", [], "any", false, false, false, 19), 'row', ["label" => "Ocena"]);
+        // line 21
+        echo "
+                        ";
+        // line 22
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 22, $this->source); })()), 'widget');
+        echo "
+                        ";
+        // line 23
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 23, $this->source); })()), 'form_end');
+        echo "
                     </div>
                 </div>
             </div>
@@ -163,14 +127,14 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 
 
             ";
-        // line 82
-        if ((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 82, $this->source); })())) {
-            // line 83
+        // line 31
+        if ((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 31, $this->source); })())) {
+            // line 32
             echo "                ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 83, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 32, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["tour"]) {
-                // line 84
+                // line 33
                 echo "                    <div class=\"row\" id=\"zakladki\">
                          <div class=\"col\">
         <div class=\"card-group\">
@@ -178,18 +142,18 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 
                            <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
                                <iframe src=\"";
-                // line 90
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 90), "html", null, true);
+                // line 39
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 39), "html", null, true);
                 echo "\" style=\"border:0\" allowfullscreen></iframe>
                            </div>
                            <div class=\"card-body\">
                                <h5 class=\"card-title\">";
-                // line 93
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 93), "html", null, true);
+                // line 42
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 42), "html", null, true);
                 echo "</h5>
                                <a class=\"btn  btn-dark\" href=\"/tour/";
-                // line 94
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 94), "html", null, true);
+                // line 43
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 43), "html", null, true);
                 echo "\">Więcej</a>
                            </div>
                        </div>
@@ -201,10 +165,10 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tour'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 101
+            // line 50
             echo "            ";
         } else {
-            // line 102
+            // line 51
             echo "                <p>No tours to display</p>
             ";
         }
@@ -228,7 +192,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 
     public function getDebugInfo()
     {
-        return array (  208 => 102,  205 => 101,  192 => 94,  188 => 93,  182 => 90,  174 => 84,  169 => 83,  167 => 82,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  172 => 51,  169 => 50,  156 => 43,  152 => 42,  146 => 39,  138 => 33,  133 => 32,  131 => 31,  120 => 23,  116 => 22,  113 => 21,  111 => 19,  108 => 18,  106 => 16,  103 => 15,  101 => 13,  97 => 12,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -244,69 +208,18 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
                     <div class=\"card-body\">
                         <h5 class=\"card-title\">Wyszukaj</h5>
                         <p class=\"card-text\">Wybierz kryteria wyszukiwania</p>
-                        <form>
-                            <div class=\"form-row\">
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect1\">Ocena trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect1\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect2\">Trudność trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect2\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect3\">Region</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect3\">
-                                            <option>Dolnośląskie</option>
-                                            <option>Kujawsko-Pomorskie</option>
-                                            <option>Lubelskie</option>
-                                            <option>Lubuskiej</option>
-                                            <option>Lódzkie</option>
-                                            <option>Małopolskie</option>
-                                            <option>Mazowieckie</option>
-                                            <option>Opolskie</option>
-                                            <option>Podkarpackie</option>
-                                            <option>Podlaskie</option>
-                                            <option>Pomorskie</option>
-                                            <option>Śląskie</option>
-                                            <option>Świętokrzyskie</option>
-                                            <option>Warmińsko-Mazurskie</option>
-                                            <option>Wielkopolskie</option>
-                                            <option>Zachodniopomorskie</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <button type=\"button\" class=\"btn btn-outline-info\" style=\"float: right\">Wyszukaj</button>
-                        </form>
+                        {{ form_start(form)  }}
+                        {{ form_row(form.diff, {
+                            label: 'Trudność'
+                        }) }}
+                        {{ form_row(form.region, {
+                            label: 'Województwo'
+                        }) }}
+                        {{ form_row(form.note, {
+                            label: 'Ocena'
+                        }) }}
+                        {{ form_widget(form) }}
+                        {{ form_end(form) }}
                     </div>
                 </div>
             </div>

@@ -9,69 +9,18 @@
                     <div class="card-body">
                         <h5 class="card-title">Wyszukaj</h5>
                         <p class="card-text">Wybierz kryteria wyszukiwania</p>
-                        <form>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Ocena trasy</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect2">Trudność trasy</label>
-                                        <select class="form-control" id="exampleFormControlSelect2">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect3">Region</label>
-                                        <select class="form-control" id="exampleFormControlSelect3">
-                                            <option>Dolnośląskie</option>
-                                            <option>Kujawsko-Pomorskie</option>
-                                            <option>Lubelskie</option>
-                                            <option>Lubuskiej</option>
-                                            <option>Lódzkie</option>
-                                            <option>Małopolskie</option>
-                                            <option>Mazowieckie</option>
-                                            <option>Opolskie</option>
-                                            <option>Podkarpackie</option>
-                                            <option>Podlaskie</option>
-                                            <option>Pomorskie</option>
-                                            <option>Śląskie</option>
-                                            <option>Świętokrzyskie</option>
-                                            <option>Warmińsko-Mazurskie</option>
-                                            <option>Wielkopolskie</option>
-                                            <option>Zachodniopomorskie</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <button type="button" class="btn btn-outline-info" style="float: right">Wyszukaj</button>
-                        </form>
+                        {{ form_start(form)  }}
+                        {{ form_row(form.diff, {
+                            label: 'Trudność'
+                        }) }}
+                        {{ form_row(form.region, {
+                            label: 'Województwo'
+                        }) }}
+                        {{ form_row(form.note, {
+                            label: 'Ocena'
+                        }) }}
+                        {{ form_widget(form) }}
+                        {{ form_end(form) }}
                     </div>
                 </div>
             </div>

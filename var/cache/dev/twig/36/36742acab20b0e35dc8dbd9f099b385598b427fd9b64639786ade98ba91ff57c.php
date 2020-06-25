@@ -87,90 +87,22 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
         // line 5
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 5, $this->source); })()), "user", [], "any", false, false, false, 5)) {
             // line 6
-            echo "    <div class=\"row\" >
-        <div class=\"col\">
-            <div class=\"card-group\">
+            echo "    ";
+            if ((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 6, $this->source); })())) {
+                // line 7
+                echo "        <div class=\"row\" id=\"zakladki\">
+            <div class=\"col\">
                 <div class=\"card bg-transparent border-dark\">
-                    <div class=\"card-body\">
-                        <h5 class=\"card-title\">Wyszukaj</h5>
-                        <p class=\"card-text\">Wybierz kryteria wyszukiwania</p>
-                        <form>
-                            <div class=\"form-row\">
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect1\">Ocena trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect1\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect2\">Trudność trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect2\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect3\">Region</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect3\">
-                                            <option>Dolnośląskie</option>
-                                            <option>Kujawsko-Pomorskie</option>
-                                            <option>Lubelskie</option>
-                                            <option>Lubuskiej</option>
-                                            <option>Lódzkie</option>
-                                            <option>Małopolskie</option>
-                                            <option>Mazowieckie</option>
-                                            <option>Opolskie</option>
-                                            <option>Podkarpackie</option>
-                                            <option>Podlaskie</option>
-                                            <option>Pomorskie</option>
-                                            <option>Śląskie</option>
-                                            <option>Świętokrzyskie</option>
-                                            <option>Warmińsko-Mazurskie</option>
-                                            <option>Wielkopolskie</option>
-                                            <option>Zachodniopomorskie</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <button type=\"button\" class=\"btn btn-outline-info\" style=\"float: right\">Wyszukaj</button>
-                        </form>
+                    <div class=\"card-header bg-transparent border-dark\">
+                        Twoje trasy
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    ";
-            // line 81
-            if ((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 81, $this->source); })())) {
-                // line 82
-                echo "        ";
+        </div></div></div>
+        ";
+                // line 14
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 82, $this->source); })()));
+                $context['_seq'] = twig_ensure_traversable((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 14, $this->source); })()));
                 foreach ($context['_seq'] as $context["_key"] => $context["tour"]) {
-                    // line 83
+                    // line 15
                     echo "            <div class=\"row\" id=\"zakladki\">
                 <div class=\"col\">
                     <div class=\"card-group\">
@@ -178,22 +110,22 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 
                             <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
                                 <iframe src=\"";
-                    // line 89
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 89), "html", null, true);
+                    // line 21
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 21), "html", null, true);
                     echo "\" style=\"border:0\" allowfullscreen></iframe>
                             </div>
                             <div class=\"card-body\">
                                 <h5 class=\"card-title\">";
-                    // line 92
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 92), "html", null, true);
+                    // line 24
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 24), "html", null, true);
                     echo "</h5>
                                 <a class=\"btn  btn-dark\" href=\"/tour/";
-                    // line 93
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 93), "html", null, true);
+                    // line 25
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 25), "html", null, true);
                     echo "\">Więcej</a>
                                 <a class=\"btn  btn-dark\" href=\"/delete/tour/";
-                    // line 94
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 94), "html", null, true);
+                    // line 26
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 26), "html", null, true);
                     echo "\">Usuń trasę</a>
                             </div>
                         </div>
@@ -205,24 +137,24 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tour'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 101
+                // line 33
                 echo "    ";
             } else {
-                // line 102
+                // line 34
                 echo "        <p>No tours to display</p>
     ";
             }
-            // line 104
+            // line 36
             echo "
     ";
         }
-        // line 106
+        // line 38
         echo "    ";
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 106, $this->source); })()), "user", [], "any", false, false, false, 106), null))) {
-            // line 107
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 38, $this->source); })()), "user", [], "any", false, false, false, 38), null))) {
+            // line 39
             echo "        <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 108
+            // line 40
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -248,7 +180,7 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 
     public function getDebugInfo()
     {
-        return array (  226 => 108,  223 => 107,  220 => 106,  216 => 104,  212 => 102,  209 => 101,  196 => 94,  192 => 93,  188 => 92,  182 => 89,  174 => 83,  169 => 82,  167 => 81,  90 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  158 => 40,  155 => 39,  152 => 38,  148 => 36,  144 => 34,  141 => 33,  128 => 26,  124 => 25,  120 => 24,  114 => 21,  106 => 15,  102 => 14,  93 => 7,  90 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -258,82 +190,14 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 
 {% block body %}
 {% if app.user %}
-    <div class=\"row\" >
-        <div class=\"col\">
-            <div class=\"card-group\">
-                <div class=\"card bg-transparent border-dark\">
-                    <div class=\"card-body\">
-                        <h5 class=\"card-title\">Wyszukaj</h5>
-                        <p class=\"card-text\">Wybierz kryteria wyszukiwania</p>
-                        <form>
-                            <div class=\"form-row\">
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect1\">Ocena trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect1\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect2\">Trudność trasy</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect2\">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=\"col\">
-                                    <div class=\"form-group\">
-                                        <label for=\"exampleFormControlSelect3\">Region</label>
-                                        <select class=\"form-control\" id=\"exampleFormControlSelect3\">
-                                            <option>Dolnośląskie</option>
-                                            <option>Kujawsko-Pomorskie</option>
-                                            <option>Lubelskie</option>
-                                            <option>Lubuskiej</option>
-                                            <option>Lódzkie</option>
-                                            <option>Małopolskie</option>
-                                            <option>Mazowieckie</option>
-                                            <option>Opolskie</option>
-                                            <option>Podkarpackie</option>
-                                            <option>Podlaskie</option>
-                                            <option>Pomorskie</option>
-                                            <option>Śląskie</option>
-                                            <option>Świętokrzyskie</option>
-                                            <option>Warmińsko-Mazurskie</option>
-                                            <option>Wielkopolskie</option>
-                                            <option>Zachodniopomorskie</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <button type=\"button\" class=\"btn btn-outline-info\" style=\"float: right\">Wyszukaj</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     {% if tours2 %}
+        <div class=\"row\" id=\"zakladki\">
+            <div class=\"col\">
+                <div class=\"card bg-transparent border-dark\">
+                    <div class=\"card-header bg-transparent border-dark\">
+                        Twoje trasy
+                    </div>
+        </div></div></div>
         {% for tour in tours2 %}
             <div class=\"row\" id=\"zakladki\">
                 <div class=\"col\">
