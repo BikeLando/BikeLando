@@ -1503,3 +1503,11 @@ d8ef8f,::1,POST,http://bikelando.localhost/tours,1593189416,,200
 2ba382,::1,POST,http://bikelando.localhost/tours,1593189423,,200
 d465b1,::1,POST,http://bikelando.localhost/tours,1593189456,,200
 292baf,::1,POST,http://bikelando.localhost/tours,1593189460,,200
+408b76,::1,GET,http://bikelando.localhost/logout,1593189557,,302
+17f7a3,::1,GET,http://bikelando.localhost/,1593189557,,200
+27e11d,::1,GET,http://bikelando.localhost/reset,1593189559,,200
+78629e,::1,GET,http://bikelando.localhost/about,1593189572,,200
+3554c0,::1,GET,http://bikelando.localhost/about,1593189597,,200
+6dfbb9,::1,GET,http://bikelando.localhost/about,1593189747,,200
+ec5c17,::1,GET,http://bikelando.localhost/tours,1593189772,,200
+ca40e7,::1,GET,http://bikelando.localhost/tour/4,1593189774,,200

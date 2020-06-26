@@ -91,7 +91,13 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">O nas</h5>
                     <p class=\"card-text\">
-                        Jesteśmy grupą młodych ludzi, którzy
+                        Projekt zaliczeniowy PHP MVC z wykorzystaniem Symfony 5.2
+                        <br>
+                        Aleksandra Rawicz-Galińska
+                        <br>
+                        Małgorzata Wieteska
+                        <br>
+                        Adam Hilaruk
                     </p>
                 </div>
                 <div class=\"card-footer bg-transparent border-dark\">
@@ -136,7 +142,13 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">O nas</h5>
                     <p class=\"card-text\">
-                        Jesteśmy grupą młodych ludzi, którzy
+                        Projekt zaliczeniowy PHP MVC z wykorzystaniem Symfony 5.2
+                        <br>
+                        Aleksandra Rawicz-Galińska
+                        <br>
+                        Małgorzata Wieteska
+                        <br>
+                        Adam Hilaruk
                     </p>
                 </div>
                 <div class=\"card-footer bg-transparent border-dark\">
