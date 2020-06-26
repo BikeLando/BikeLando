@@ -2,20 +2,42 @@
 
 namespace App\Controller;
 
+use App\Entity\Note;
+use App\Entity\Tour;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+
 
 class AccountController extends AbstractController
 {
     /**
-     * @Route("/account", name="account")
+     * @Route("/account/{user}", name="account")
      */
-    public function index()
+    public function index($user)
     {
-
+        $statistic = $this->getDoctrine()->getRepository(Tour::class)->findBy(['userId' => $user]);
+        $statistic_note = $this->getDoctrine()->getRepository(Note::class)->findBy(['userId' => $user]);
+        $sum_km=0;
+        $sum_ocen = 0;
+        $i = 0;
+        while ($i < count($statistic))
+        {
+            $sum_km += $statistic[$i]->getLength();
+            $sum_ocen += $statistic[$i]->getNote();
+            $i++;
+        }
+        $okr_ziemi=$sum_km/40075;
+        $ile_dodano = count($statistic);
+        $ile_ocen = count($statistic_note);
+        $srednia_ocen = $sum_ocen/count($statistic);
 
         return $this->render('account/index.html.twig', [
-            'controller_name' => 'AccountController',
+            'sum_km' => $sum_km,
+            'ob_ziemi' => $okr_ziemi,
+            'ile_dodano' => $ile_dodano,
+            'ile_ocen' => $ile_ocen,
+            'srednia' => $srednia_ocen
+
         ]);
     }
 }
