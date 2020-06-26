@@ -90,7 +90,15 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">O nas</h5>
-                    <p class=\"card-text\">Ogólnie ze jesteśmy fajni i po co założylismy stronkę.</p>
+                    <p class=\"card-text\">
+                        Projekt zaliczeniowy PHP MVC z wykorzystaniem Symfony 5.2
+                        <br>
+                        Aleksandra Rawicz-Galińska
+                        <br>
+                        Małgorzata Wieteska
+                        <br>
+                        Adam Hilaruk
+                    </p>
                 </div>
                 <div class=\"card-footer bg-transparent border-dark\">
                     <small class=\"text-muted\">15.06.2020</small>
@@ -133,7 +141,15 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">O nas</h5>
-                    <p class=\"card-text\">Ogólnie ze jesteśmy fajni i po co założylismy stronkę.</p>
+                    <p class=\"card-text\">
+                        Projekt zaliczeniowy PHP MVC z wykorzystaniem Symfony 5.2
+                        <br>
+                        Aleksandra Rawicz-Galińska
+                        <br>
+                        Małgorzata Wieteska
+                        <br>
+                        Adam Hilaruk
+                    </p>
                 </div>
                 <div class=\"card-footer bg-transparent border-dark\">
                     <small class=\"text-muted\">15.06.2020</small>

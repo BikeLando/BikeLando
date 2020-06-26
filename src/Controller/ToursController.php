@@ -84,10 +84,10 @@ class ToursController extends AbstractController
                 $tab = ['note'=>$note];
             }
             if ($region != '0') {
-                    $tab += ['region'=>$region];
+                    $tab = ['region'=>$region];
             }
             if ($diff != '0') {
-                    $tab+=['difficulty'=>$diff];
+                    $tab=['difficulty'=>$diff];
             }
 
             if(count($tab)>0) {
@@ -126,8 +126,10 @@ class ToursController extends AbstractController
     public function filter($note, $difficulty, $region)
     {
 
+
         $tour = $this->getDoctrine()->getRepository(Tour::class)->findBy(['note'=>$note],['difficulty'=>$difficulty],['region'=>$region]);
         return $this->render('tours/show.html.twig', array('tour'=>$tour));
+
 
     }
 }
