@@ -121,7 +121,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
         echo "</th>
                     <th>";
         // line 24
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 24, $this->source); })()), "userId", [], "any", false, false, false, 24), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["author"]) || array_key_exists("author", $context) ? $context["author"] : (function () { throw new RuntimeError('Variable "author" does not exist.', 24, $this->source); })()), "username", [], "any", false, false, false, 24), "html", null, true);
         echo "</th>
                     <th>";
         // line 25
@@ -189,7 +189,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
                     <th>{{ tour.length }}</th>
                     <th>{{ tour.difficulty }}</th>
                     <th>{{ tour.region }}</th>
-                    <th>{{ tour.userId }}</th>
+                    <th>{{ author.username }}</th>
                     <th>{{ tour.note }}</th>
                 </tr>
                 </tbody>

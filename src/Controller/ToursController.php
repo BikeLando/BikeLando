@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Tour;
+use App\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -116,20 +117,12 @@ class ToursController extends AbstractController
      * @Route("/tour/{id}", name="tour_show")
      */
     public function show($id) {
+
         $tour = $this->getDoctrine()->getRepository(Tour::class)->find($id);
-        return $this->render('tours/show.html.twig', array('tour'=>$tour));
+        $email = $tour->getUserId();
+        $author = $this->getDoctrine()->getRepository(User::class)->findOneBy(['email' => $email]);
+
+        return $this->render('tours/show.html.twig', array('tour'=>$tour, 'author'=>$author));
     }
 
-    /**
-     * Route("/tour/filter/{note}/{difficulty}/{region}", name="filter")
-     */
-    public function filter($note, $difficulty, $region)
-    {
-
-
-        $tour = $this->getDoctrine()->getRepository(Tour::class)->findBy(['note'=>$note],['difficulty'=>$difficulty],['region'=>$region]);
-        return $this->render('tours/show.html.twig', array('tour'=>$tour));
-
-
-    }
 }
