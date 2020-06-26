@@ -101,17 +101,32 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
                             <th scope=\"col\">Dodane trasy</th>
                             <th scope=\"col\">Dodane oceny</th>
                             <th scope=\"col\">Dodane kilometry</th>
+                            <th scope=\"col\">Średnia ocena Twoich tras</th>
                             <th scope=\"col\">Okrążenia ziemi</th>
-                            <th scope=\"col\">Średnia ocena</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td>";
+            // line 25
+            echo twig_escape_filter($this->env, (isset($context["ile_dodano"]) || array_key_exists("ile_dodano", $context) ? $context["ile_dodano"] : (function () { throw new RuntimeError('Variable "ile_dodano" does not exist.', 25, $this->source); })()), "html", null, true);
+            echo "</td>
+                            <td>";
+            // line 26
+            echo twig_escape_filter($this->env, (isset($context["ile_ocen"]) || array_key_exists("ile_ocen", $context) ? $context["ile_ocen"] : (function () { throw new RuntimeError('Variable "ile_ocen" does not exist.', 26, $this->source); })()), "html", null, true);
+            echo "</td>
+                            <td>";
+            // line 27
+            echo twig_escape_filter($this->env, (isset($context["sum_km"]) || array_key_exists("sum_km", $context) ? $context["sum_km"] : (function () { throw new RuntimeError('Variable "sum_km" does not exist.', 27, $this->source); })()), "html", null, true);
+            echo "</td>
+                            <td>";
+            // line 28
+            echo twig_escape_filter($this->env, (isset($context["srednia"]) || array_key_exists("srednia", $context) ? $context["srednia"] : (function () { throw new RuntimeError('Variable "srednia" does not exist.', 28, $this->source); })()), "html", null, true);
+            echo "</td>
+                            <td>";
+            // line 29
+            echo twig_escape_filter($this->env, (isset($context["ob_ziemi"]) || array_key_exists("ob_ziemi", $context) ? $context["ob_ziemi"] : (function () { throw new RuntimeError('Variable "ob_ziemi" does not exist.', 29, $this->source); })()), "html", null, true);
+            echo "</td>
                         </tr>
                         </tbody>
                     </table>
@@ -160,7 +175,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     public function getDebugInfo()
     {
-        return array (  138 => 43,  133 => 41,  130 => 40,  121 => 34,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  153 => 43,  148 => 41,  145 => 40,  136 => 34,  128 => 29,  124 => 28,  120 => 27,  116 => 26,  112 => 25,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -183,17 +198,17 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
                             <th scope=\"col\">Dodane trasy</th>
                             <th scope=\"col\">Dodane oceny</th>
                             <th scope=\"col\">Dodane kilometry</th>
+                            <th scope=\"col\">Średnia ocena Twoich tras</th>
                             <th scope=\"col\">Okrążenia ziemi</th>
-                            <th scope=\"col\">Średnia ocena</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td>{{ ile_dodano }}</td>
+                            <td>{{ ile_ocen }}</td>
+                            <td>{{ sum_km }}</td>
+                            <td>{{ srednia }}</td>
+                            <td>{{ ob_ziemi }}</td>
                         </tr>
                         </tbody>
                     </table>

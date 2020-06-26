@@ -152,11 +152,25 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
                 // line 43
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 43), "html", null, true);
                 echo "</h5>
-                               <a class=\"btn  btn-dark\" href=\"/tour/";
+                                   ";
                 // line 44
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 44), "html", null, true);
-                echo "\">Więcej</a>
-                           </div>
+                if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 44, $this->source); })()), "user", [], "any", false, false, false, 44)) {
+                    // line 45
+                    echo "                                        <a class=\"btn  btn-dark\" href=\"/tour/";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 45), "html", null, true);
+                    echo "/";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 45, $this->source); })()), "user", [], "any", false, false, false, 45), "email", [], "any", false, false, false, 45), "html", null, true);
+                    echo "\">Więcej</a>
+                                       ";
+                } else {
+                    // line 47
+                    echo "                                           <a class=\"btn  btn-dark\" href=\"/tour/";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 47), "html", null, true);
+                    echo "/unknown\">Więcej</a>
+                                       ";
+                }
+                // line 49
+                echo "                           </div>
                        </div>
           </div>
     </div>
@@ -166,7 +180,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tour'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 51
+            // line 55
             echo "            ";
         } else {
             echo " <!--brak tras -->
@@ -193,7 +207,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 
     public function getDebugInfo()
     {
-        return array (  170 => 51,  157 => 44,  153 => 43,  147 => 40,  139 => 34,  134 => 33,  132 => 32,  121 => 24,  117 => 23,  114 => 22,  112 => 20,  109 => 19,  107 => 17,  104 => 16,  102 => 14,  98 => 13,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  184 => 55,  173 => 49,  167 => 47,  159 => 45,  157 => 44,  153 => 43,  147 => 40,  139 => 34,  134 => 33,  132 => 32,  121 => 24,  117 => 23,  114 => 22,  112 => 20,  109 => 19,  107 => 17,  104 => 16,  102 => 14,  98 => 13,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -241,7 +255,11 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
                            </div>
                            <div class=\"card-body\">
                                <h5 class=\"card-title\">{{ tour.name }}</h5>
-                               <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}\">Więcej</a>
+                                   {% if app.user %}
+                                        <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}/{{ app.user.email }}\">Więcej</a>
+                                       {% else %}
+                                           <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}/unknown\">Więcej</a>
+                                       {% endif %}
                            </div>
                        </div>
           </div>

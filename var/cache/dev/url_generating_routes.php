@@ -16,7 +16,7 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'about' => [[], ['_controller' => 'App\\Controller\\AboutController::index'], [], [['text', '/about']], [], []],
-    'account' => [[], ['_controller' => 'App\\Controller\\AccountController::index'], [], [['text', '/account']], [], []],
+    'account' => [['user'], ['_controller' => 'App\\Controller\\AccountController::index'], [], [['variable', '/', '[^/]++', 'user', true], ['text', '/account']], [], []],
     'add_tours' => [['user'], ['_controller' => 'App\\Controller\\AddToursController::index'], [], [['variable', '/', '[^/]++', 'user', true], ['text', '/add/tours']], [], []],
     'add_user_to_db' => [[], ['_controller' => 'App\\Controller\\AddUserToDbController::index'], [], [['text', '/add/user/to/db']], [], []],
     'delete_tour' => [['idTour'], ['_controller' => 'App\\Controller\\DeleteTourController::index'], [], [['variable', '/', '[^/]++', 'idTour', true], ['text', '/delete/tour']], [], []],
@@ -27,7 +27,7 @@ return [
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
     'tours' => [[], ['_controller' => 'App\\Controller\\ToursController::index'], [], [['text', '/tours']], [], []],
-    'tour_show' => [['id'], ['_controller' => 'App\\Controller\\ToursController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/tour']], [], []],
+    'tour_show' => [['id', 'user_id'], ['_controller' => 'App\\Controller\\ToursController::show'], [], [['variable', '/', '[^/]++', 'user_id', true], ['variable', '/', '[^/]++', 'id', true], ['text', '/tour']], [], []],
     'user_tours' => [['user'], ['_controller' => 'App\\Controller\\UserToursController::index'], [], [['variable', '/', '[^/]++', 'user', true], ['text', '/user/tours']], [], []],
     'index' => [[], ['template' => 'base.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController::templateAction'], [], [['text', '/']], [], []],
 ];

@@ -86,11 +86,13 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 
         // line 5
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 5, $this->source); })()), "user", [], "any", false, false, false, 5)) {
-            // line 6
-            echo "    ";
-            if ((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 6, $this->source); })())) {
-                // line 7
-                echo "        <div class=\"row\" id=\"zakladki\">
+            echo " <!-- zalogowany -->
+    <!-- wyswietlanie tras zalogowanego -->
+    ";
+            // line 7
+            if ((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 7, $this->source); })())) {
+                // line 8
+                echo "        <div class=\"row\" >
             <div class=\"col\">
                 <div class=\"card bg-transparent border-dark\">
                     <div class=\"card-header bg-transparent border-dark\">
@@ -98,11 +100,11 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
                     </div>
         </div></div></div>
         ";
-                // line 14
+                // line 15
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 14, $this->source); })()));
+                $context['_seq'] = twig_ensure_traversable((isset($context["tours2"]) || array_key_exists("tours2", $context) ? $context["tours2"] : (function () { throw new RuntimeError('Variable "tours2" does not exist.', 15, $this->source); })()));
                 foreach ($context['_seq'] as $context["_key"] => $context["tour"]) {
-                    // line 15
+                    // line 16
                     echo "            <div class=\"row\" id=\"zakladki\">
                 <div class=\"col\">
                     <div class=\"card-group\">
@@ -110,22 +112,24 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 
                             <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
                                 <iframe src=\"";
-                    // line 21
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 21), "html", null, true);
+                    // line 22
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 22), "html", null, true);
                     echo "\" style=\"border:0\" allowfullscreen></iframe>
                             </div>
                             <div class=\"card-body\">
                                 <h5 class=\"card-title\">";
-                    // line 24
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 24), "html", null, true);
+                    // line 25
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 25), "html", null, true);
                     echo "</h5>
                                 <a class=\"btn  btn-dark\" href=\"/tour/";
-                    // line 25
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 25), "html", null, true);
-                    echo "\">Więcej</a>
-                                <a class=\"btn  btn-dark\" href=\"/delete/tour/";
                     // line 26
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 26), "html", null, true);
+                    echo "/";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", [], "any", false, false, false, 26), "email", [], "any", false, false, false, 26), "html", null, true);
+                    echo "\">Więcej</a>
+                                <a class=\"btn  btn-dark\" href=\"/delete/tour/";
+                    // line 27
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 27), "html", null, true);
                     echo "\">Usuń trasę</a>
                             </div>
                         </div>
@@ -137,24 +141,24 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tour'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 33
+                // line 34
                 echo "    ";
             } else {
-                // line 34
-                echo "        <p>No tours to display</p>
+                echo " <!-- brak tras -->
+        <p>No tours to display</p>
     ";
             }
-            // line 36
+            // line 37
             echo "
     ";
         }
-        // line 38
+        // line 39
         echo "    ";
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 38, $this->source); })()), "user", [], "any", false, false, false, 38), null))) {
-            // line 39
-            echo "        <div class=\"alert alert-danger\" role=\"alert\">
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 39, $this->source); })()), "user", [], "any", false, false, false, 39), null))) {
+            echo " <!-- nie zalogowany -->
+        <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 40
+            // line 41
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -180,7 +184,7 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 
     public function getDebugInfo()
     {
-        return array (  158 => 40,  155 => 39,  152 => 38,  148 => 36,  144 => 34,  141 => 33,  128 => 26,  124 => 25,  120 => 24,  114 => 21,  106 => 15,  102 => 14,  93 => 7,  90 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  162 => 41,  156 => 39,  152 => 37,  145 => 34,  132 => 27,  126 => 26,  122 => 25,  116 => 22,  108 => 16,  104 => 15,  95 => 8,  93 => 7,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -189,9 +193,10 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
 {% block title %}BikeLando - Twoje trasy{% endblock %}
 
 {% block body %}
-{% if app.user %}
+{% if app.user %} <!-- zalogowany -->
+    <!-- wyswietlanie tras zalogowanego -->
     {% if tours2 %}
-        <div class=\"row\" id=\"zakladki\">
+        <div class=\"row\" >
             <div class=\"col\">
                 <div class=\"card bg-transparent border-dark\">
                     <div class=\"card-header bg-transparent border-dark\">
@@ -209,7 +214,7 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
                             </div>
                             <div class=\"card-body\">
                                 <h5 class=\"card-title\">{{ tour.name }}</h5>
-                                <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}\">Więcej</a>
+                                <a class=\"btn  btn-dark\" href=\"/tour/{{ tour.id }}/{{ app.user.email }}\">Więcej</a>
                                 <a class=\"btn  btn-dark\" href=\"/delete/tour/{{ tour.id }}\">Usuń trasę</a>
                             </div>
                         </div>
@@ -217,12 +222,12 @@ class __TwigTemplate_a7fdd70aa94d9cee03ca9e376bbcab83baee62eb5956d88fe4a9b86ae50
                 </div>
             </div>
         {% endfor %}
-    {% else %}
+    {% else %} <!-- brak tras -->
         <p>No tours to display</p>
     {% endif %}
 
     {% endif %}
-    {% if app.user == null %}
+    {% if app.user == null %} <!-- nie zalogowany -->
         <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"{{ path('index') }}\" class=\"alert-link\"> Kliknij </a>.
         </div>

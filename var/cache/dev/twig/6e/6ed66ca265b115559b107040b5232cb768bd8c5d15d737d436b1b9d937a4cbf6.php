@@ -134,9 +134,34 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
         // line 29
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 29, $this->source); })()), "description", [], "any", false, false, false, 29), "html", null, true);
         echo "</p>
+            ";
+        // line 30
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 30, $this->source); })()), "user", [], "any", false, false, false, 30)) {
+            // line 31
+            echo "            <h5>Ocena <br></h5>
+            ";
+            // line 32
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 32, $this->source); })()), 'form_start');
+            echo "
+            ";
+            // line 33
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 33, $this->source); })()), "note", [], "any", false, false, false, 33), 'row', ["label" => " "]);
+            // line 35
+            echo "
 
-            <a href=\"";
-        // line 31
+            ";
+            // line 37
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 37, $this->source); })()), 'widget');
+            echo "
+            ";
+            // line 38
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 38, $this->source); })()), 'form_end');
+            echo "
+            <br>
+            ";
+        }
+        // line 41
+        echo "            <a href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
         echo "\">Powrot</a>
         </div>
@@ -162,7 +187,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
 
     public function getDebugInfo()
     {
-        return array (  140 => 31,  135 => 29,  128 => 25,  124 => 24,  120 => 23,  116 => 22,  112 => 21,  96 => 8,  91 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  164 => 41,  158 => 38,  154 => 37,  150 => 35,  148 => 33,  144 => 32,  141 => 31,  139 => 30,  135 => 29,  128 => 25,  124 => 24,  120 => 23,  116 => 22,  112 => 21,  96 => 8,  91 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -196,7 +221,17 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
                 </tbody>
             </table>
             <p>{{ tour.description }}</p>
+            {% if app.user %}
+            <h5>Ocena <br></h5>
+            {{ form_start(form_note)  }}
+            {{ form_row(form_note.note,  {
+                label: ' '
+            }) }}
 
+            {{ form_widget(form_note) }}
+            {{ form_end(form_note) }}
+            <br>
+            {% endif %}
             <a href=\"{{ path('tours') }}\">Powrot</a>
         </div>
     </div>

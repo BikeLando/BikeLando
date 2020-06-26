@@ -34,7 +34,7 @@
             position:absolute;
         }
         .container {
-            background-color: #f2e4d9;
+            background-color: #E0F2F1;
             margin-top: 10px;
             margin-bottom: 10px;
             padding-top: 10px;
@@ -67,6 +67,7 @@
             </audio>
         </div>
     </div>
+    <div style="margin: 16px"></div>
     <!-- Podtytuł i logowanie-->
     <div class="row">
         <div class="col">
@@ -86,6 +87,7 @@
             </form>
         </div>
     </div>
+<div style="margin: 16px"></div>
     <!-- Rejestracja i nowe hasło-->
     <div class="row">
         <div class="col">
@@ -104,7 +106,7 @@
                         <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('about') }}">O nas</a>
                     </nav>
                     <nav class="nav navbar-light" style="float: right">
-                        <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('account') }}">Twoje konto</a>
+                        <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('account',{'user':app.user.email})}}">Twoje konto</a>
                         <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent" href="{{ path('user_tours',{'user':app.user.email})}}">Twoje trasy</a>
                         <a class="nav-link btn btn-outline-dark " style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent;" href="{{ path('add_tours',{'user':app.user.email})}}">Dodaj trase</a>
                     </nav>
