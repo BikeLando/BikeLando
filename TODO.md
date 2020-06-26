@@ -1,6 +1,5 @@
  ##OGÓLNE
 - przerobić rutowanie do pliku YAML dla czytelności 
-- odzyskiwanie hasla (jak?)
 
 ##PO ZALOGOWANIU
 - ocenianie tras

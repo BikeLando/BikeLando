@@ -1429,3 +1429,6 @@ cd9de0,::1,GET,http://localhost/user/tours/admin@admin.com,1593099520,,200
 fbea8b,::1,GET,http://bikelando.localhost/favicon.ico,1593184674,,404
 c8ebb1,::1,GET,http://bikelando.localhost/tours,1593184675,,200
 e9aa13,::1,POST,http://bikelando.localhost/tours,1593184680,,200
+0f9d9e,::1,GET,http://bikelando.localhost/reset,1593184744,,200
+2f65ca,::1,GET,http://bikelando.localhost/reset,1593184800,,200
+35613f,::1,GET,http://bikelando.localhost/reset,1593184855,,200
