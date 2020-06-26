@@ -94,30 +94,31 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Twoje Konto</h5>
-
+                    <p class=\"card-text\">Tu odnajdziesz podsumowanie swoich dokonań w BikeLando.</p>
                     <table class=\"table table-dark\">
                         <thead>
                         <tr>
-                            <th scope=\"col\">#</th>
-                            <th scope=\"col\">First</th>
-                            <th scope=\"col\">Last</th>
-                            <th scope=\"col\">Handle</th>
+                            <th scope=\"col\">Dodane trasy</th>
+                            <th scope=\"col\">Dodane oceny</th>
+                            <th scope=\"col\">Dodane kilometry</th>
+                            <th scope=\"col\">Okrążenia ziemi</th>
+                            <th scope=\"col\">Średnia ocena</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope=\"row\">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
                         </tr>
                         </tbody>
                     </table>
 
-                    <p class=\"card-text\">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
                     <a class=\"nav-link btn btn-outline-dark\" href=\"";
-            // line 33
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 33, $this->source); })()), "user", [], "any", false, false, false, 33), "email", [], "any", false, false, false, 33)]), "html", null, true);
+            // line 34
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 34, $this->source); })()), "user", [], "any", false, false, false, 34), "email", [], "any", false, false, false, 34)]), "html", null, true);
             echo "\">Edytuj</a>
                 </div>
             </div>
@@ -125,15 +126,15 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
     </div>
     ";
         }
-        // line 39
+        // line 40
         echo "
     ";
-        // line 40
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 40, $this->source); })()), "user", [], "any", false, false, false, 40), null))) {
+        // line 41
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 41, $this->source); })()), "user", [], "any", false, false, false, 41), null))) {
             echo " <!--nie zalogowany -->
         <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 42
+            // line 43
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -159,7 +160,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     public function getDebugInfo()
     {
-        return array (  137 => 42,  132 => 40,  129 => 39,  120 => 33,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  138 => 43,  133 => 41,  130 => 40,  121 => 34,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -175,27 +176,28 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Twoje Konto</h5>
-
+                    <p class=\"card-text\">Tu odnajdziesz podsumowanie swoich dokonań w BikeLando.</p>
                     <table class=\"table table-dark\">
                         <thead>
                         <tr>
-                            <th scope=\"col\">#</th>
-                            <th scope=\"col\">First</th>
-                            <th scope=\"col\">Last</th>
-                            <th scope=\"col\">Handle</th>
+                            <th scope=\"col\">Dodane trasy</th>
+                            <th scope=\"col\">Dodane oceny</th>
+                            <th scope=\"col\">Dodane kilometry</th>
+                            <th scope=\"col\">Okrążenia ziemi</th>
+                            <th scope=\"col\">Średnia ocena</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope=\"row\">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
                         </tr>
                         </tbody>
                     </table>
 
-                    <p class=\"card-text\">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
                     <a class=\"nav-link btn btn-outline-dark\" href=\"{{ path('edit',{'id':app.user.email}) }}\">Edytuj</a>
                 </div>
             </div>
