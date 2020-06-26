@@ -32,7 +32,7 @@ class Tour
     private $name;
 
     /**
-     * @ORM\Column(type="float")
+     * @ORM\Column(type="float", scale=6)
      */
     private $length;
 

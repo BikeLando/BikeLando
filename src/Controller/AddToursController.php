@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -27,8 +28,8 @@ class AddToursController extends AbstractController
         $form = $this->createFormBuilder($tour)
             ->add('name', TextType::class, array('attr' =>
                 array('class'=>'form-control')))
-            ->add('length', TextType::class, array('attr' =>
-                array('class'=>'form-control')) )
+            ->add('length', NumberType::class,  array('scale' => 5,'attr' =>
+                array('class'=>'form-control'),) )
             ->add('linkToMap', TextType::class, array('attr' =>
                 array('class'=>'form-control')))
             ->add('difficulty', ChoiceType::class,
