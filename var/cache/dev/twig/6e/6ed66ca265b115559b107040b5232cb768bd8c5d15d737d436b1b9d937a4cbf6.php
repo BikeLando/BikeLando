@@ -134,8 +134,9 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
         // line 29
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 29, $this->source); })()), "description", [], "any", false, false, false, 29), "html", null, true);
         echo "</p>
+
             <a href=\"";
-        // line 30
+        // line 31
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
         echo "\">Powrot</a>
         </div>
@@ -161,7 +162,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
 
     public function getDebugInfo()
     {
-        return array (  139 => 30,  135 => 29,  128 => 25,  124 => 24,  120 => 23,  116 => 22,  112 => 21,  96 => 8,  91 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  140 => 31,  135 => 29,  128 => 25,  124 => 24,  120 => 23,  116 => 22,  112 => 21,  96 => 8,  91 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -195,6 +196,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
                 </tbody>
             </table>
             <p>{{ tour.description }}</p>
+
             <a href=\"{{ path('tours') }}\">Powrot</a>
         </div>
     </div>

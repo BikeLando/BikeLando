@@ -1536,3 +1536,5 @@ a62474,::1,GET,http://bikelando.localhost/tour/4,1593192097,,500
 913748,::1,GET,http://bikelando.localhost/tour/4,1593192509,,200
 2519b5,::1,GET,http://bikelando.localhost/tours,1593192514,,200
 4e4188,::1,GET,http://bikelando.localhost/tour/14,1593192519,,200
+3da2cc,::1,GET,http://bikelando.localhost/tours,1593192875,,200
+edf796,::1,GET,http://bikelando.localhost/tour/15,1593192877,,200
