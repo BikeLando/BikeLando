@@ -111,7 +111,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"), "html", null, true);
         echo "\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
 <!-- Główny kontener -->
-<div class=\"container\">
+<div class=\"container\" style=\"box-shadow: 5px 5px 10px\">
     <!-- Tytuł -->
     ";
         // line 54
@@ -165,7 +165,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
                 <a href=\"";
             // line 78
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+            echo "\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
             </div>
         </div>
         ";
@@ -192,11 +192,11 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
             <a href=\"";
             // line 94
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-            echo "\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
+            echo "\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
             <a href=\"";
             // line 95
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reset");
-            echo "\" class=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
+            echo "\" class=\"badge badge-link\" style=\"float: right\">Nie pamietam hasła</a>
         </div>
     </div>
     ";
@@ -449,7 +449,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 <script src=\"{{ asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js') }}\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
 <script src=\"{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') }}\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
 <!-- Główny kontener -->
-<div class=\"container\">
+<div class=\"container\" style=\"box-shadow: 5px 5px 10px\">
     <!-- Tytuł -->
     {% for flashMessage in app.session.flashbag.get('notice') %}
         <div class=\"alert alert-success\">
@@ -475,7 +475,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
             {% if app.user %}
             <div class=\"mb-3\" style=\"float: right\">
                 Zalogowany jako {{ app.user.username }},
-                <a href=\"{{ path('app_logout') }}\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+                <a href=\"{{ path('app_logout') }}\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
             </div>
         </div>
         {% endif %}
@@ -491,8 +491,8 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     <!-- Rejestracja i nowe hasło-->
     <div class=\"row\">
         <div class=\"col\">
-            <a href=\"{{ path('app_register')}}\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
-            <a href=\"{{ path('reset')}}\" class=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
+            <a href=\"{{ path('app_register')}}\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
+            <a href=\"{{ path('reset')}}\" class=\"badge badge-link\" style=\"float: right\">Nie pamietam hasła</a>
         </div>
     </div>
     {% endif %}
