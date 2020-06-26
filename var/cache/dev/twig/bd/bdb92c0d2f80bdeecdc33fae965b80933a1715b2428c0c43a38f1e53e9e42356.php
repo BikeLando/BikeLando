@@ -84,19 +84,40 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
+        echo "<!-- infomacja o użytkowniku -->
+    ";
         // line 6
-        echo "    ";
         if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 6, $this->source); })()), "user", [], "any", false, false, false, 6)) {
-            // line 7
-            echo "    <div class=\"row\" id=\"zakladki\">
+            echo " <!--zalogowany -->
+    <div class=\"row\" id=\"zakladki\">
         <div class=\"col\">
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Twoje Konto</h5>
+
+                    <table class=\"table table-dark\">
+                        <thead>
+                        <tr>
+                            <th scope=\"col\">#</th>
+                            <th scope=\"col\">First</th>
+                            <th scope=\"col\">Last</th>
+                            <th scope=\"col\">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope=\"row\">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                     <p class=\"card-text\">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
                     <a class=\"nav-link btn btn-outline-dark\" href=\"";
-            // line 13
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 13, $this->source); })()), "user", [], "any", false, false, false, 13), "email", [], "any", false, false, false, 13)]), "html", null, true);
+            // line 33
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 33, $this->source); })()), "user", [], "any", false, false, false, 33), "email", [], "any", false, false, false, 33)]), "html", null, true);
             echo "\">Edytuj</a>
                 </div>
             </div>
@@ -104,15 +125,15 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
     </div>
     ";
         }
-        // line 19
+        // line 39
         echo "
     ";
-        // line 20
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 20, $this->source); })()), "user", [], "any", false, false, false, 20), null))) {
-            // line 21
-            echo "        <div class=\"alert alert-danger\" role=\"alert\">
+        // line 40
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 40, $this->source); })()), "user", [], "any", false, false, false, 40), null))) {
+            echo " <!--nie zalogowany -->
+        <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 22
+            // line 42
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -138,7 +159,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     public function getDebugInfo()
     {
-        return array (  116 => 22,  113 => 21,  111 => 20,  108 => 19,  99 => 13,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  137 => 42,  132 => 40,  129 => 39,  120 => 33,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -147,13 +168,33 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
 {% block title %}BikeLando - Twoje konto{% endblock %}
 
-{% block body %}
-    {% if app.user %}
+{% block body %}<!-- infomacja o użytkowniku -->
+    {% if app.user %} <!--zalogowany -->
     <div class=\"row\" id=\"zakladki\">
         <div class=\"col\">
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Twoje Konto</h5>
+
+                    <table class=\"table table-dark\">
+                        <thead>
+                        <tr>
+                            <th scope=\"col\">#</th>
+                            <th scope=\"col\">First</th>
+                            <th scope=\"col\">Last</th>
+                            <th scope=\"col\">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope=\"row\">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                     <p class=\"card-text\">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
                     <a class=\"nav-link btn btn-outline-dark\" href=\"{{ path('edit',{'id':app.user.email}) }}\">Edytuj</a>
                 </div>
@@ -162,7 +203,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
     </div>
     {% endif %}
 
-    {% if app.user == null %}
+    {% if app.user == null %} <!--nie zalogowany -->
         <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"{{ path('index') }}\" class=\"alert-link\"> Kliknij </a>.
         </div>

@@ -1,14 +1,34 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}BikeLando - Twoje konto{% endblock %}
-<!-- infomacja o użytkowniku -->
-{% block body %}
+
+{% block body %}<!-- infomacja o użytkowniku -->
     {% if app.user %} <!--zalogowany -->
     <div class="row" id="zakladki">
         <div class="col">
             <div class="card bg-transparent border-dark">
                 <div class="card-body">
                     <h5 class="card-title">Twoje Konto</h5>
+
+                    <table class="table table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                     <p class="card-text">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
                     <a class="nav-link btn btn-outline-dark" href="{{ path('edit',{'id':app.user.email}) }}">Edytuj</a>
                 </div>

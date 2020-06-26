@@ -85,7 +85,8 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
-        echo "    <div class=\"row\" >
+        echo "    <!--wyszukiwanie tras -->
+    <div class=\"row\" >
         <div class=\"col\">
             <div class=\"card-group\">
                 <div class=\"card bg-transparent border-dark\">
@@ -93,31 +94,31 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
                         <h5 class=\"card-title\">Wyszukaj</h5>
                         <p class=\"card-text\">Wybierz kryteria wyszukiwania</p>
                         ";
-        // line 12
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), 'form_start');
-        echo "
-                        ";
         // line 13
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), "diff", [], "any", false, false, false, 13), 'row', ["label" => "Trudność"]);
-        // line 15
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), 'form_start');
         echo "
                         ";
+        // line 14
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 14, $this->source); })()), "diff", [], "any", false, false, false, 14), 'row', ["label" => "Trudność"]);
         // line 16
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 16, $this->source); })()), "region", [], "any", false, false, false, 16), 'row', ["label" => "Województwo"]);
-        // line 18
         echo "
                         ";
+        // line 17
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 17, $this->source); })()), "region", [], "any", false, false, false, 17), 'row', ["label" => "Województwo"]);
         // line 19
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 19, $this->source); })()), "note", [], "any", false, false, false, 19), 'row', ["label" => "Ocena"]);
-        // line 21
         echo "
                         ";
+        // line 20
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 20, $this->source); })()), "note", [], "any", false, false, false, 20), 'row', ["label" => "Ocena"]);
         // line 22
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 22, $this->source); })()), 'widget');
         echo "
                         ";
         // line 23
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 23, $this->source); })()), 'form_end');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 23, $this->source); })()), 'widget');
+        echo "
+                        ";
+        // line 24
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 24, $this->source); })()), 'form_end');
         echo "
                     </div>
                 </div>
@@ -125,16 +126,16 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
         </div>
     </div>
 
-
+<!--wyswietlanie wszystkich tras -->
             ";
-        // line 31
-        if ((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 31, $this->source); })())) {
-            // line 32
+        // line 32
+        if ((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 32, $this->source); })())) {
+            // line 33
             echo "                ";
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 32, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["tours"]) || array_key_exists("tours", $context) ? $context["tours"] : (function () { throw new RuntimeError('Variable "tours" does not exist.', 33, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["tour"]) {
-                // line 33
+                // line 34
                 echo "                    <div class=\"row\" id=\"zakladki\">
                          <div class=\"col\">
         <div class=\"card-group\">
@@ -142,18 +143,18 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 
                            <div id=\"map-container-google-3\" class=\"z-depth-1-half map-container-3\">
                                <iframe src=\"";
-                // line 39
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 39), "html", null, true);
+                // line 40
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "linkToMap", [], "any", false, false, false, 40), "html", null, true);
                 echo "\" style=\"border:0\" allowfullscreen></iframe>
                            </div>
                            <div class=\"card-body\">
                                <h5 class=\"card-title\">";
-                // line 42
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 42), "html", null, true);
+                // line 43
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "name", [], "any", false, false, false, 43), "html", null, true);
                 echo "</h5>
                                <a class=\"btn  btn-dark\" href=\"/tour/";
-                // line 43
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 43), "html", null, true);
+                // line 44
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tour"], "id", [], "any", false, false, false, 44), "html", null, true);
                 echo "\">Więcej</a>
                            </div>
                        </div>
@@ -165,11 +166,11 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tour'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 50
+            // line 51
             echo "            ";
         } else {
-            // line 51
-            echo "                <p>No tours to display</p>
+            echo " <!--brak tras -->
+                <p>No tours to display</p>
             ";
         }
         
@@ -192,7 +193,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 
     public function getDebugInfo()
     {
-        return array (  172 => 51,  169 => 50,  156 => 43,  152 => 42,  146 => 39,  138 => 33,  133 => 32,  131 => 31,  120 => 23,  116 => 22,  113 => 21,  111 => 19,  108 => 18,  106 => 16,  103 => 15,  101 => 13,  97 => 12,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  170 => 51,  157 => 44,  153 => 43,  147 => 40,  139 => 34,  134 => 33,  132 => 32,  121 => 24,  117 => 23,  114 => 22,  112 => 20,  109 => 19,  107 => 17,  104 => 16,  102 => 14,  98 => 13,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -201,6 +202,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
 {% block title %}BikeLando - Trasy{% endblock %}
 
 {% block body %}
+    <!--wyszukiwanie tras -->
     <div class=\"row\" >
         <div class=\"col\">
             <div class=\"card-group\">
@@ -226,7 +228,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
         </div>
     </div>
 
-
+<!--wyswietlanie wszystkich tras -->
             {% if tours %}
                 {% for tour in tours %}
                     <div class=\"row\" id=\"zakladki\">
@@ -246,7 +248,7 @@ class __TwigTemplate_b9ac450f10a1c35982d19e22ed27b62f56087eac86be86496baf74d7a41
     </div>
                     </div>
                 {% endfor %}
-            {% else %}
+            {% else %} <!--brak tras -->
                 <p>No tours to display</p>
             {% endif %}
 {% endblock %}
