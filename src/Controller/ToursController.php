@@ -84,10 +84,10 @@ class ToursController extends AbstractController
                 $tab = ['note'=>$note];
             }
             if ($region != '0') {
-                    $tab = ['region'=>$region];
+                    $tab += ['region'=>$region];
             }
             if ($diff != '0') {
-                    $tab=['difficulty'=>$diff];
+                    $tab += ['difficulty'=>$diff];
             }
 
             if(count($tab)>0) {
