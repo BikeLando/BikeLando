@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}BikeLando - Twoje konto{% endblock %}
-
+<!-- infomacja o użytkowniku -->
 {% block body %}
-    {% if app.user %}
+    {% if app.user %} <!--zalogowany -->
     <div class="row" id="zakladki">
         <div class="col">
             <div class="card bg-transparent border-dark">
@@ -17,7 +17,7 @@
     </div>
     {% endif %}
 
-    {% if app.user == null %}
+    {% if app.user == null %} <!--nie zalogowany -->
         <div class="alert alert-danger" role="alert">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href="{{ path('index') }}" class="alert-link"> Kliknij </a>.
         </div>

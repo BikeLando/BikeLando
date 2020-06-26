@@ -2,6 +2,7 @@
 {% block title %}BikeLando - Trasy{% endblock %}
 
 {% block body %}
+    <!--wyszukiwanie tras -->
     <div class="row" >
         <div class="col">
             <div class="card-group">
@@ -27,7 +28,7 @@
         </div>
     </div>
 
-
+<!--wyswietlanie wszystkich tras -->
             {% if tours %}
                 {% for tour in tours %}
                     <div class="row" id="zakladki">
@@ -47,7 +48,7 @@
     </div>
                     </div>
                 {% endfor %}
-            {% else %}
+            {% else %} <!--brak tras -->
                 <p>No tours to display</p>
             {% endif %}
 {% endblock %}

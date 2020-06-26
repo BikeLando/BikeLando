@@ -1,3 +1,5 @@
+{# Index główny zawierający bloki podstawowe uzupełniane przez kolejne twig'i z widokami #}
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -50,28 +52,31 @@
 <script src="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') }}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Główny kontener -->
 <div class="container">
-    <!-- Tytuł -->
+    <!-- informacja o sesji -->
     {% for flashMessage in app.session.flashbag.get('notice') %}
         <div class="alert alert-success">
             {{ flashMessage }}
         </div>
     {% endfor %}
+    <!-- Tytuł -->
     <div class="row">
         <div class="col">
             <h1 style="float: left;">BikeLando</h1>
         </div>
         <div class="col">
+            <!-- Muzyka -->
             <audio controls autoplay loop style="float: right">
                 <source src="{{ asset('Music/Loona.mp3') }}" type='audio/mpeg'>
                 <a href="{{ asset('Music/Loona.mp3') }}">Pobierz</a>
             </audio>
         </div>
     </div>
-    <!-- Podtytuł i logowanie-->
+    <!-- Podtytuł -->
     <div class="row">
         <div class="col">
             <h5 style="float: left;">Portal rowerowy dla każdego</h5>
-            {% if app.user %}
+            {% if app.user %} <!-- zalogowany -->
+            <!--info kto zalogowany i opcja wyloguj -->
             <div class="mb-3" style="float: right">
                 Zalogowany jako {{ app.user.username }},
                 <a href="{{ path('app_logout') }}" class="badge badge-light" style="float: right; margin-left: 10px">Wyloguj</a>
@@ -79,14 +84,15 @@
         </div>
         {% endif %}
         </div>
-        {%  if app.user == null %}
+        {%  if app.user == null %} <!-- nie zalogowany -->
         <div class="col">
+            <!-- logowanie -->
             <form class="form-inline" style="float: right">
                 <a href="{{ path('app_login') }}" type="button" class="btn btn-outline-dark">Zaloguj się</a>
             </form>
         </div>
     </div>
-    <!-- Rejestracja i nowe hasło-->
+    <!-- rejestracja i niepamietam hasła-->
     <div class="row">
         <div class="col">
             <a href="{{ path('app_register')}}" class="badge badge-light" style="float: right; margin-left: 10px">Dołącz do nas!</a>
@@ -95,7 +101,7 @@
     </div>
     {% endif %}
     <!-- Menu -->
-        {% if app.user %}
+        {% if app.user %} <!-- zalogowany -->
             <div class="row">
                 <div class="col">
                     <nav class="nav navbar-light" style="float: left">
@@ -112,7 +118,7 @@
             </div>
         {%  endif %}
 
-        {%  if app.user == null %}
+        {%  if app.user == null %} <!-- nie zalogowany -->
     <div class="row">
         <div class="col">
             <nav class="nav navbar-light">
@@ -155,9 +161,9 @@
             </div>
         </div>
     </div>
-    <!-- Zakładki z manu -->
+    <!-- post -->
     {% block body %}
-        <div class="row" id="zakladki">
+        <div class="row">
             <div class="col">
                 <div class="card bg-transparent border-dark">
                     <div class="card-header bg-transparent border-dark">
