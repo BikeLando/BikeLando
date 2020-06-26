@@ -2,14 +2,35 @@
 
 {% block title %}BikeLando - Twoje konto{% endblock %}
 
-{% block body %}
-    {% if app.user %}
+{% block body %}<!-- infomacja o użytkowniku -->
+    {% if app.user %} <!--zalogowany -->
     <div class="row" id="zakladki">
         <div class="col">
             <div class="card bg-transparent border-dark">
                 <div class="card-body">
                     <h5 class="card-title">Twoje Konto</h5>
-                    <p class="card-text">Tu wyświetlane dane usera i może jakieś statystyki np ile razy juz okrazyl ziemie.</p>
+                    <p class="card-text">Tu odnajdziesz podsumowanie swoich dokonań w BikeLando.</p>
+                    <table class="table table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Dodane trasy</th>
+                            <th scope="col">Dodane oceny</th>
+                            <th scope="col">Dodane kilometry</th>
+                            <th scope="col">Okrążenia ziemi</th>
+                            <th scope="col">Średnia ocena</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                     <a class="nav-link btn btn-outline-dark" href="{{ path('edit',{'id':app.user.email}) }}">Edytuj</a>
                 </div>
             </div>
@@ -17,7 +38,7 @@
     </div>
     {% endif %}
 
-    {% if app.user == null %}
+    {% if app.user == null %} <!--nie zalogowany -->
         <div class="alert alert-danger" role="alert">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href="{{ path('index') }}" class="alert-link"> Kliknij </a>.
         </div>

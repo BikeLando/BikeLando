@@ -2,9 +2,10 @@
 {% block title %}BikeLando - Twoje trasy{% endblock %}
 
 {% block body %}
-{% if app.user %}
+{% if app.user %} <!-- zalogowany -->
+    <!-- wyswietlanie tras zalogowanego -->
     {% if tours2 %}
-        <div class="row" id="zakladki">
+        <div class="row" >
             <div class="col">
                 <div class="card bg-transparent border-dark">
                     <div class="card-header bg-transparent border-dark">
@@ -30,12 +31,12 @@
                 </div>
             </div>
         {% endfor %}
-    {% else %}
+    {% else %} <!-- brak tras -->
         <p>No tours to display</p>
     {% endif %}
 
     {% endif %}
-    {% if app.user == null %}
+    {% if app.user == null %} <!-- nie zalogowany -->
         <div class="alert alert-danger" role="alert">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href="{{ path('index') }}" class="alert-link"> Kliknij </a>.
         </div>

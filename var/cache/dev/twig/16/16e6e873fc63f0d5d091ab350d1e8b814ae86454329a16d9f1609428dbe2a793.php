@@ -84,8 +84,8 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 5
-        echo "    <div class=\"row\" id=\"zakladki\">
+        echo "<!-- o autorach -->
+    <div class=\"row\" id=\"zakladki\">
         <div class=\"col\">
             <div class=\"card bg-transparent border-dark\">
                 <div class=\"card-body\">
@@ -101,7 +101,7 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
                     </p>
                 </div>
                 <div class=\"card-footer bg-transparent border-dark\">
-                    <small class=\"text-muted\">15.06.2020</small>
+                    <small class=\"text-muted\">Autorzy</small>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
 
     public function getDebugInfo()
     {
-        return array (  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  78 => 4,  59 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -135,7 +135,7 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
         return new Source("{% extends 'base.html.twig' %}
 {% block title %}BikeLando - O nas{% endblock %}
 
-{% block body %}
+{% block body %}<!-- o autorach -->
     <div class=\"row\" id=\"zakladki\">
         <div class=\"col\">
             <div class=\"card bg-transparent border-dark\">
@@ -152,7 +152,7 @@ class __TwigTemplate_1ad25aed91a46e6ea3321f633f1a0d1998f971fedfbec8746d5e18521b8
                     </p>
                 </div>
                 <div class=\"card-footer bg-transparent border-dark\">
-                    <small class=\"text-muted\">15.06.2020</small>
+                    <small class=\"text-muted\">Autorzy</small>
                 </div>
             </div>
         </div>
