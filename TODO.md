@@ -1,13 +1,4 @@
  ##OGÓLNE
-- przerobić rutowanie do pliku YAML dla czytelności 
+- przerobić rutowanie do pliku YAML dla czytelności (?)
 
-##PO ZALOGOWANIU
-- ocenianie tras
 
-reset wszystkiego i sciagniecie z githuba wersji
-git fetch --all
-git reset --hard origin/master
-
-usun ostatni commit
-git checkout master
-git push -f origin HEAD

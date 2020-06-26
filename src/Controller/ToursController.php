@@ -117,6 +117,13 @@ class ToursController extends AbstractController
      * @Route("/tour/{id}/{user_id}", name="tour_show")
      */
     public function show($id, Request $request, $user_id) {
+        if ($user_id=="unknown") {
+            $tour = $this->getDoctrine()->getRepository(Tour::class)->find($id);
+            $email = $tour->getUserId();
+            $author = $this->getDoctrine()->getRepository(User::class)->findOneBy(['email' => $email]);
+            return $this->render('tours/show.html.twig', array('tour'=>$tour, 'author'=>$author ));
+        }
+
         $tour = $this->getDoctrine()->getRepository(Tour::class)->find($id);
         $email = $tour->getUserId();
         $author = $this->getDoctrine()->getRepository(User::class)->findOneBy(['email' => $email]);
