@@ -27,7 +27,15 @@
                 </tbody>
             </table>
             <p>{{ tour.description }}</p>
+            <h5>Ocena <br></h5>
+            {{ form_start(form_note)  }}
+            {{ form_row(form_note.note,  {
+                label: ' '
+            }) }}
 
+            {{ form_widget(form_note) }}
+            {{ form_end(form_note) }}
+            <br>
             <a href="{{ path('tours') }}">Powrot</a>
         </div>
     </div>
