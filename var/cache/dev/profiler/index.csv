@@ -1583,3 +1583,12 @@ c3988b,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593210994,,20
 b612c0,::1,GET,http://bikelando.localhost/about,1593211055,,200
 467486,::1,GET,http://bikelando.localhost/tours,1593211059,,200
 0d5d4e,::1,GET,http://bikelando.localhost/,1593211060,,200
+d9b24a,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593211422,,200
+3af0d9,::1,GET,http://bikelando.localhost/tours,1593211428,,200
+8df53d,::1,GET,http://bikelando.localhost/tour/10/admin@admin.com,1593211431,,200
+c2432a,::1,POST,http://bikelando.localhost/tour/10/admin@admin.com,1593211436,,200
+f8ca4e,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593211440,,200
+8576d1,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593211537,,200
+4b7a50,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593211556,,200
+6e07e8,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593211600,,200
+0a8b6d,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593211758,,200
