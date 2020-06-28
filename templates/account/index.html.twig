@@ -1,3 +1,4 @@
+{# Aleksandra Rawicz #}
 {% extends 'base.html.twig' %}
 
 {% block title %}BikeLando - Twoje konto{% endblock %}
@@ -10,22 +11,30 @@
                 <div class="card-body">
                     <h5 class="card-title">Twoje Konto</h5>
                     <p class="card-text">Tu odnajdziesz podsumowanie swoich dokonań w BikeLando.</p>
-                    <table class="table table-dark">
+                    <table class="table table-dark" style="width: 80%">
                         <thead>
                         <tr>
-                            <th scope="col">Dodane trasy</th>
-                            <th scope="col">Dodane oceny</th>
-                            <th scope="col">Dodane kilometry</th>
-                            <th scope="col">Średnia ocena Twoich tras</th>
-                            <th scope="col">Okrążenia ziemi</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
+                            <th scope="col">Dodane trasy</th>
                             <td>{{ ile_dodano }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Dodane oceny</th>
                             <td>{{ ile_ocen }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Dodane kilometry</th>
                             <td>{{ sum_km }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Średnia ocena</th>
                             <td>{{ srednia }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Okrążenia ziemi</th>
                             <td>{{ ob_ziemi }}</td>
                         </tr>
                         </tbody>

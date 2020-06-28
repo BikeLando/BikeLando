@@ -95,45 +95,53 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Twoje Konto</h5>
                     <p class=\"card-text\">Tu odnajdziesz podsumowanie swoich dokonań w BikeLando.</p>
-                    <table class=\"table table-dark\">
+                    <table class=\"table table-dark\" style=\"width: 80%\">
                         <thead>
                         <tr>
-                            <th scope=\"col\">Dodane trasy</th>
-                            <th scope=\"col\">Dodane oceny</th>
-                            <th scope=\"col\">Dodane kilometry</th>
-                            <th scope=\"col\">Średnia ocena Twoich tras</th>
-                            <th scope=\"col\">Okrążenia ziemi</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
+                            <th scope=\"col\">Dodane trasy</th>
+                            <td>";
+            // line 21
+            echo twig_escape_filter($this->env, (isset($context["ile_dodano"]) || array_key_exists("ile_dodano", $context) ? $context["ile_dodano"] : (function () { throw new RuntimeError('Variable "ile_dodano" does not exist.', 21, $this->source); })()), "html", null, true);
+            echo "</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Dodane oceny</th>
                             <td>";
             // line 25
-            echo twig_escape_filter($this->env, (isset($context["ile_dodano"]) || array_key_exists("ile_dodano", $context) ? $context["ile_dodano"] : (function () { throw new RuntimeError('Variable "ile_dodano" does not exist.', 25, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["ile_ocen"]) || array_key_exists("ile_ocen", $context) ? $context["ile_ocen"] : (function () { throw new RuntimeError('Variable "ile_ocen" does not exist.', 25, $this->source); })()), "html", null, true);
             echo "</td>
-                            <td>";
-            // line 26
-            echo twig_escape_filter($this->env, (isset($context["ile_ocen"]) || array_key_exists("ile_ocen", $context) ? $context["ile_ocen"] : (function () { throw new RuntimeError('Variable "ile_ocen" does not exist.', 26, $this->source); })()), "html", null, true);
-            echo "</td>
-                            <td>";
-            // line 27
-            echo twig_escape_filter($this->env, (isset($context["sum_km"]) || array_key_exists("sum_km", $context) ? $context["sum_km"] : (function () { throw new RuntimeError('Variable "sum_km" does not exist.', 27, $this->source); })()), "html", null, true);
-            echo "</td>
-                            <td>";
-            // line 28
-            echo twig_escape_filter($this->env, (isset($context["srednia"]) || array_key_exists("srednia", $context) ? $context["srednia"] : (function () { throw new RuntimeError('Variable "srednia" does not exist.', 28, $this->source); })()), "html", null, true);
-            echo "</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Dodane kilometry</th>
                             <td>";
             // line 29
-            echo twig_escape_filter($this->env, (isset($context["ob_ziemi"]) || array_key_exists("ob_ziemi", $context) ? $context["ob_ziemi"] : (function () { throw new RuntimeError('Variable "ob_ziemi" does not exist.', 29, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["sum_km"]) || array_key_exists("sum_km", $context) ? $context["sum_km"] : (function () { throw new RuntimeError('Variable "sum_km" does not exist.', 29, $this->source); })()), "html", null, true);
+            echo "</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Średnia ocena</th>
+                            <td>";
+            // line 33
+            echo twig_escape_filter($this->env, (isset($context["srednia"]) || array_key_exists("srednia", $context) ? $context["srednia"] : (function () { throw new RuntimeError('Variable "srednia" does not exist.', 33, $this->source); })()), "html", null, true);
+            echo "</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Okrążenia ziemi</th>
+                            <td>";
+            // line 37
+            echo twig_escape_filter($this->env, (isset($context["ob_ziemi"]) || array_key_exists("ob_ziemi", $context) ? $context["ob_ziemi"] : (function () { throw new RuntimeError('Variable "ob_ziemi" does not exist.', 37, $this->source); })()), "html", null, true);
             echo "</td>
                         </tr>
                         </tbody>
                     </table>
 
                     <a class=\"nav-link btn btn-outline-dark\" href=\"";
-            // line 34
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 34, $this->source); })()), "user", [], "any", false, false, false, 34), "email", [], "any", false, false, false, 34)]), "html", null, true);
+            // line 42
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 42, $this->source); })()), "user", [], "any", false, false, false, 42), "email", [], "any", false, false, false, 42)]), "html", null, true);
             echo "\">Edytuj</a>
                 </div>
             </div>
@@ -141,15 +149,15 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
     </div>
     ";
         }
-        // line 40
+        // line 48
         echo "
     ";
-        // line 41
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 41, $this->source); })()), "user", [], "any", false, false, false, 41), null))) {
+        // line 49
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "user", [], "any", false, false, false, 49), null))) {
             echo " <!--nie zalogowany -->
         <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 43
+            // line 51
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -175,7 +183,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     public function getDebugInfo()
     {
-        return array (  153 => 43,  148 => 41,  145 => 40,  136 => 34,  128 => 29,  124 => 28,  120 => 27,  116 => 26,  112 => 25,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  161 => 51,  156 => 49,  153 => 48,  144 => 42,  136 => 37,  129 => 33,  122 => 29,  115 => 25,  108 => 21,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -192,22 +200,30 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
                 <div class=\"card-body\">
                     <h5 class=\"card-title\">Twoje Konto</h5>
                     <p class=\"card-text\">Tu odnajdziesz podsumowanie swoich dokonań w BikeLando.</p>
-                    <table class=\"table table-dark\">
+                    <table class=\"table table-dark\" style=\"width: 80%\">
                         <thead>
                         <tr>
-                            <th scope=\"col\">Dodane trasy</th>
-                            <th scope=\"col\">Dodane oceny</th>
-                            <th scope=\"col\">Dodane kilometry</th>
-                            <th scope=\"col\">Średnia ocena Twoich tras</th>
-                            <th scope=\"col\">Okrążenia ziemi</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
+                            <th scope=\"col\">Dodane trasy</th>
                             <td>{{ ile_dodano }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Dodane oceny</th>
                             <td>{{ ile_ocen }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Dodane kilometry</th>
                             <td>{{ sum_km }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Średnia ocena</th>
                             <td>{{ srednia }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=\"col\">Okrążenia ziemi</th>
                             <td>{{ ob_ziemi }}</td>
                         </tr>
                         </tbody>

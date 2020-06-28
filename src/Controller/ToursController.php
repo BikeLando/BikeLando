@@ -13,6 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ToursController extends AbstractController
 {
+    //Aleksandra Rawicz Adam Hilaruk Małgorzata Wieteska
     /**
      * @Route("/tours", name="tours")
      * Method({"GET", "POST"})
@@ -112,7 +113,7 @@ class ToursController extends AbstractController
 
         }
     }
-
+//Małgorzata Wieteska
     /**
      * @Route("/tour/{id}/{user_id}", name="tour_show")
      */
