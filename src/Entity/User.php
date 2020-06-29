@@ -1,5 +1,5 @@
 <?php
-
+// Małgorzata Wieteska Aleksandra Rawicz Adam Hilaruk
 namespace App\Entity;
 
 use App\Repository\UserRepository;
