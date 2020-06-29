@@ -41,23 +41,23 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "base.html.twig"));
 
-        // line 1
+        // line 2
         echo "<!DOCTYPE html>
 <html lang=\"pl\">
 <head>
     <meta charset=\"UTF-8\">
     <title>";
-        // line 5
+        // line 6
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
     <link rel=\"stylesheet\" href=\"";
-        // line 6
+        // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"), "html", null, true);
         echo "\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
     <style>
         body {
             background-image: url(";
-        // line 9
+        // line 10
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("grafic/IMG_1825.JPG"), "html", null, true);
         echo ");
             background-position: top center;
@@ -100,29 +100,30 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 
 <!-- skrypty do bootstrapa i jquery -->
 <script src=\"";
-        // line 49
+        // line 50
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://code.jquery.com/jquery-3.2.1.slim.min.js"), "html", null, true);
         echo "\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
 <script src=\"";
-        // line 50
+        // line 51
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"), "html", null, true);
         echo "\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
 <script src=\"";
-        // line 51
+        // line 52
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"), "html", null, true);
         echo "\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
 <!-- Główny kontener -->
-<div class=\"container\">
+<div class=\"container\" style=\"box-shadow: 5px 5px 10px\">
     <!-- Tytuł -->
+
     ";
-        // line 55
+        // line 57
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 55, $this->source); })()), "session", [], "any", false, false, false, 55), "flashbag", [], "any", false, false, false, 55), "get", [0 => "notice"], "method", false, false, false, 55));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 57, $this->source); })()), "session", [], "any", false, false, false, 57), "flashbag", [], "any", false, false, false, 57), "get", [0 => "check"], "method", false, false, false, 57));
         foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
-            // line 56
-            echo "        <div class=\"alert alert-success\">
+            // line 58
+            echo "        <div class=\"alert alert-danger\">
             ";
-            // line 57
+            // line 59
             echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
             echo "
         </div>
@@ -131,7 +132,24 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 60
+        // line 62
+        echo "    ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 62, $this->source); })()), "session", [], "any", false, false, false, 62), "flashbag", [], "any", false, false, false, 62), "get", [0 => "notice"], "method", false, false, false, 62));
+        foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
+            // line 63
+            echo "        <div class=\"alert alert-success\">
+            ";
+            // line 64
+            echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
+            echo "
+        </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 67
         echo "    <div class=\"row\">
         <div class=\"col\">
             <h1 style=\"float: left;\">BikeLando</h1>
@@ -139,11 +157,11 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         <div class=\"col\">
             <audio controls autoplay loop style=\"float: right\">
                 <source src=\"";
-        // line 66
+        // line 73
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Music/Loona.mp3"), "html", null, true);
         echo "\" type='audio/mpeg'>
                 <a href=\"";
-        // line 67
+        // line 74
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Music/Loona.mp3"), "html", null, true);
         echo "\">Pobierz</a>
             </audio>
@@ -155,32 +173,32 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         <div class=\"col\">
             <h5 style=\"float: left;\">Portal rowerowy dla każdego</h5>
             ";
-        // line 76
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 76, $this->source); })()), "user", [], "any", false, false, false, 76)) {
-            // line 77
+        // line 83
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 83, $this->source); })()), "user", [], "any", false, false, false, 83)) {
+            // line 84
             echo "            <div class=\"mb-3\" style=\"float: right\">
                 Zalogowany jako ";
-            // line 78
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 78, $this->source); })()), "user", [], "any", false, false, false, 78), "username", [], "any", false, false, false, 78), "html", null, true);
+            // line 85
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 85, $this->source); })()), "user", [], "any", false, false, false, 85), "username", [], "any", false, false, false, 85), "html", null, true);
             echo ",
                 <a href=\"";
-            // line 79
+            // line 86
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+            echo "\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
             </div>
         </div>
         ";
         }
-        // line 83
+        // line 90
         echo "        </div>
         ";
-        // line 84
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 84, $this->source); })()), "user", [], "any", false, false, false, 84), null))) {
-            // line 85
+        // line 91
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 91, $this->source); })()), "user", [], "any", false, false, false, 91), null))) {
+            // line 92
             echo "        <div class=\"col\">
             <form class=\"form-inline\" style=\"float: right\">
                 <a href=\"";
-            // line 87
+            // line 94
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\" type=\"button\" class=\"btn btn-outline-dark\">Zaloguj się</a>
             </form>
@@ -191,76 +209,76 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     <div class=\"row\">
         <div class=\"col\">
             <a href=\"";
-            // line 95
+            // line 102
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-            echo "\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
+            echo "\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
             <a href=\"";
-            // line 96
+            // line 103
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reset");
-            echo "\" class=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
+            echo "\" class=\"badge badge-link\" style=\"float: right\">Nie pamietam hasła</a>
         </div>
     </div>
     ";
         }
-        // line 100
+        // line 107
         echo "    <!-- Menu -->
         ";
-        // line 101
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 101, $this->source); })()), "user", [], "any", false, false, false, 101)) {
-            // line 102
+        // line 108
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 108, $this->source); })()), "user", [], "any", false, false, false, 108)) {
+            // line 109
             echo "            <div class=\"row\">
                 <div class=\"col\">
                     <nav class=\"nav navbar-light\" style=\"float: left\">
                         <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 105
+            // line 112
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
             echo "\">Strona główna</a>
                         <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 106
+            // line 113
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
             echo "\">Trasy</a>
                         <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 107
+            // line 114
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("about");
             echo "\">O nas</a>
                     </nav>
                     <nav class=\"nav navbar-light\" style=\"float: right\">
                         <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 110
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account", ["user" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 110, $this->source); })()), "user", [], "any", false, false, false, 110), "email", [], "any", false, false, false, 110)]), "html", null, true);
+            // line 117
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account", ["user" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 117, $this->source); })()), "user", [], "any", false, false, false, 117), "email", [], "any", false, false, false, 117)]), "html", null, true);
             echo "\">Twoje konto</a>
                         <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 111
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_tours", ["user" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 111, $this->source); })()), "user", [], "any", false, false, false, 111), "email", [], "any", false, false, false, 111)]), "html", null, true);
+            // line 118
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_tours", ["user" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 118, $this->source); })()), "user", [], "any", false, false, false, 118), "email", [], "any", false, false, false, 118)]), "html", null, true);
             echo "\">Twoje trasy</a>
                         <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent;\" href=\"";
-            // line 112
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_tours", ["user" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 112, $this->source); })()), "user", [], "any", false, false, false, 112), "email", [], "any", false, false, false, 112)]), "html", null, true);
+            // line 119
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_tours", ["user" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 119, $this->source); })()), "user", [], "any", false, false, false, 119), "email", [], "any", false, false, false, 119)]), "html", null, true);
             echo "\">Dodaj trase</a>
                     </nav>
                 </div>
             </div>
         ";
         }
-        // line 117
+        // line 124
         echo "
         ";
-        // line 118
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 118, $this->source); })()), "user", [], "any", false, false, false, 118), null))) {
-            // line 119
+        // line 125
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 125, $this->source); })()), "user", [], "any", false, false, false, 125), null))) {
+            // line 126
             echo "    <div class=\"row\">
         <div class=\"col\">
             <nav class=\"nav navbar-light\">
                 <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 122
+            // line 129
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
             echo "\">Strona główna</a>
                 <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 123
+            // line 130
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
             echo "\">Trasy</a>
                 <a class=\"nav-link btn btn-outline-dark \" style=\"border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom-color: transparent\" href=\"";
-            // line 124
+            // line 131
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("about");
             echo "\">O nas</a>
             </nav>
@@ -268,7 +286,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     </div>
         ";
         }
-        // line 129
+        // line 136
         echo "    <!-- Pokaz slajdów -->
     <div class=\"row\">
         <div class=\"col\">
@@ -281,20 +299,20 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
                 <div class=\"carousel-inner\">
                     <div class=\"carousel-item active\">
                         ";
-        // line 141
+        // line 148
         echo "                        <img class=\"d-block w-100\" src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("grafic/1.png"), "html", null, true);
         echo "\" alt=\"Pierwszy slajd\">
                     </div>
                     <div class=\"carousel-item\">
                         <img class=\"d-block w-100\" src=\"";
-        // line 144
+        // line 151
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("grafic/2.png"), "html", null, true);
         echo "\" alt=\"Drugi slajd\">
                     </div>
                     <div class=\"carousel-item\">
                         <img class=\"d-block w-100\" src=\"";
-        // line 147
+        // line 154
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("grafic/3.png"), "html", null, true);
         echo "\" alt=\"Trzeci slajd\">
                     </div>
@@ -312,9 +330,9 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     </div>
     <!-- Zakładki z manu -->
     ";
-        // line 162
+        // line 169
         $this->displayBlock('body', $context, $blocks);
-        // line 182
+        // line 189
         echo "</body>
 </html>";
         
@@ -325,7 +343,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 
     }
 
-    // line 5
+    // line 6
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -344,7 +362,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 
     }
 
-    // line 162
+    // line 169
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -354,7 +372,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 163
+        // line 170
         echo "        <div class=\"row\" id=\"zakladki\">
             <div class=\"col\">
                 <div class=\"card bg-transparent border-dark\">
@@ -394,12 +412,13 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 
     public function getDebugInfo()
     {
-        return array (  358 => 163,  348 => 162,  329 => 5,  318 => 182,  316 => 162,  298 => 147,  292 => 144,  285 => 141,  272 => 129,  264 => 124,  260 => 123,  256 => 122,  251 => 119,  249 => 118,  246 => 117,  238 => 112,  234 => 111,  230 => 110,  224 => 107,  220 => 106,  216 => 105,  211 => 102,  209 => 101,  206 => 100,  199 => 96,  195 => 95,  184 => 87,  180 => 85,  178 => 84,  175 => 83,  168 => 79,  164 => 78,  161 => 77,  159 => 76,  147 => 67,  143 => 66,  135 => 60,  126 => 57,  123 => 56,  119 => 55,  112 => 51,  108 => 50,  104 => 49,  61 => 9,  55 => 6,  51 => 5,  45 => 1,);
+        return array (  376 => 170,  366 => 169,  347 => 6,  336 => 189,  334 => 169,  316 => 154,  310 => 151,  303 => 148,  290 => 136,  282 => 131,  278 => 130,  274 => 129,  269 => 126,  267 => 125,  264 => 124,  256 => 119,  252 => 118,  248 => 117,  242 => 114,  238 => 113,  234 => 112,  229 => 109,  227 => 108,  224 => 107,  217 => 103,  213 => 102,  202 => 94,  198 => 92,  196 => 91,  193 => 90,  186 => 86,  182 => 85,  179 => 84,  177 => 83,  165 => 74,  161 => 73,  153 => 67,  144 => 64,  141 => 63,  136 => 62,  127 => 59,  124 => 58,  120 => 57,  112 => 52,  108 => 51,  104 => 50,  61 => 10,  55 => 7,  51 => 6,  45 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
+        return new Source("{# Aleksandra Rawicz Adam Hilaruk Małgorzata Wieteska #}
+<!DOCTYPE html>
 <html lang=\"pl\">
 <head>
     <meta charset=\"UTF-8\">
@@ -451,8 +470,14 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
 <script src=\"{{ asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js') }}\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
 <script src=\"{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js') }}\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
 <!-- Główny kontener -->
-<div class=\"container\">
+<div class=\"container\" style=\"box-shadow: 5px 5px 10px\">
     <!-- Tytuł -->
+
+    {% for flashMessage in app.session.flashbag.get('check') %}
+        <div class=\"alert alert-danger\">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
     {% for flashMessage in app.session.flashbag.get('notice') %}
         <div class=\"alert alert-success\">
             {{ flashMessage }}
@@ -477,7 +502,7 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
             {% if app.user %}
             <div class=\"mb-3\" style=\"float: right\">
                 Zalogowany jako {{ app.user.username }},
-                <a href=\"{{ path('app_logout') }}\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
+                <a href=\"{{ path('app_logout') }}\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Wyloguj</a>
             </div>
         </div>
         {% endif %}
@@ -493,8 +518,8 @@ class __TwigTemplate_e05b0bca78f9583fc2900566ad95626673522d50b181e72f26f24f8ad87
     <!-- Rejestracja i nowe hasło-->
     <div class=\"row\">
         <div class=\"col\">
-            <a href=\"{{ path('app_register')}}\" class=\"badge badge-light\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
-            <a href=\"{{ path('reset')}}\" class=\"badge badge-light\" style=\"float: right\">Nie pamietam hasła</a>
+            <a href=\"{{ path('app_register')}}\" class=\"badge badge-link\" style=\"float: right; margin-left: 10px\">Dołącz do nas!</a>
+            <a href=\"{{ path('reset')}}\" class=\"badge badge-link\" style=\"float: right\">Nie pamietam hasła</a>
         </div>
     </div>
     {% endif %}

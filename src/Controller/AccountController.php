@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Note;
 use App\Entity\Tour;
+use App\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -16,6 +17,14 @@ class AccountController extends AbstractController
     public function index($user)
     {
         $statistic = $this->getDoctrine()->getRepository(Tour::class)->findBy(['userId' => $user]);
+        if ($statistic == null)
+        {
+            $this -> get('session')->getFlashBag()->add(
+                'check',
+                'Nie ma takiego konta'
+            );
+            return $this->redirectToRoute('index');
+        }
         $statistic_note = $this->getDoctrine()->getRepository(Note::class)->findBy(['userId' => $user]);
         $sum_km=0;
         $sum_ocen = 0;
