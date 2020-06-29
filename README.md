@@ -17,7 +17,6 @@ Adam Hilaruk
         1. [Obiekt User](#obiekt-user)
         2. [Obiekt Tour](#obiekt-tour)
         3. [Obiekt Note](#obiekt-note)
-        4. [Model Filtry](#model-filtry)
 4. [Bazy Danych](#bazy-danych)
     1. [Tabela Users](#tabela-users)
 	    1. [Kolumny](#kolumny1)
