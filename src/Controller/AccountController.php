@@ -23,7 +23,7 @@ class AccountController extends AbstractController
                 'check',
                 'Nie ma takiego konta'
             );
-            return $this->redirectToRoute('index');
+            return $this->redirectToRoute('app_register');
         }
         $statistic_note = $this->getDoctrine()->getRepository(Note::class)->findBy(['userId' => $user]);
         $sum_km=0;

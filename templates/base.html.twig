@@ -54,11 +54,6 @@
 <div class="container" style="box-shadow: 5px 5px 10px">
     <!-- Tytuł -->
 
-    {% for flashMessage in app.session.flashbag.get('check') %}
-        <div class="alert alert-danger">
-            {{ flashMessage }}
-        </div>
-    {% endfor %}
     {% for flashMessage in app.session.flashbag.get('notice') %}
         <div class="alert alert-success">
             {{ flashMessage }}

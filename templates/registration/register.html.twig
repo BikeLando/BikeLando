@@ -4,6 +4,11 @@
 {% block title %}BikeLando - Rejestracja{% endblock %}
 {% block body %}
     <!-- rejestracja -->
+    {% for flashMessage in app.session.flashbag.get('check') %}
+        <div class="alert alert-danger">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
 <div class="row" id="zakladki">
     <div class="col">
         <div class="card bg-transparent border-dark">
