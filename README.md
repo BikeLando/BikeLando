@@ -115,10 +115,14 @@ W celu instalacji aplikacji:
 2. Zainstaluj program xampp i włącz Apache oraz MySQL
 3. Stwórz lokalną bazę danych o nazwie: bikelando
 W niej stwórz usera o nazwie i haśle: symfony:symfony
-3. Wykonaj w terminalu np. phpstorm polecenie: 
+4. Wykonaj w terminalu np. phpstorm polecenie: 
 php bin/console doctrine:schema:update --force
 w celu zaktualizowania swojej bazy danych
-4. Włącz projekt w przeglądarce w dowolny sposób (np. poprzez wpisanie adresu localhost)
+
+LUB zamiast pkt 3. i 4.
+zaimportuj przykładowa bazę danych do MySql (localhost/phpmyadmin), przykładowa baza danych znajduje się w pliku w repozytorium o nazwie bikelando.sql
+
+5. Włącz projekt w przeglądarce w dowolny sposób (np. poprzez wpisanie adresu localhost)
 
 ##### Uwaga
 W celu prawidłowego działania aplikacji lokalnie wymagane jest stworzenie lokalnej bazy danych o nazwie: bikelando z tabelami i kolumnami jak w opisie bazy danych wyżej (patrz punkt 4. [Bazy Danych](#bazy-danych))
