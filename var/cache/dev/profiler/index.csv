@@ -1650,3 +1650,8 @@ bf88eb,::1,GET,http://bikelando.localhost/account/x@x.pl,1593455323,,302
 e0118f,::1,GET,http://bikelando.localhost/account/x@x.pl,1593455378,,302
 b71d29,::1,GET,http://bikelando.localhost/,1593455379,,200
 26aff3,::1,GET,http://bikelando.localhost/,1593455386,,200
+16ad8c,::1,GET,http://bikelando.localhost/,1593455538,,200
+d5160f,::1,GET,http://bikelando.localhost/favicon.ico,1593455539,bc0881,404
+bc0881,::1,GET,http://bikelando.localhost/favicon.ico,1593455539,,404
+95cca0,::1,GET,http://bikelando.localhost/account/x@x.pl,1593455543,,302
+a6efdb,::1,GET,http://bikelando.localhost/register,1593455544,,200
