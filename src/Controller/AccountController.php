@@ -16,8 +16,8 @@ class AccountController extends AbstractController
      */
     public function index($user)
     {
-        $statistic = $this->getDoctrine()->getRepository(Tour::class)->findBy(['userId' => $user]);
-        if ($statistic == null)
+        $us = $this->getDoctrine()->getRepository(User::class)->findOneBy(['email' => $user]);
+        if ($us == null)
         {
             $this -> get('session')->getFlashBag()->add(
                 'check',
@@ -25,28 +25,34 @@ class AccountController extends AbstractController
             );
             return $this->redirectToRoute('app_register');
         }
+        $statistic = $this->getDoctrine()->getRepository(Tour::class)->findBy(['userId' => $user]);
         $statistic_note = $this->getDoctrine()->getRepository(Note::class)->findBy(['userId' => $user]);
-        $sum_km=0;
-        $sum_ocen = 0;
-        $i = 0;
-        while ($i < count($statistic))
-        {
-            $sum_km += $statistic[$i]->getLength();
-            $sum_ocen += $statistic[$i]->getNote();
-            $i++;
+        if ($statistic!=null && $statistic_note!=null) {
+            $sum_km = $us->sum($statistic);
+            $earthEncirclement = $us->earthEncirclement($statistic);
+            $number1 = $us->number($statistic);
+            $number2 =  $us->number($statistic_note);
+            $average = $us->average($statistic);
+
+            return $this->render('account/index.html.twig', [
+                'sum_km' => $sum_km,
+                'ob_ziemi' => $earthEncirclement,
+                'ile_dodano' => $number1,
+                'ile_ocen' => $number2,
+                'srednia' => $average
+
+            ]);
         }
-        $okr_ziemi=$sum_km/40075;
-        $ile_dodano = count($statistic);
-        $ile_ocen = count($statistic_note);
-        $srednia_ocen = $sum_ocen/count($statistic);
+        else
+        {
+            return $this->render('account/index.html.twig', [
+                'sum_km' => 0,
+                'ob_ziemi' => 0,
+                'ile_dodano' => 0,
+                'ile_ocen' => 0,
+                'srednia' => 0
 
-        return $this->render('account/index.html.twig', [
-            'sum_km' => $sum_km,
-            'ob_ziemi' => $okr_ziemi,
-            'ile_dodano' => $ile_dodano,
-            'ile_ocen' => $ile_ocen,
-            'srednia' => $srednia_ocen
-
-        ]);
+            ]);
+        }
     }
 }

@@ -32,7 +32,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     protected function doGetParent(array $context)
     {
-        // line 1
+        // line 2
         return "base.html.twig";
     }
 
@@ -45,7 +45,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "account/index.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "account/index.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "account/index.html.twig", 2);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -55,7 +55,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     }
 
-    // line 3
+    // line 4
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -74,7 +74,7 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     }
 
-    // line 5
+    // line 6
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -86,8 +86,8 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
         echo "<!-- infomacja o użytkowniku -->
     ";
-        // line 6
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 6, $this->source); })()), "user", [], "any", false, false, false, 6)) {
+        // line 7
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 7, $this->source); })()), "user", [], "any", false, false, false, 7)) {
             echo " <!--zalogowany -->
     <div class=\"row\" id=\"zakladki\">
         <div class=\"col\">
@@ -104,44 +104,44 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
                         <tr>
                             <th scope=\"col\">Dodane trasy</th>
                             <td>";
-            // line 21
-            echo twig_escape_filter($this->env, (isset($context["ile_dodano"]) || array_key_exists("ile_dodano", $context) ? $context["ile_dodano"] : (function () { throw new RuntimeError('Variable "ile_dodano" does not exist.', 21, $this->source); })()), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, (isset($context["ile_dodano"]) || array_key_exists("ile_dodano", $context) ? $context["ile_dodano"] : (function () { throw new RuntimeError('Variable "ile_dodano" does not exist.', 22, $this->source); })()), "html", null, true);
             echo "</td>
                         </tr>
                         <tr>
                             <th scope=\"col\">Dodane oceny</th>
                             <td>";
-            // line 25
-            echo twig_escape_filter($this->env, (isset($context["ile_ocen"]) || array_key_exists("ile_ocen", $context) ? $context["ile_ocen"] : (function () { throw new RuntimeError('Variable "ile_ocen" does not exist.', 25, $this->source); })()), "html", null, true);
+            // line 26
+            echo twig_escape_filter($this->env, (isset($context["ile_ocen"]) || array_key_exists("ile_ocen", $context) ? $context["ile_ocen"] : (function () { throw new RuntimeError('Variable "ile_ocen" does not exist.', 26, $this->source); })()), "html", null, true);
             echo "</td>
                         </tr>
                         <tr>
                             <th scope=\"col\">Dodane kilometry</th>
                             <td>";
-            // line 29
-            echo twig_escape_filter($this->env, (isset($context["sum_km"]) || array_key_exists("sum_km", $context) ? $context["sum_km"] : (function () { throw new RuntimeError('Variable "sum_km" does not exist.', 29, $this->source); })()), "html", null, true);
+            // line 30
+            echo twig_escape_filter($this->env, (isset($context["sum_km"]) || array_key_exists("sum_km", $context) ? $context["sum_km"] : (function () { throw new RuntimeError('Variable "sum_km" does not exist.', 30, $this->source); })()), "html", null, true);
             echo "</td>
                         </tr>
                         <tr>
                             <th scope=\"col\">Średnia ocena</th>
                             <td>";
-            // line 33
-            echo twig_escape_filter($this->env, (isset($context["srednia"]) || array_key_exists("srednia", $context) ? $context["srednia"] : (function () { throw new RuntimeError('Variable "srednia" does not exist.', 33, $this->source); })()), "html", null, true);
+            // line 34
+            echo twig_escape_filter($this->env, (isset($context["srednia"]) || array_key_exists("srednia", $context) ? $context["srednia"] : (function () { throw new RuntimeError('Variable "srednia" does not exist.', 34, $this->source); })()), "html", null, true);
             echo "</td>
                         </tr>
                         <tr>
                             <th scope=\"col\">Okrążenia ziemi</th>
                             <td>";
-            // line 37
-            echo twig_escape_filter($this->env, (isset($context["ob_ziemi"]) || array_key_exists("ob_ziemi", $context) ? $context["ob_ziemi"] : (function () { throw new RuntimeError('Variable "ob_ziemi" does not exist.', 37, $this->source); })()), "html", null, true);
+            // line 38
+            echo twig_escape_filter($this->env, (isset($context["ob_ziemi"]) || array_key_exists("ob_ziemi", $context) ? $context["ob_ziemi"] : (function () { throw new RuntimeError('Variable "ob_ziemi" does not exist.', 38, $this->source); })()), "html", null, true);
             echo "</td>
                         </tr>
                         </tbody>
                     </table>
 
                     <a class=\"nav-link btn btn-outline-dark\" href=\"";
-            // line 42
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 42, $this->source); })()), "user", [], "any", false, false, false, 42), "email", [], "any", false, false, false, 42)]), "html", null, true);
+            // line 43
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 43, $this->source); })()), "user", [], "any", false, false, false, 43), "email", [], "any", false, false, false, 43)]), "html", null, true);
             echo "\">Edytuj</a>
                 </div>
             </div>
@@ -149,15 +149,15 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
     </div>
     ";
         }
-        // line 48
+        // line 49
         echo "
     ";
-        // line 49
-        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "user", [], "any", false, false, false, 49), null))) {
+        // line 50
+        if ((0 === twig_compare(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "user", [], "any", false, false, false, 50), null))) {
             echo " <!--nie zalogowany -->
         <div class=\"alert alert-danger\" role=\"alert\">
             Część dostępna wyłącznie dla użytkowników portalu, cofnij się do części dostępnej powszechnie <a href=\"";
-            // line 51
+            // line 52
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
             echo "\" class=\"alert-link\"> Kliknij </a>.
         </div>
@@ -183,12 +183,13 @@ class __TwigTemplate_b581edb55bd34d61e98bc0f40728ecc49066a77f842fa0820d858b60eb4
 
     public function getDebugInfo()
     {
-        return array (  161 => 51,  156 => 49,  153 => 48,  144 => 42,  136 => 37,  129 => 33,  122 => 29,  115 => 25,  108 => 21,  90 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  161 => 52,  156 => 50,  153 => 49,  144 => 43,  136 => 38,  129 => 34,  122 => 30,  115 => 26,  108 => 22,  90 => 7,  78 => 6,  59 => 4,  36 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
+        return new Source("{# Aleksandra Rawicz #}
+{% extends 'base.html.twig' %}
 
 {% block title %}BikeLando - Twoje konto{% endblock %}
 

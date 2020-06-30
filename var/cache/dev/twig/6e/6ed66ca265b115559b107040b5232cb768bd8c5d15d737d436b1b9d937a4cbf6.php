@@ -32,7 +32,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
 
     protected function doGetParent(array $context)
     {
-        // line 1
+        // line 2
         return "base.html.twig";
     }
 
@@ -45,7 +45,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "tours/show.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "tours/show.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "tours/show.html.twig", 2);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -55,7 +55,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
 
     }
 
-    // line 2
+    // line 3
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -74,7 +74,7 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
 
     }
 
-    // line 4
+    // line 5
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,16 +84,16 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 5
+        // line 6
         echo "    <div class=\"card bg-transparent border-dark\">
         <iframe src=\"";
-        // line 6
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 6, $this->source); })()), "linkToMap", [], "any", false, false, false, 6), "html", null, true);
+        // line 7
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 7, $this->source); })()), "linkToMap", [], "any", false, false, false, 7), "html", null, true);
         echo "\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
         <div class=\"card-body\">
             <h4 class=\"card-title\">";
-        // line 8
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 8, $this->source); })()), "name", [], "any", false, false, false, 8), "html", null, true);
+        // line 9
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 9, $this->source); })()), "name", [], "any", false, false, false, 9), "html", null, true);
         echo "</h4>
             <table class=\"table\">
                 <thead>
@@ -108,59 +108,59 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
                 <tbody>
                 <tr>
                     <th>";
-        // line 21
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 21, $this->source); })()), "length", [], "any", false, false, false, 21), "html", null, true);
-        echo "</th>
-                    <th>";
         // line 22
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 22, $this->source); })()), "difficulty", [], "any", false, false, false, 22), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 22, $this->source); })()), "length", [], "any", false, false, false, 22), "html", null, true);
         echo "</th>
                     <th>";
         // line 23
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 23, $this->source); })()), "region", [], "any", false, false, false, 23), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 23, $this->source); })()), "difficulty", [], "any", false, false, false, 23), "html", null, true);
         echo "</th>
                     <th>";
         // line 24
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["author"]) || array_key_exists("author", $context) ? $context["author"] : (function () { throw new RuntimeError('Variable "author" does not exist.', 24, $this->source); })()), "username", [], "any", false, false, false, 24), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 24, $this->source); })()), "region", [], "any", false, false, false, 24), "html", null, true);
         echo "</th>
                     <th>";
         // line 25
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 25, $this->source); })()), "note", [], "any", false, false, false, 25), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["author"]) || array_key_exists("author", $context) ? $context["author"] : (function () { throw new RuntimeError('Variable "author" does not exist.', 25, $this->source); })()), "username", [], "any", false, false, false, 25), "html", null, true);
+        echo "</th>
+                    <th>";
+        // line 26
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 26, $this->source); })()), "note", [], "any", false, false, false, 26), "html", null, true);
         echo "</th>
                 </tr>
                 </tbody>
             </table>
             <p>";
-        // line 29
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 29, $this->source); })()), "description", [], "any", false, false, false, 29), "html", null, true);
+        // line 30
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["tour"]) || array_key_exists("tour", $context) ? $context["tour"] : (function () { throw new RuntimeError('Variable "tour" does not exist.', 30, $this->source); })()), "description", [], "any", false, false, false, 30), "html", null, true);
         echo "</p>
             ";
-        // line 30
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 30, $this->source); })()), "user", [], "any", false, false, false, 30)) {
-            // line 31
+        // line 31
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 31, $this->source); })()), "user", [], "any", false, false, false, 31)) {
+            // line 32
             echo "            <h5>Ocena <br></h5>
             ";
-            // line 32
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 32, $this->source); })()), 'form_start');
+            // line 33
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 33, $this->source); })()), 'form_start');
             echo "
             ";
-            // line 33
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 33, $this->source); })()), "note", [], "any", false, false, false, 33), 'row', ["label" => " "]);
-            // line 35
+            // line 34
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 34, $this->source); })()), "note", [], "any", false, false, false, 34), 'row', ["label" => " "]);
+            // line 36
             echo "
 
             ";
-            // line 37
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 37, $this->source); })()), 'widget');
+            // line 38
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 38, $this->source); })()), 'widget');
             echo "
             ";
-            // line 38
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 38, $this->source); })()), 'form_end');
+            // line 39
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form_note"]) || array_key_exists("form_note", $context) ? $context["form_note"] : (function () { throw new RuntimeError('Variable "form_note" does not exist.', 39, $this->source); })()), 'form_end');
             echo "
             <br>
             ";
         }
-        // line 41
+        // line 42
         echo "            <a href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("tours");
         echo "\">Powrot</a>
@@ -187,12 +187,13 @@ class __TwigTemplate_7550dc40e1bb7a4bc584d9035f95e54181035dcbf7ca2fc5e7cfc034fb6
 
     public function getDebugInfo()
     {
-        return array (  164 => 41,  158 => 38,  154 => 37,  150 => 35,  148 => 33,  144 => 32,  141 => 31,  139 => 30,  135 => 29,  128 => 25,  124 => 24,  120 => 23,  116 => 22,  112 => 21,  96 => 8,  91 => 6,  88 => 5,  78 => 4,  59 => 2,  36 => 1,);
+        return array (  164 => 42,  158 => 39,  154 => 38,  150 => 36,  148 => 34,  144 => 33,  141 => 32,  139 => 31,  135 => 30,  128 => 26,  124 => 25,  120 => 24,  116 => 23,  112 => 22,  96 => 9,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
+        return new Source("{# Małgorzata Wieteska #}
+{% extends 'base.html.twig' %}
 {% block title %}BikeLando - Trasy{% endblock %}
 
 {% block body %}

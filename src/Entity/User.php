@@ -136,4 +136,43 @@ class User implements UserInterface
 
         return $this;
     }
+    public function sum(array $statistic): float
+    {
+        $i = 0;
+        $sum = 0;
+        while ($i < count($statistic)) {
+            $sum += $statistic[$i]->getLength();
+            $i++;
+        }
+        return $sum;
+    }
+    public function earthEncirclement(array $statistic): float
+    {
+        $i = 0;
+        $sum = 0;
+        while ($i < count($statistic)) {
+            $sum += $statistic[$i]->getLength();
+            $i++;
+        }
+        $result = $sum / 40075;
+        return $result;
+    }
+    public function number(array $statistic): float
+    {
+        return count($statistic);
+    }
+    public function average(array $statistic): float
+    {
+        $sum = 0;
+        $i = 0;
+        while ($i < count($statistic)) {
+            $sum += $statistic[$i]->getNote();
+            $i++;
+        }
+        $average = $sum/ count($statistic);
+        return $average;
+    }
+
+
+
 }
