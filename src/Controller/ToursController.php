@@ -5,11 +5,14 @@ namespace App\Controller;
 use App\Entity\Tour;
 use App\Entity\User;
 use App\Entity\Note;
+use App\Form\AddToursFormType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Form\SearchFormType;
 
 class ToursController extends AbstractController
 {
@@ -18,63 +21,9 @@ class ToursController extends AbstractController
      * @Route("/tours", name="tours")
      * Method({"GET", "POST"})
      */
-    public function index(Request $request)
+    public function index(Request $request): Response
     {
-        $form = $this->createFormBuilder()
-            ->add('diff', ChoiceType::class,
-                ['choices' => [
-                    'Wszystkie' => 0,
-                    '1' => 1,
-                    '2' => 2,
-                    '3' => 3,
-                    '4' => 4,
-                    '5' => 5,
-                    '6' => 6,
-                    '7' => 7,
-                    '8' => 8,
-                    '9' => 9,
-                    '10' => 10,
-                ]])
-            ->add('region', ChoiceType::class, [
-                'choices' => [
-                    'Wszystkie' => 0,
-                    'dolnośląskie' => 'dolnośląskie',
-                    'kujawsko-pomorskie' => 'kujawsko-pomorskie',
-                    'lubelskie' => 'lubelskie',
-                    'lubuskie' => 'lubuskie',
-                    'łódzkie' => 'łódzkie',
-                    'małopolskie' => 'małopolskie',
-                    'mazowieckie' => 'mazowieckie',
-                    'opolskie' => 'opolskie',
-                    'podkarpackie' => 'podkarpackie',
-                    'podlaskie' => 'podlaskie',
-                    'pomorskie' => 'pomorskie',
-                    'śląskie' => 'śląskie',
-                    'świętokrzyskie' => 'świętokrzyskie',
-                    'warmińsko-mazurskie' => 'warmińsko-mazurskie',
-                    'wielkopolskie' => 'wielkopolskie',
-                    'zachodniopomorskie' => 'zachodniopomorskie',
-                ]
-            ])
-            ->add('note', ChoiceType::class, [
-                'choices' => [
-                    'Wszystkie' => 0,
-                    '1' => 1,
-                    '2' => 2,
-                    '3' => 3,
-                    '4' => 4,
-                    '5' => 5,
-                    '6' => 6,
-                    '7' => 7,
-                    '8' => 8,
-                    '9' => 9,
-                    '10' => 10,
-                ]])
-            ->add('save', SubmitType::class, array(
-                'label' => 'Wyszukaj',
-                'attr' => array('class' => 'btn btn-primary mt-3')))
-            ->getForm();
-
+        $form = $this->createForm(SearchFormType::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -83,13 +32,13 @@ class ToursController extends AbstractController
             $region = $form->get('region')->getData();
             $tab=[];
             if ($note != '0' ) {
-                $tab = ['note'=>$note];
+                $tab += ['note'=>$note];
             }
             if ($region != '0') {
-                    $tab = ['region'=>$region];
+                    $tab += ['region'=>$region];
             }
             if ($diff != '0') {
-                    $tab=['difficulty'=>$diff];
+                    $tab+=['difficulty'=>$diff];
             }
 
             if(count($tab)>0) {

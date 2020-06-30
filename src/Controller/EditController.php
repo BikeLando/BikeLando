@@ -48,7 +48,7 @@ class EditController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
             $entityManager->flush();
-            return $this->redirectToRoute('account');
+            return $this->redirectToRoute('index');
         }
         $this -> get('session')->getFlashBag()->add(
             'password_error',
