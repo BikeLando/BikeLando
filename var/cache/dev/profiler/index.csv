@@ -1764,3 +1764,13 @@ c10d7f,::1,GET,http://bikelando.localhost/tour/5/admin@admin.com,1593552690,,200
 018b31,::1,POST,http://bikelando.localhost/tour/5/admin@admin.com,1593552693,,302
 b95e8e,::1,GET,http://bikelando.localhost/,1593552693,,200
 2426c4,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593552697,,200
+af3677,::1,GET,http://bikelando.localhost/,1593553170,,200
+cefa7f,::1,GET,http://bikelando.localhost/favicon.ico,1593553171,e9b5b4,404
+e9b5b4,::1,GET,http://bikelando.localhost/favicon.ico,1593553171,,404
+f0ea3a,::1,GET,http://bikelando.localhost/login,1593553173,,200
+025bd3,::1,POST,http://bikelando.localhost/login,1593553180,,302
+d2ec67,::1,GET,http://bikelando.localhost/,1593553181,,200
+b89dcc,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593553183,819571,500
+819571,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593553183,,500
+80ae3e,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593553257,,200
+074fad,::1,GET,http://bikelando.localhost/account/admin@admin.com,1593553308,,200

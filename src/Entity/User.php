@@ -51,6 +51,7 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=255)
      */
     private $username;
+    const radius = 40075;
 
     public function getId(): ?int
     {
@@ -154,7 +155,7 @@ class User implements UserInterface
             $sum += $statistic[$i]->getLength();
             $i++;
         }
-        $result = $sum / 40075;
+        $result = $sum / self::radius;
         return $result;
     }
     public function number(array $statistic): float
